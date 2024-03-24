@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/configuration/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/configuration/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/controller/Consumer1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/controller/Consumer1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/service/consumer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/service/consumer1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice3/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/grafana/provisioning/datasources.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/grafana/provisioning/datasources.yml" afterDir="false" />
-    </list>
+    <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +161,7 @@
       <workItem from="1710843534756" duration="4963000" />
       <workItem from="1710848545249" duration="2383000" />
       <workItem from="1710930768607" duration="17700000" />
-      <workItem from="1711270927061" duration="9817000" />
+      <workItem from="1711270927061" duration="10120000" />
     </task>
     <servers />
   </component>
