@@ -5,44 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_12_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_jakarta9_1_12_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_12_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_common_0_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_0_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_agent_0_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_3_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_3_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_3_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/grafana/provisioning/datasources.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/Microservice2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/Microservice2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/controller/Service2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/controller/Consumer1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/service/client1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/service/consumer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/configuration/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/configuration/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/controller/Consumer1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/controller/Consumer1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/service/consumer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/service/consumer1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice3/src/main/java/com/example/microservice3/controller/Service3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice3/src/main/java/com/example/microservice3/controller/Consumer2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice3/src/main/java/com/example/microservice3/service/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice3/src/main/java/com/example/microservice3/service/consumer2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice3/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/base/13468/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/postgres_data/base/13468/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/postgres_data/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/postgres_data/global/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/pg_stat_tmp/db_0.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/pg_stat_tmp/db_13468.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/pg_stat_tmp/global.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/postgres_data/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres_data/postmaster.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/grafana/provisioning/datasources.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/grafana/provisioning/datasources.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +98,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Microservice2Application">
+  <component name="RunManager" selected="Spring Boot.Microservice3Application">
     <configuration name="Microservice1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -200,7 +170,7 @@
       <workItem from="1710843534756" duration="4963000" />
       <workItem from="1710848545249" duration="2383000" />
       <workItem from="1710930768607" duration="17700000" />
-      <workItem from="1711270927061" duration="1882000" />
+      <workItem from="1711270927061" duration="9817000" />
     </task>
     <servers />
   </component>
@@ -212,8 +182,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Microservice2/src/main/java/com/example/microservice2/configuration/KafkaConsumerConfig.java</url>
-          <line>37</line>
-          <properties class="com.example.microservice2.configuration.KafkaConsumerConfig" method="kafkaListenerContainerFactory">
+          <line>25</line>
+          <properties class="com.example.microservice3.configuration.KafkaConsumerConfig">
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />

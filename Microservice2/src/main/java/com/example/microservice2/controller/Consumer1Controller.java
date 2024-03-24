@@ -10,7 +10,7 @@ public class Consumer1Controller {
         this.consumer1 = consumer1;
     }
     @GetMapping("/call-service-1")
-    public String getMessageFromA() {
+    public String getMessageFrom1() {
         String messageFrom1 = consumer1.hello();
         return "consumer 1 calling producer : " + messageFrom1;
     }

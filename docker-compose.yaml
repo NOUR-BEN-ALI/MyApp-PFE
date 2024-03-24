@@ -58,10 +58,6 @@ services:
       - GF_SERVER_ROOT_URL=http://localhost:3000
     ports:
       - "3000:3000"
-    depends_on:
-      - prometheus
-
-
 volumes:
   postgres_data:
   prometheus_data:
