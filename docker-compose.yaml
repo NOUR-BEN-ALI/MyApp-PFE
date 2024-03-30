@@ -14,9 +14,11 @@ services:
     ports:
       - "9092:9092"
     environment:
+      #3ibara kafka broker invite producer*consumer how to join kafka communication
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      #mapping between listener names and security protocols.
+      #mapping between listener names and security protocols(PLAINTEXT ,ssl,tls...).
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      # the name of the listener used for communication between Kafka brokers themselves.
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
@@ -65,7 +67,7 @@ services:
     depends_on:
       - postgres
 #    environment:
-#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/basepfe3
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
   microservice2:
     build: ./MyApplication/Microservice2
     ports:
@@ -73,7 +75,7 @@ services:
     depends_on:
       - postgres
 #    environment:
-#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/basepfe4
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe4
   microservice3:
     build: ./MyApplication/Microservice3
     ports:
@@ -81,7 +83,7 @@ services:
     depends_on:
       - postgres
 #    environment:
-#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/basepfe5
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe5
 
 volumes:
   postgres_data:
