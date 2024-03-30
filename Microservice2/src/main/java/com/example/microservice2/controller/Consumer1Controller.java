@@ -12,6 +12,6 @@ public class Consumer1Controller {
     @GetMapping("/call-service-1")
     public String getMessageFrom1() {
         String messageFrom1 = consumer1.hello();
-        return "consumer 1 calling producer : " + messageFrom1;
+        return "producer  calling consumer 1 : " + messageFrom1;
     }
 }

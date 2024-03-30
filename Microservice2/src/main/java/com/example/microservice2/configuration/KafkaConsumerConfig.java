@@ -25,6 +25,7 @@ public class KafkaConsumerConfig {
     }
 
     @Bean
+    // create containers for kafka listener + responsible for managing Kafka message listeners
     public ConcurrentKafkaListenerContainerFactory<String, String> kafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());

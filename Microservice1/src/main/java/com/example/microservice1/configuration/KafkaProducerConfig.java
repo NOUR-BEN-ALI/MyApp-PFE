@@ -13,16 +13,19 @@ import java.util.Map;
 @Configuration
 public class KafkaProducerConfig {
 
+//    simplifies sending messages to Kafka topics
     @Bean
     public KafkaTemplate<String, String> kafkaTemplate() {
         KafkaTemplate<String, String> kafkaTemplate = new KafkaTemplate<>(producerFactory());
         return kafkaTemplate;
     }
 
+    //management + creation of kafka producers
     @Bean
     public DefaultKafkaProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        //e serializer Modify key/value if you need to work with different data types
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         return new DefaultKafkaProducerFactory<>(configProps);

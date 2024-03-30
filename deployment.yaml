@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapplication
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapplication
+  template:
+    metadata:
+      labels:
+        app: myapplication
+    spec:
+      containers:
+        - name: microservice1
+          image: microservice1
+          ports:
+            - containerPort: 9989
+        - name: microservice2
+          image: microservice2
+          ports:
+            - containerPort: 9988
+        - name: microservice3
+          image: microservice3
+          ports:
+            - containerPort: 9987

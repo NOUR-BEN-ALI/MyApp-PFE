@@ -8,7 +8,6 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     ports:
       - "2181:2181"
-
   kafka:
     image: wurstmeister/kafka:latest
     container_name: kafka
@@ -31,7 +30,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: basepfe3
+      POSTGRES_DB: basepfe3 , basepfe4 , basepfe5
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -58,6 +57,31 @@ services:
       - GF_SERVER_ROOT_URL=http://localhost:3000
     ports:
       - "3000:3000"
+  microservice1:
+    build: ./MyApplication/Microservice1
+    ports:
+      - "9989:9997"
+    depends_on:
+      - postgres
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/basepfe3
+  microservice2:
+    build: ./MyApplication/Microservice2
+    ports:
+      - "9988:9998"
+    depends_on:
+      - postgres
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/basepfe4
+  microservice3:
+    build: ./MyApplication/Microservice3
+    ports:
+      - "9987:9999"
+    depends_on:
+      - postgres
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/basepfe5
+
 volumes:
   postgres_data:
   prometheus_data:
