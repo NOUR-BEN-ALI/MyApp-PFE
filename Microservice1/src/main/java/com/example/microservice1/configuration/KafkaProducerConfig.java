@@ -22,6 +22,7 @@ public class KafkaProducerConfig {
 
     //management + creation of kafka producers
     @Bean
+    //elconsumer push msg --> serialize msg  ----> el producer pull msg -->Deserialize msg key value by  converting messages (typically objects) from their original format (like Java objects) into a byte stream
     public DefaultKafkaProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
