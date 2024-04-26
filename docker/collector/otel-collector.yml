@@ -1,0 +1,16 @@
+exporters:
+  otlp:
+    endpoint: "http://tempo:4328"
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: []
+      exporters: [otlp]

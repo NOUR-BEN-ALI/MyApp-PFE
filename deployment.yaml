@@ -1,27 +1,54 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  name: myapplication
+  name: postgres-microservice-pod
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: myapplication
-  template:
-    metadata:
-      labels:
-        app: myapplication
-    spec:
-      containers:
-        - name: microservice1
-          image: microservice1
-          ports:
-            - containerPort: 9989
-        - name: microservice2
-          image: microservice2
-          ports:
-            - containerPort: 9988
-        - name: microservice3
-          image: microservice3
-          ports:
-            - containerPort: 9987
+  containers:
+    - name: postgres
+      image: postgres:13
+      ports:
+        - containerPort: 5432
+      env:
+        - name: POSTGRES_USER
+          value: postgres
+        - name: POSTGRES_PASSWORD
+          value: admin
+        - name: POSTGRES_DB
+          value: basepfe3
+      volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
+    - name: microservice1
+      image: nourbenali/myapplication-microservice1:latest
+      ports:
+        - containerPort: 9989
+      env:
+        - name: MINIKUBE_IP
+          value: "192.168.49.2"
+        - name: SPRING_DATASOURCE_URL
+          value: "jdbc:postgresql://localhost:5432/basepfe3"
+        - name: SPRING_DATASOURCE_USERNAME
+          value: "postgres"
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: "admin"
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "kafka:9093"
+#    - name: tempo
+#      image: grafana/tempo:2.2.2
+#      volumeMounts:
+#        - name: tempo-config
+#          mountPath: /etc/tempo.yml
+#        - name: tempo-data
+#          mountPath: /tmp/tempo
+#      ports:
+#        - containerPort: 3200
+#        - containerPort: 4327
+#        - containerPort: 4328
+  volumes:
+    - name: postgres-data
+      emptyDir: {}
+#    - name: tempo-config
+#      configMap:
+#        name: tempo-config
+#    - name: tempo-data
+#      emptyDir: {}

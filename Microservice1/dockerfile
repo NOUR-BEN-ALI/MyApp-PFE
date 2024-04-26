@@ -1,9 +1,17 @@
 # Use an OpenJDK base image
-FROM openjdk:23-slim-bullseye
+FROM openjdk:21-jdk
 # Copy the JAR file from your project into the container
 COPY target/microservice1.jar /app/microservice1.jar
+#COPY target/opentelemetry-javaagent-2.1.0.jar /app/opentelemetry-javaagent-2.1.0.jar
+
 # Expose the port your Spring Boot application runs on (change to the actual port)
 
 EXPOSE 9989
 # Define the command to run your Spring Boot application
 CMD ["java", "-jar", "/app/microservice1.jar"]
+# Définir la commande pour exécuter votre application Spring Boot
+#CMD ["java", "-javaagent:/app/opentelemetry-javaagent.jar", \
+#            "-Dotel.exporter=otlp", \
+#            "-Dotel.exporter.otlp.endpoint=http://host.docker.internal:4317", \
+#            "-Dotel.service.name=Microservice1", \
+#            "-jar", "/app/microservice1.jar"]

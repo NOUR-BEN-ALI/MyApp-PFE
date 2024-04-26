@@ -1,29 +1,37 @@
 version: '3'
 
 services:
-  zookeeper:   #maintenir à jour la liste des brokers disponibles dans le cluster
+  zookeeper:
     image: wurstmeister/zookeeper:latest
     container_name: zookeeper
     environment:
+      MINIKUBE_IP: "192.168.49.2"
       ZOOKEEPER_TICK_TIME: 2000
     ports:
       - "2181:2181"
+    networks:
+      - my-network
+
   kafka:
     image: wurstmeister/kafka:latest
     container_name: kafka
     ports:
-      - "9092:9092"
+      - "9093:9092"
     environment:
-      #3ibara kafka broker invite producer*consumer how to join kafka communication
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      #mapping between listener names and security protocols(PLAINTEXT ,ssl,tls...).
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
-      # the name of the listener used for communication between Kafka brokers themselves.
+      KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9093,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_LISTENERS: PLAINTEXT://kafka:9093,PLAINTEXT_HOST://0.0.0.0:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     depends_on:
       - zookeeper
+    networks:
+      - my-network
+    volumes:
+      - kafka_data:/kafka/data
+  #  command: ["/bin/bash", "-c", "bin/kafka-topics.sh --create --topic MyApplication --bootstrap-server kafka:9093"]
 
   postgres:
     image: postgres:13
@@ -33,24 +41,28 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: basepfe3 , basepfe4 , basepfe5
-    volumes:
+      POSTGRES_DB: basepfe3
+    volumes:  # Utilisation des volumes pour persister les données de PostgreSQL
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my-network
 
   prometheus:
     image: prom/prometheus:v2.46.0
     command:
-       - --enable-feature=exemplar-storage
-       - --config.file=/etc/prometheus/prometheus.yml
-    volumes:
+      - --enable-feature=exemplar-storage
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:  # Utilisation des volumes pour persister les données de Prometheus
       - ./docker/prometheus:/etc/prometheus/:rw
       - prometheus_data:/prometheus
     ports:
       - "9090:9090"
+    networks:
+      - my-network
 
   grafana:
     image: grafana/grafana:10.1.0
-    volumes:
+    volumes:  # Utilisation des volumes pour persister les données de Grafana
       - ./docker/grafana:/etc/grafana/provisioning/datasources:ro
       - grafana_data:/var/lib/grafana
     environment:
@@ -58,34 +70,97 @@ services:
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
       - GF_AUTH_DISABLE_LOGIN_FORM=true
       - GF_SERVER_ROOT_URL=http://localhost:3000
+
     ports:
       - "3000:3000"
+    networks:
+      - my-network
+
+
+  tempo:
+    image: grafana/tempo:2.2.2
+    command: [ "-config.file=/etc/tempo.yml/tempo.yml" ]
+    volumes:
+      - ./docker/tempo/tempo.yml:/etc/tempo.yml/:ro
+      - ./docker/tempo/tempo-data:/tmp/tempo
+    ports:
+      - "3200:3200"  # Tempo
+      - "4327:4327" # otlp grpc
+      - "4328:4328" # otlp http
+
+
+
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.98.0
+    restart: always
+    command:
+      - --config=/etc/otelcol-cont/otel-collector.yml
+    volumes:
+      - ./docker/collector/otel-collector.yml:/etc/otelcol-cont/otel-collector.yml:ro
+    ports:
+      - "1888:1888" # pprof extension
+      - "13133:13133" # health_check extension
+      - "4317:4317" # OTLP gRPC receiver
+      - "4318:4318" # OTLP http receiver
+      - "55679:55679" # zpages extension
+
+
+
+
+
   microservice1:
-    build: ./MyApplication/Microservice1
+    build: ./Microservice1
     ports:
       - "9989:9997"
     depends_on:
       - postgres
-#    environment:
-#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
-  microservice2:
-    build: ./MyApplication/Microservice2
-    ports:
-      - "9988:9998"
-    depends_on:
-      - postgres
+      - kafka
+    environment:
+      MINIKUBE_IP: "192.168.49.2"
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+
+    networks:
+      - my-network
+
+#  microservice2:
+#    build: ./Microservice2
+#    ports:
+#      - "9988:9998"
+#    depends_on:
+#      - postgres
+#      - kafka
+#      - microservice1
+#
 #    environment:
 #      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe4
-  microservice3:
-    build: ./MyApplication/Microservice3
-    ports:
-      - "9987:9999"
-    depends_on:
-      - postgres
+#      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+#
+#    networks:
+#      - my-network
+#
+#  microservice3:
+#    build: ./Microservice3
+#    ports:
+#      - "9987:9999"
+#    depends_on:
+#      - postgres
+#      - kafka
+#      - microservice1
 #    environment:
 #      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe5
+#      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+#
+#    networks:
+#      - my-network
 
-volumes:
+networks:
+  my-network:
+
+volumes:  # Définition des volumes
   postgres_data:
   prometheus_data:
   grafana_data:
+  kafka_data:
+  tempo-data:

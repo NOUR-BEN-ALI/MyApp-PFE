@@ -1,5 +1,5 @@
 # Use an OpenJDK base image
-FROM openjdk:23-slim-bullseye
+FROM openjdk:21-jdk
 # Copy the JAR file from your project into the container
 COPY target/microservice3.jar /app/microservice3.jar
 # Expose the port your Spring Boot application runs on (change to the actual port)
