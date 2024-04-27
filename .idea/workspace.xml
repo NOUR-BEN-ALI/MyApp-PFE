@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployzookafka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployzookafka.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pod.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="52b1b6d5-3f08-4c0f-aa72-4db736ebe12d" />
+        <option name="url" value="https://github.com/NOUR-BEN-ALI/MyApp-PFE.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -194,7 +208,7 @@
       <workItem from="1713878653538" duration="14254000" />
       <workItem from="1713963573576" duration="9666000" />
       <workItem from="1714038075881" duration="15651000" />
-      <workItem from="1714149815749" duration="6069000" />
+      <workItem from="1714149815749" duration="10023000" />
     </task>
     <servers />
   </component>

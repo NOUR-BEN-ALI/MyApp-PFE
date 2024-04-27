@@ -103,10 +103,6 @@ services:
       - "13133:13133" # health_check extension
       - "4317:4317" # OTLP gRPC receiver
       - "4318:4318" # OTLP http receiver
-      - "55679:55679" # zpages extension
-
-
-
 
 
   microservice1:
@@ -117,7 +113,6 @@ services:
       - postgres
       - kafka
     environment:
-      MINIKUBE_IP: "192.168.49.2"
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9093
 
