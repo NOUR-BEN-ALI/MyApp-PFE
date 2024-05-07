@@ -1,16 +1,41 @@
-exporters:
-  otlp:
-    endpoint: "http://tempo:4328"
-
 receivers:
   otlp:
     protocols:
       grpc:
-      http:
 
+processors:
+  batch:
+
+exporters:
+  loki:
+    endpoint: "http://loki:3100/loki/api/v1/push"
+#  otlp:
+#    endpoint: "grpc://tempo:3200"  # Endpoint for Tempo OTLP receiver
+#  prometheus:
+#    endpoint: "prometheus:9091"  # Endpoint for Prometheus scraping
 service:
   pipelines:
-    traces:
+    logs:
       receivers: [otlp]
-      processors: []
-      exporters: [otlp]
+      exporters: [loki]  # Export logs to Loki
+#    traces:
+#      receivers: [otlp]
+#      exporters: [otlp]  # Export traces to Tempo
+#    metrics:
+#      receivers: [otlp]
+#      exporters: [prometheus]  # Export metrics to Prometheus
+#receivers:
+#  otlp:
+#    protocols:
+#      grpc:
+#        endpoint: "0.0.0.0:4317"  # Endpoint for receiving traces via OTLP
+#
+#exporters:
+#  otlp:
+#    endpoint: "tempo:4317"  # Endpoint for exporting traces to Tempo
+#
+#service:
+#  pipelines:
+#    traces:
+#      receivers: [otlp]
+#      exporters: [otlp]  # Export traces to Tempo

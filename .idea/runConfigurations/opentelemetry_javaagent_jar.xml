@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="opentelemetry-javaagent.jar" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/Microservice1/opentelemetry-javaagent.jar" />
+    <option name="VM_PARAMETERS" value="-javaagent:./opentelemetry-javaagent.jar -Dotel.exporter=otlp -Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push -Dotel.service.name=Microservice1" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2" />
+  </configuration>
+</component>
