@@ -1,9 +1,31 @@
-# Use an OpenJDK base image
+## Use an OpenJDK base image
 FROM openjdk:21-jdk
-# Copy the JAR file from your project into the container
-COPY target/microservice2.jar /app/microservice2.jar
-# Expose the port your Spring Boot application runs on (change to the actual port)
+ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
 
+## Copy the JAR file from your project into the container
+COPY target/microservice2.jar /app/microservice2.jar
+##COPY target/opentelemetry-javaagent-2.1.0.jar /app/opentelemetry-javaagent-2.1.0.jar
+WORKDIR /app
+ #COPY --from=build /build/target/*.jar /app/microservice1.jar
+ #
+ENTRYPOINT ["java", "-javaagent:/opentelemetry-javaagent.jar", "-jar", "/app/microservice2.jar"]
+## Expose the port your Spring Boot application runs on (change to the actual port)
+#
 EXPOSE 9988
-# Define the command to run your Spring Boot application
-CMD ["java", "-jar", "/app/microservice2.jar"]
+#
+ENV JAVA_OPTS="-javaagent:/app/opentelemetry-javaagent.jar \
+    -Dotel.exporter=otlp \
+    -Dotel.spans.exporter=none \
+    -Dotel.otlp.tracing.endpoint=http://tempo:4317\
+    -Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push \
+    -Dotel.service.name=Microservice2"
+
+
+## Define the command to run your Spring Boot application
+#CMD ["java", "-jar", "/app/microservice1.jar"]
+## Définir la commande pour exécuter votre application Spring Boot
+##CMD ["java", "-javaagent:/app/opentelemetry-javaagent.jar", \
+##            "-Dotel.exporter=otlp", \
+##            "-Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push", \
+##            "-Dotel.service.name=Microservice1", \
+##            "-jar", "/app/microservice.jar"]

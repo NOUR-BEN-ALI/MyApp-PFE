@@ -122,8 +122,10 @@ services:
       - postgres
       - kafka
     environment:
+
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
       OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
+      OTEL_METRICS_EXPORTER : none
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     networks:
@@ -140,6 +142,9 @@ services:
       - microservice1
 
     environment:
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
+      OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
+      OTEL_METRICS_EXPORTER: none
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe4
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
 
@@ -155,6 +160,9 @@ services:
       - kafka
       - microservice1
     environment:
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
+      OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
+      OTEL_METRICS_EXPORTER: none
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe5
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     networks:

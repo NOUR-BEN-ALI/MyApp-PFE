@@ -20,6 +20,7 @@ ENV JAVA_OPTS="-javaagent:/app/opentelemetry-javaagent.jar \
     -Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push \
     -Dotel.service.name=Microservice1"
 
+
 ## Define the command to run your Spring Boot application
 #CMD ["java", "-jar", "/app/microservice1.jar"]
 ## Définir la commande pour exécuter votre application Spring Boot
