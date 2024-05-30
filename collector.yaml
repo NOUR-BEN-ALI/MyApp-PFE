@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: otel-collector-deployment
+  labels:
+    app: otel-collector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: otel-collector
+  template:
+    metadata:
+      labels:
+        app: otel-collector
+    spec:
+      containers:
+        - name: collector
+          image: otel/opentelemetry-collector-contrib:0.91.0
+          ports:
+            - containerPort: 4317
+            #command:
+            #- --config=/etc/otelcol-contrib/otel-collector.yml
+            #volumeMounts:
+            #- name: config-volume
+            # mountPath: /etc/otelcol-contrib
+          #volumes:
+          #- name: config-volume
+          # configMap:
+          #  name: otel-collector-config
+
+--- #multiple yaml configuration within 1 file
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: otel-collector-service
+spec:
+  selector:
+    app: otel-collector
+  ports:
+    - protocol: TCP
+      port: 4317 #l service accessible fel cluster bl @ip te3ou w bl port tajjm t7otnfs l port maa l container kima tajjm lee
+      targetPort: 4317 #container port ya3ni l port mta3 l pods that belongs to the service

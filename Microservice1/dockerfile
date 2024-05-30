@@ -14,9 +14,10 @@ ENTRYPOINT ["java", "-javaagent:/opentelemetry-javaagent.jar", "-jar", "/app/mic
 EXPOSE 9989
 #
 ENV JAVA_OPTS="-javaagent:/app/opentelemetry-javaagent.jar \
-    -Dotel.exporter=otlp \
-    -Dotel.spans.exporter=none \
+    -Dotel.traces.exporter=otlp \
     -Dotel.otlp.tracing.endpoint=http://tempo:4317\
+    -Dotel.exporter.otlp.endpoint=http://collector:4317 \
+    -Dotel.logs.exporter=otlp \
     -Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push \
     -Dotel.service.name=Microservice1"
 

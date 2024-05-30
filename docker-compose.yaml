@@ -62,8 +62,8 @@ services:
   grafana:
     image: grafana/grafana:10.1.0
     volumes:  # Utilisation des volumes pour persister les données de Grafana
-      - ./docker/grafana:/etc/grafana/provisioning/datasources:ro
-      - grafana_data:/var/lib/grafana
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning
+      - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
     environment:
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
@@ -112,7 +112,8 @@ services:
       - "3100:3100"
     networks:
       - my-network
-
+    volumes:
+      - ./docker/loki/local-config.yaml:/etc/loki/local-config.yaml
   microservice1:
     container_name: microservice1
     build: ./Microservice1
@@ -126,6 +127,10 @@ services:
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
       OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
       OTEL_METRICS_EXPORTER : none
+#      OTEL_LOGS_EXPORTER: "otlp"
+#      OTEL_LOGS_OTLP_ENDPOINT: "http://loki:3100/loki/api/v1/push"
+      OTEL_LOGS_EXPORTER: "otlp"
+      OTEL_EXPORTER_OTLP_LOGS_ENDPOINT: "http://loki:4318"  # Assuming the OpenTelemetry Collector is on localhost
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     networks:
