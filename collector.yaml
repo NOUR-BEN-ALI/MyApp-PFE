@@ -29,7 +29,7 @@ spec:
           # configMap:
           #  name: otel-collector-config
 
---- #multiple yaml configuration within 1 file
+---
 
 apiVersion: v1
 kind: Service
@@ -40,5 +40,5 @@ spec:
     app: otel-collector
   ports:
     - protocol: TCP
-      port: 4317 #l service accessible fel cluster bl @ip te3ou w bl port tajjm t7otnfs l port maa l container kima tajjm lee
-      targetPort: 4317 #container port ya3ni l port mta3 l pods that belongs to the service
+      port: 4317
+      targetPort: 4317

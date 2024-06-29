@@ -1,6 +1,54 @@
 version: '3'
 
 services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - /home/${myname}/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - my-network
+#  nexus:
+#    image: sonatype/nexus3
+#    container_name: nexus
+#    ports:
+#      - "8081:8081"
+#    networks:
+#      - my-network
+#    volumes:
+#      - "/opt/nexus/:/var/lib/nexus"
+#  sonarqube:
+#    image: sonarqube:community
+#    restart: unless-stopped
+#    depends_on:
+#      - db
+#    environment:
+#      SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonar
+#      SONAR_JDBC_USERNAME: sonar
+#      SONAR_JDBC_PASSWORD: sonar
+#    volumes:
+#      - sonarqube_data:/opt/sonarqube/data
+#      - sonarqube_extensions:/opt/sonarqube/extensions
+#      - sonarqube_logs:/opt/sonarqube/logs
+#    ports:
+#      - "9000:9000"
+#
+#  db:
+#    image: postgres:13
+#    restart: unless-stopped
+#    environment:
+#      POSTGRES_USER: sonar
+#      POSTGRES_PASSWORD: sonar
+#    volumes:
+#      - postgresql:/var/lib/postgresql
+#      - postgresql_data:/var/lib/postgresql/data
+
   zookeeper:
     image: wurstmeister/zookeeper:latest
     container_name: zookeeper
@@ -85,7 +133,7 @@ services:
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as grafana data source
-      - "4317:4317" #otlp grpc
+      - "4316:4317" #otlp grpc
     networks:
       - my-network
 
@@ -98,7 +146,7 @@ services:
       - ./docker/collector/otel-collector.yml:/etc/otelcol-contrib/otel-collector.yml
     restart: always
     ports:
-      - "4316:4317" # OTLP gRPC receiver
+      - "4317:4317" # OTLP gRPC receiver
     depends_on:
       - loki
     networks:
@@ -106,14 +154,13 @@ services:
 
   loki:
     container_name: loki
-    image: grafana/loki:main
-    command: [ "-config.file=/etc/loki/local-config.yaml" ]
+    image: grafana/loki:2.9.0
     ports:
-      - "3100:3100"
+        - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
     networks:
       - my-network
-    volumes:
-      - ./docker/loki/local-config.yaml:/etc/loki/local-config.yaml
+
   microservice1:
     container_name: microservice1
     build: ./Microservice1
@@ -123,16 +170,8 @@ services:
       - postgres
       - kafka
     environment:
-
-      OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
-      OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
-      OTEL_METRICS_EXPORTER : none
-#      OTEL_LOGS_EXPORTER: "otlp"
-#      OTEL_LOGS_OTLP_ENDPOINT: "http://loki:3100/loki/api/v1/push"
-      OTEL_LOGS_EXPORTER: "otlp"
-      OTEL_EXPORTER_OTLP_LOGS_ENDPOINT: "http://loki:4318"  # Assuming the OpenTelemetry Collector is on localhost
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
-      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+     SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
+     SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     networks:
       - my-network
 
@@ -182,3 +221,9 @@ volumes:  # Définition des volumes
   grafana_data:
   kafka_data:
   tempo-data:
+#  sonarqube_data:
+#  sonarqube_extensions:
+#  sonarqube_logs:
+#  postgresql:
+#  postgresql_data:
+#  nexus_data:

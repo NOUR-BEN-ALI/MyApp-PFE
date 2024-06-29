@@ -7,26 +7,18 @@ COPY target/microservice1.jar /app/microservice1.jar
 ##COPY target/opentelemetry-javaagent-2.1.0.jar /app/opentelemetry-javaagent-2.1.0.jar
 WORKDIR /app
  #COPY --from=build /build/target/*.jar /app/microservice1.jar
- #
-ENTRYPOINT ["java", "-javaagent:/opentelemetry-javaagent.jar", "-jar", "/app/microservice1.jar"]
+ # Entry point to run the application
+ ENTRYPOINT ["java", "-javaagent:/opentelemetry-javaagent.jar", "-jar", "/app/microservice1.jar"]
 ## Expose the port your Spring Boot application runs on (change to the actual port)
 #
 EXPOSE 9989
 #
 ENV JAVA_OPTS="-javaagent:/app/opentelemetry-javaagent.jar \
-    -Dotel.traces.exporter=otlp \
-    -Dotel.otlp.tracing.endpoint=http://tempo:4317\
-    -Dotel.exporter.otlp.endpoint=http://collector:4317 \
+    -Dotel.exporter.otlp.protocol=grpc \
+    -Dotel.metrics.exporter=prometheus \
+    -Dotel.exporter.prometheus.port=9090 \
     -Dotel.logs.exporter=otlp \
-    -Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push \
-    -Dotel.service.name=Microservice1"
-
-
-## Define the command to run your Spring Boot application
-#CMD ["java", "-jar", "/app/microservice1.jar"]
-## Définir la commande pour exécuter votre application Spring Boot
-##CMD ["java", "-javaagent:/app/opentelemetry-javaagent.jar", \
-##            "-Dotel.exporter=otlp", \
-##            "-Dotel.exporter.otlp.endpoint=http://loki:3100/loki/api/v1/push", \
-##            "-Dotel.service.name=Microservice1", \
-##            "-jar", "/app/microservice.jar"]
+    -Dotel.exporter.otlp.logs.endpoint=http://collector:4317 \
+    -Dotel.exporter.otlp.endpoint=http://collector:4317 \
+    -Dotel.exporter.otlp.traces.endpoint=http://tempo:4317 \
+    -Dotel.service.name=Microservice1 "

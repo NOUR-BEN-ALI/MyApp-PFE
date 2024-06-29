@@ -23,7 +23,7 @@ spec:
             - name: KAFKA_BROKER_ID
               value: "1"
             - name: KAFKA_ADVERTISED_LISTENERS
-              value: "PLAINTEXT://kafka-service:9092 "
+              value: "PLAINTEXT://kafka-service:9092"
             - name: KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
               value: "PLAINTEXT:PLAINTEXT"
             - name: KAFKA_INTER_BROKER_LISTENER_NAME
@@ -33,9 +33,7 @@ spec:
             - name: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
               value: "1"
 
-
---- #multiple yaml configuration within 1 file
-
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -46,8 +44,8 @@ spec:
     app: kafka
   ports:
     - protocol: TCP
-      port: 9092 #l service accessible fel cluster bl @ip te3ou w bl port tajjm t7otnfs l port maa l container kima tajjm lee
-      targetPort: 9092 #container port ya3ni l port mta3 l pods that belongs to the service
+      port: 9092
+      targetPort: 9092
 
 ---
 apiVersion: apps/v1
@@ -76,7 +74,7 @@ spec:
             - name: ZOOKEEPER_CLIENT_PORT
               value: "2181"
             - name: ZOOKEEPER_TICK_TIME
-              value : "2000"
+              value: "2000"
 
 ---
 apiVersion: v1

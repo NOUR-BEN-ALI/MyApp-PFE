@@ -5,66 +5,121 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/collector.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confCollector.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confPrometheus.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/grafana/dashboards/2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/grafana/dashboards/3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/grafana/dashboards/dash.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/grafana/dashboards/dashboard.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/grafana/provisioning/dashboards/dashboard.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/20728efe-23ad-480a-9345-43f3d814ee2d/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/20728efe-23ad-480a-9345-43f3d814ee2d/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/20728efe-23ad-480a-9345-43f3d814ee2d/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f1134d54-bca2-42b8-8277-e8f6fcdeb3dc/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f1134d54-bca2-42b8-8277-e8f6fcdeb3dc/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f1134d54-bca2-42b8-8277-e8f6fcdeb3dc/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fe26b170-82ab-4feb-8625-575b4a2aae4c/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fe26b170-82ab-4feb-8625-575b4a2aae4c/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fe26b170-82ab-4feb-8625-575b4a2aae4c/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tempo-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tempo1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_loki4j_loki_logback_appender_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0b946934-4c72-4168-a22f-aec3d3a2f066/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0b946934-4c72-4168-a22f-aec3d3a2f066/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0b946934-4c72-4168-a22f-aec3d3a2f066/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/33ed7f07-193c-46b6-9446-c2431a3ef7dd/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/33ed7f07-193c-46b6-9446-c2431a3ef7dd/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/33ed7f07-193c-46b6-9446-c2431a3ef7dd/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/356465cd-b62a-4c00-9fc8-bbe338b6ba08/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/356465cd-b62a-4c00-9fc8-bbe338b6ba08/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/356465cd-b62a-4c00-9fc8-bbe338b6ba08/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/4342bf29-192a-4657-9f00-be3a0007de7f/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/4342bf29-192a-4657-9f00-be3a0007de7f/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/4342bf29-192a-4657-9f00-be3a0007de7f/meta.compacted.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/5a18b0a8-2757-4ea6-9668-aeb6f7ff92af/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/5a18b0a8-2757-4ea6-9668-aeb6f7ff92af/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/5a18b0a8-2757-4ea6-9668-aeb6f7ff92af/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/6513db41-5a24-4f48-9af3-fbf2ac6f8d31/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/6513db41-5a24-4f48-9af3-fbf2ac6f8d31/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/6513db41-5a24-4f48-9af3-fbf2ac6f8d31/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/7bf99f1b-5362-4f12-b5ea-f03a8a1cb686/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/7bf99f1b-5362-4f12-b5ea-f03a8a1cb686/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/7bf99f1b-5362-4f12-b5ea-f03a8a1cb686/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/838a4486-81c1-48f0-a63b-0dc8a1419e14/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/838a4486-81c1-48f0-a63b-0dc8a1419e14/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/838a4486-81c1-48f0-a63b-0dc8a1419e14/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/91e1cafe-e77a-4b6f-93f3-6037ba0909be/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/91e1cafe-e77a-4b6f-93f3-6037ba0909be/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/91e1cafe-e77a-4b6f-93f3-6037ba0909be/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b8f85fb1-5a25-46fb-8b27-4b4001023428/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b8f85fb1-5a25-46fb-8b27-4b4001023428/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b8f85fb1-5a25-46fb-8b27-4b4001023428/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/c2c804aa-88e0-4da3-9444-67a6198a4d27/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/c2c804aa-88e0-4da3-9444-67a6198a4d27/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/c2c804aa-88e0-4da3-9444-67a6198a4d27/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e5cebdeb-e63a-4309-b6b0-4cf47dbf3c6c/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e5cebdeb-e63a-4309-b6b0-4cf47dbf3c6c/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e5cebdeb-e63a-4309-b6b0-4cf47dbf3c6c/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VisionaryOps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VisionaryOps.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigMap.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice1/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployKafka.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/collector.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploymentmicro1.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploypostgres.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployzookafka.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/depolyzookeeper.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/depolyzookeeper.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/collector/otel-collector.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/collector/otel-collector.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/grafana/dashboard.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/grafana/provisioning/datasources.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/grafana/provisioning/datasources/datasources.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/loki/local-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/loki/local-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/6adf2aca-9710-4ac5-a7d0-72e70dbf1b12/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/6adf2aca-9710-4ac5-a7d0-72e70dbf1b12/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/6adf2aca-9710-4ac5-a7d0-72e70dbf1b12/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/77a14e07-3992-4917-9e74-3095768dfec2/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/77a14e07-3992-4917-9e74-3095768dfec2/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/77a14e07-3992-4917-9e74-3095768dfec2/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/8a724056-4a32-4b8b-ba3e-f90869677b21/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/8a724056-4a32-4b8b-ba3e-f90869677b21/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/8a724056-4a32-4b8b-ba3e-f90869677b21/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/97d75e04-5c65-4d7d-9a7d-2c7a10ed4ea9/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/97d75e04-5c65-4d7d-9a7d-2c7a10ed4ea9/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/97d75e04-5c65-4d7d-9a7d-2c7a10ed4ea9/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b1bc809e-0654-4d3e-bc4c-7f593f2efe9a/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b1bc809e-0654-4d3e-bc4c-7f593f2efe9a/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b1bc809e-0654-4d3e-bc4c-7f593f2efe9a/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/d0ddce1a-39c6-4b31-b6d0-4d7d2bd4fe8c/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/d0ddce1a-39c6-4b31-b6d0-4d7d2bd4fe8c/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/d0ddce1a-39c6-4b31-b6d0-4d7d2bd4fe8c/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f3815b35-4c0b-4165-8855-124a7b48044d/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f3815b35-4c0b-4165-8855-124a7b48044d/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f3815b35-4c0b-4165-8855-124a7b48044d/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/loki/local-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0730136f-2756-45f3-b33f-7239826d73a0/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0730136f-2756-45f3-b33f-7239826d73a0/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0730136f-2756-45f3-b33f-7239826d73a0/meta.compacted.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0a0479c1-2c60-4bdf-89cd-8754b3d1871c/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0a0479c1-2c60-4bdf-89cd-8754b3d1871c/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0a0479c1-2c60-4bdf-89cd-8754b3d1871c/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0bc099b1-2895-4568-a474-a4ab88a5e1f7/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0bc099b1-2895-4568-a474-a4ab88a5e1f7/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/0bc099b1-2895-4568-a474-a4ab88a5e1f7/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/20728efe-23ad-480a-9345-43f3d814ee2d/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/20728efe-23ad-480a-9345-43f3d814ee2d/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/20728efe-23ad-480a-9345-43f3d814ee2d/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/2446aa43-d4c8-4a9a-b92d-f630221e8ddc/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/2446aa43-d4c8-4a9a-b92d-f630221e8ddc/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/2446aa43-d4c8-4a9a-b92d-f630221e8ddc/meta.compacted.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/3855d049-6be0-407a-9da9-353a54c432e9/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/3855d049-6be0-407a-9da9-353a54c432e9/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/3855d049-6be0-407a-9da9-353a54c432e9/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/39b166b9-01b8-4bf7-9c2a-53beb2b9802d/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/39b166b9-01b8-4bf7-9c2a-53beb2b9802d/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/39b166b9-01b8-4bf7-9c2a-53beb2b9802d/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/3fe0779f-5926-465b-b446-b185b42effaf/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/3fe0779f-5926-465b-b446-b185b42effaf/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/3fe0779f-5926-465b-b446-b185b42effaf/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/4467fc4a-6b1f-46df-982c-4297375785b2/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/4467fc4a-6b1f-46df-982c-4297375785b2/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/4467fc4a-6b1f-46df-982c-4297375785b2/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/87b1f3ab-da89-4427-941d-7ebe22e9a932/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/87b1f3ab-da89-4427-941d-7ebe22e9a932/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/87b1f3ab-da89-4427-941d-7ebe22e9a932/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/9c7d7449-b794-408a-b9d2-a1ee9edef367/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/9c7d7449-b794-408a-b9d2-a1ee9edef367/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/9c7d7449-b794-408a-b9d2-a1ee9edef367/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b92828be-0118-4f63-b5db-573d84e9290e/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b92828be-0118-4f63-b5db-573d84e9290e/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/b92828be-0118-4f63-b5db-573d84e9290e/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/bdc463d1-b842-4eb5-b7e5-125cf5416010/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/bdc463d1-b842-4eb5-b7e5-125cf5416010/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/bdc463d1-b842-4eb5-b7e5-125cf5416010/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/d4a7aaca-744f-41ff-adb5-dbef20c9ce27/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/d4a7aaca-744f-41ff-adb5-dbef20c9ce27/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/d4a7aaca-744f-41ff-adb5-dbef20c9ce27/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/db61d04d-b6b9-4b0d-ab74-fc3248ebbf5c/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/db61d04d-b6b9-4b0d-ab74-fc3248ebbf5c/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/db61d04d-b6b9-4b0d-ab74-fc3248ebbf5c/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3902de9-6721-4ff3-a018-68725eb99343/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3902de9-6721-4ff3-a018-68725eb99343/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3902de9-6721-4ff3-a018-68725eb99343/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3e4232d-89d0-43b8-ac3c-ce03ba4d7eff/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3e4232d-89d0-43b8-ac3c-ce03ba4d7eff/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3e4232d-89d0-43b8-ac3c-ce03ba4d7eff/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e75db101-62e8-4b97-9fef-bac10fd3e72e/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e75db101-62e8-4b97-9fef-bac10fd3e72e/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e75db101-62e8-4b97-9fef-bac10fd3e72e/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/efbc25d1-037b-4e8a-9d34-f883fb53123f/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/efbc25d1-037b-4e8a-9d34-f883fb53123f/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/efbc25d1-037b-4e8a-9d34-f883fb53123f/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f1134d54-bca2-42b8-8277-e8f6fcdeb3dc/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f1134d54-bca2-42b8-8277-e8f6fcdeb3dc/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/f1134d54-bca2-42b8-8277-e8f6fcdeb3dc/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fd284a02-dec0-46d8-8b59-8b6481d5a894/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fd284a02-dec0-46d8-8b59-8b6481d5a894/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fd284a02-dec0-46d8-8b59-8b6481d5a894/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fe26b170-82ab-4feb-8625-575b4a2aae4c/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fe26b170-82ab-4feb-8625-575b4a2aae4c/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/fe26b170-82ab-4feb-8625-575b4a2aae4c/meta.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pod.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pod2.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +337,15 @@
       <workItem from="1716210391995" duration="7065000" />
       <workItem from="1716378402246" duration="6312000" />
       <workItem from="1716459780152" duration="10771000" />
-      <workItem from="1716978647608" duration="10361000" />
+      <workItem from="1716978647608" duration="10957000" />
+      <workItem from="1717941271459" duration="6693000" />
+      <workItem from="1718878168722" duration="7955000" />
+      <workItem from="1719320065330" duration="886000" />
+      <workItem from="1719321807187" duration="3117000" />
+      <workItem from="1719395087557" duration="1779000" />
+      <workItem from="1719409562163" duration="2405000" />
+      <workItem from="1719647782098" duration="795000" />
+      <workItem from="1719648792626" duration="2944000" />
     </task>
     <servers />
   </component>

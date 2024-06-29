@@ -101,7 +101,11 @@
         <artifactId>opentelemetry-exporter-otlp-trace</artifactId>
         <version>1.14.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.github.loki4j</groupId>
+            <artifactId>loki-logback-appender</artifactId>
+            <version>1.4.1</version>
+        </dependency>
     </dependencies>
 
     <build>

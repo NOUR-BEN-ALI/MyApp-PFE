@@ -66,6 +66,6 @@ spec:
     app: microservice1
   ports:
     - protocol: TCP
-      port: 9989 #l service accessible fel cluster bl @ip te3ou w bl port tajjm t7otnfs l port maa l container kima tajjm lee
-      targetPort: 9989 #container port ya3ni l port mta3 l pods that belongs to the service
+      port: 9989
+      targetPort: 9989
       nodePort: 30100
