@@ -25,7 +25,7 @@ public class KafkaProducerConfig {
     //elconsumer push msg --> serialize msg  ----> el producer pull msg -->Deserialize msg key value by  converting messages (typically objects) from their original format (like Java objects) into a byte stream
     public DefaultKafkaProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
-        configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
+        configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka-service:9092");
         //e serializer Modify key/value if you need to work with different data types
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
