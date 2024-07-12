@@ -43,5 +43,5 @@ ENV JAVA_OPTS="-javaagent:/app/opentelemetry-javaagent.jar \
     -Dotel.spans.exporter=none \
     -Dotel.otlp.tracing.endpoint=http://tempo:4317\
     -Dotel.logs.exporter=otlp \
-    -Dotel.exporter.otlp.logs.endpoint=http://collector:4317 \
+    -Dotel.exporter.otlp.logs.endpoint=http://collector:4316 \
     -Dotel.service.name=Microservice1"

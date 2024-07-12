@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice3
+  template:
+    metadata:
+      labels:
+        app: microservice3
+    spec:
+      containers:
+        - name: microservice3
+          image: nourbenali/visionaryops-microservice33:latest
+          ports:
+            - containerPort: 9987
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:postgresql://postgres-service:5432/basepfe5"
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "postgres"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "admin"
+            - name: KAFKA_URL
+              value: "kafka-service:9092"
+            - name: PORT
+              value: "9987"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "http://tempo-service:4317"
+            - name: OTEL_EXPORTER_OTLP_TIMEOUT
+              value: "3000"
+            - name: OTEL_METRICS_EXPORTER
+              value: "none"
+
+      volumes:
+        - name: postgres-data
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice3-service
+spec:
+  type: NodePort
+  selector:
+    app: microservice3
+  ports:
+    - protocol: TCP
+      port: 9987
+      targetPort: 9987
+      nodePort: 30998  # Adjust this as needed
+    # You can change this to ClusterIP or LoadBalancer as per your requirement
+
+

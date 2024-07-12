@@ -17,12 +17,12 @@ data:
       - job_name: 'Microservice1'
         metrics_path: '/actuator/prometheus'
         static_configs:
-          - targets: ['host.docker.internal:9997']
+          - targets: ['host.docker.internal:9989']
       - job_name: 'Microservice2'
         metrics_path: '/actuator/prometheus'
         static_configs:
-          - targets: ['host.docker.internal:9998']
+          - targets: ['host.docker.internal:9988']
       - job_name: 'Microservice3'
         metrics_path: '/actuator/prometheus'
         static_configs:
-          - targets: ['host.docker.internal:9999']
+          - targets: ['host.docker.internal:9987']

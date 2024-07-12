@@ -8,33 +8,10 @@ processors:
 
 exporters:
   loki:
-    endpoint: http://loki:3100/loki/api/v1/push
+    endpoint: "http://loki:3100/loki/api/v1/push"
 
 service:
   pipelines:
     logs:
       receivers: [otlp]
-      processors: [batch]
       exporters: [loki]
-
-#receivers:
-#  otlp:
-#    protocols:
-#      grpc:
-#      http:
-#
-#processors:
-#  batch:
-#
-#exporters:
-#  loki:
-#    endpoint: http://loki:3100/loki/api/v1/push
-#  logging:
-#    loglevel: debug
-#
-#service:
-#  pipelines:
-#    logs:
-#      receivers: [otlp]
-#      processors: [batch]
-#      exporters: [loki, logging]
