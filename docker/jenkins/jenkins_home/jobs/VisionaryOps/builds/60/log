@@ -1,0 +1,214 @@
+Started by user [8mha:////4FS4+I9f7RiXdMZcVHAywdJuB9AaT+ou6iqgzVK+dooAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4IDBO16XE4YjjPEDn+v3pyfqmcbzMVOOEZOzngpOCmamAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HRJnIy9UO5P873cYMn7sg9fOWx5EOVysHZrfHewQ5s2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4B66ywBz7Ova72D0vKTI4TQsi5K1Wr1z5BjiHBqsLpXyAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/jobs/VisionaryOps/workspace@2
+[8mha:////4CfiR6tWZrRUjU35wjI3kSKrri3kJ1G+07+k7EswTYbiAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4HZNXvqMenRNl6dqnDS2CrTPj3eWfR6V2qKihHFqruWmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $GIT_CREDENTIALS or $GIT_CREDENTIALS_PSW
+[8mha:////4FLB8Mg4AKDnvbslJ0Krmw6wp1Mw3ePKu9dG/lv+y7yQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4FKj0rU4Gfp1NlAxy8uki3f/9kQJQtXs9b2wJoW1zuNIAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4DUXgCgcdTdmL+d4LD5DAbCy+DVKwbBqbSasml3oRMZbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4KuazC6UYuCTRhcn9df0n26Xpaw2Z0z1uuzu+WpFfun6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4BWSY2J/kjXWKclAsw5YDNxhuT3rnwisdabPT1y57ie1AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Clone my Branch from Git)
+[8mha:////4LrTmih7h/8180aXQQILtW1J8UFEO6OrEaXS4gXVsmz+AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] script
+[8mha:////4AV4ogdtcUKe59j/TvCxIKLjSMDOmGcO2BRcsWsLhOIBAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4Ei8tWoHab1/0Xnl97cqn6+nh7M7YtWgY9RYiBQM3GJzAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] fileExists
+[8mha:////4CFxMAmoP1QQaRIFpbQzJvSctRUtkamAVYeXJOhCQkXdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr6/2VK+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [GIT_CREDENTIALS_PSW, GIT_CREDENTIALS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ git clone --branch deployment-d https://NOUR-BEN-ALI:****@github.com/NOUR-BEN-ALI/MyApp-PFE.git MyApp-PFE
+Cloning into 'MyApp-PFE'...
+Updating files:   8% (134/1619)Updating files:   9% (146/1619)Updating files:  10% (162/1619)Updating files:  11% (179/1619)Updating files:  11% (184/1619)Updating files:  12% (195/1619)Updating files:  12% (208/1619)Updating files:  13% (211/1619)Updating files:  14% (227/1619)Updating files:  15% (243/1619)Updating files:  15% (258/1619)Updating files:  16% (260/1619)Updating files:  17% (276/1619)Updating files:  18% (292/1619)Updating files:  18% (297/1619)Updating files:  19% (308/1619)Updating files:  20% (324/1619)Updating files:  20% (333/1619)Updating files:  21% (340/1619)Updating files:  21% (353/1619)Updating files:  22% (357/1619)Updating files:  22% (368/1619)Updating files:  23% (373/1619)Updating files:  24% (389/1619)Updating files:  25% (405/1619)Updating files:  26% (421/1619)Updating files:  27% (438/1619)Updating files:  27% (440/1619)Updating files:  28% (454/1619)Updating files:  29% (470/1619)Updating files:  30% (486/1619)Updating files:  31% (502/1619)Updating files:  32% (519/1619)Updating files:  33% (535/1619)Updating files:  34% (551/1619)Updating files:  35% (567/1619)Updating files:  36% (583/1619)Updating files:  37% (600/1619)Updating files:  38% (616/1619)Updating files:  39% (632/1619)Updating files:  40% (648/1619)Updating files:  41% (664/1619)Updating files:  42% (680/1619)Updating files:  43% (697/1619)Updating files:  44% (713/1619)Updating files:  45% (729/1619)Updating files:  46% (745/1619)Updating files:  47% (761/1619)Updating files:  48% (778/1619)Updating files:  49% (794/1619)Updating files:  50% (810/1619)Updating files:  51% (826/1619)Updating files:  52% (842/1619)Updating files:  53% (859/1619)Updating files:  53% (866/1619)Updating files:  54% (875/1619)Updating files:  55% (891/1619)Updating files:  56% (907/1619)Updating files:  57% (923/1619)Updating files:  58% (940/1619)Updating files:  59% (956/1619)Updating files:  60% (972/1619)Updating files:  61% (988/1619)Updating files:  62% (1004/1619)Updating files:  63% (1020/1619)Updating files:  64% (1037/1619)Updating files:  65% (1053/1619)Updating files:  65% (1066/1619)Updating files:  66% (1069/1619)Updating files:  67% (1085/1619)Updating files:  68% (1101/1619)Updating files:  69% (1118/1619)Updating files:  70% (1134/1619)Updating files:  71% (1150/1619)Updating files:  72% (1166/1619)Updating files:  73% (1182/1619)Updating files:  74% (1199/1619)Updating files:  74% (1214/1619)Updating files:  75% (1215/1619)Updating files:  76% (1231/1619)Updating files:  77% (1247/1619)Updating files:  78% (1263/1619)Updating files:  79% (1280/1619)Updating files:  79% (1288/1619)Updating files:  80% (1296/1619)Updating files:  81% (1312/1619)Updating files:  82% (1328/1619)Updating files:  83% (1344/1619)Updating files:  84% (1360/1619)Updating files:  84% (1372/1619)Updating files:  85% (1377/1619)Updating files:  86% (1393/1619)Updating files:  87% (1409/1619)Updating files:  88% (1425/1619)Updating files:  89% (1441/1619)Updating files:  89% (1442/1619)Updating files:  90% (1458/1619)Updating files:  91% (1474/1619)Updating files:  92% (1490/1619)Updating files:  93% (1506/1619)Updating files:  94% (1522/1619)Updating files:  95% (1539/1619)Updating files:  96% (1555/1619)Updating files:  97% (1571/1619)Updating files:  97% (1574/1619)Updating files:  98% (1587/1619)Updating files:  99% (1603/1619)Updating files: 100% (1619/1619)Updating files: 100% (1619/1619), done.
+[8mha:////4MUxcXIuf7rfHg5ImIJagIrXFpPREmR4pKAKfCWvO40wAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7NyZXKai+AAAA[0m[Pipeline] }
+[8mha:////4J1LtrIBpLOBeVyY8ZbbOshfv+TYgO9wE6DeuEOifuKSAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyaWwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfMnS0t74AAAA=[0m[Pipeline] // script
+[8mha:////4Duay1ocepUqC4OHUlZd5Go4jk0eF9B8Y39/Ym1P65P8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BgGX7wu+AAAA[0m[Pipeline] }
+[8mha:////4Nudk/EgGny68jHYIdTiMtEFbibn7r+tqGQsuRW1VGpGAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRHQhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Qb3eCbP8B+RyEnL0AAAA=[0m[Pipeline] // stage
+[8mha:////4K7QCSvgt1gsiiRE8XhwEdmDPTiqqfr/Xi9TiMWKLLxYAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjOhCiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxJah2Ow+x/INuSc/fMEAAAA=[0m[Pipeline] stage
+[8mha:////4PbccX+Mj+WKmP2T7Fp48N+6TcKuZX/PWElYb4xOj/AtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] { (Clean and compile with Maven ms1)
+[8mha:////4Iw8od6IDUU8dsVPVc7QCkH1MaZ6cRjcBPvKErcQxF4nAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] dir
+Running in /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1
+[8mha:////4Bz0dZKzau6GFHSgyXpNz8OIZ2h94ffpeNv49o67pYd4AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] {
+[8mha:////4GfIM8mDszpP+4sRqkrh0m3rfEiHxArB4Ke+gI1OVF3iAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] sh
++ mvn clean install -DskipTests
+[INFO] Making this build non-interactive, because the environment variable CI equals "true". Disable this detection by removing that variable or adding --force-interactive.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for 'com.example:Microservice1:jar:0.0.1-SNAPSHOT'
+[WARNING] 'dependencies.dependency.scope' for org.springframework.cloud:spring-cloud-dependencies:pom must be one of [provided, compile, runtime, test, system] but is 'import'. @ line 64, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------< com.example:Microservice1 >------------
+[INFO] Building Microservice1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] ----------------------[ jar ]-----------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ Microservice1 ---
+[INFO] Deleting /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Microservice1 ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ Microservice1 ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 9 source files with javac [debug release 21] to target/classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Microservice1 ---
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/src/test/resources
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/src/test/resources-filtered
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ Microservice1 ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ Microservice1 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ Microservice1 ---
+[INFO] Building jar: /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/target/microservice1.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.3:repackage (repackage) @ Microservice1 ---
+[INFO] Replacing main artifact /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/target/microservice1.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/target/microservice1.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ Microservice1 ---
+[INFO] Installing /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/target/microservice1.jar to /root/.m2/repository/com/example/Microservice1/0.0.1-SNAPSHOT/Microservice1-0.0.1-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/pom.xml to /root/.m2/repository/com/example/Microservice1/0.0.1-SNAPSHOT/Microservice1-0.0.1-SNAPSHOT-build.pom
+[INFO] Installing /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1/target/consumer-10288999336609270903.pom to /root/.m2/repository/com/example/Microservice1/0.0.1-SNAPSHOT/Microservice1-0.0.1-SNAPSHOT.pom
+[INFO] Copying com.example:Microservice1:pom:0.0.1-SNAPSHOT to project local repository
+[INFO] Copying com.example:Microservice1:jar:0.0.1-SNAPSHOT to project local repository
+[INFO] Copying com.example:Microservice1:pom:consumer:0.0.1-SNAPSHOT to project local repository
+[INFO] ----------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ----------------------------------------------------
+[INFO] Total time:  26.615 s
+[INFO] Finished at: 2024-07-26T12:51:03Z
+[INFO] ----------------------------------------------------
+[8mha:////4Cy4BwyKjlVqAA5/fRu2w82WYXhu+VndR+FwLHvRxwJ8AAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNG7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+Ad3NsHm+AAAA[0m[Pipeline] }
+[8mha:////4O9uEn2hNhxKs0F+yWPDXtbzlEgKUR4fvG7tLY8gsoYGAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8JP5Su+AAAA[0m[Pipeline] // dir
+[8mha:////4Ixg0VsJjO3yaxw9FtCnkwJvnoJ4QgNJ/6HllbkrkEIAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN/oNdtq+AAAA[0m[Pipeline] }
+[8mha:////4MaLS0c+bcfT8fBvDugG7qBMH5uxDDmpCT+DMnV6WpYvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw84NdtDvgAAAA==[0m[Pipeline] // stage
+[8mha:////4DT62JbdDVHJyUOX+tND1N2ZHZ6m5CK0Tvyw6AitoubfAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjUUVCVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg6gZil39OZZvge6LhsEAAAA=[0m[Pipeline] stage
+[8mha:////4Mv/A8AQVfv0L+R0DU4aq3r6ay757E97XP9gU0HU3lShAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] { (Clean and compile with Maven ms2)
+[8mha:////4EyTgpDI+PUDrevML/QKL+AG2OgyaysJjE68+g97yZlJAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] dir
+Running in /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice2
+[8mha:////4OQ7bNycNOpWTrHHr3SmSL+0EGsa2G7KbF+Eo5An7sHFAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] {
+[8mha:////4L4ImbJ+4OgF7F9OA5v1twUKo0Xjtt49qqctyZPTcQKdAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfettHKdL4AAAA=[0m[Pipeline] sh
++ mvn clean install -DskipTests
+[INFO] Making this build non-interactive, because the environment variable CI equals "true". Disable this detection by removing that variable or adding --force-interactive.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for 'com.example:Microservice2:jar:0.0.1-SNAPSHOT'
+[WARNING] 'dependencies.dependency.scope' for org.springframework.cloud:spring-cloud-dependencies:pom must be one of [provided, compile, runtime, test, system] but is 'import'. @ line 63, column 4
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------< com.example:Microservice2 >------------
+[INFO] Building Microservice2 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] ----------------------[ jar ]-----------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ Microservice2 ---
+[INFO] Deleting /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice2/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Microservice2 ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ Microservice2 ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 9 source files with javac [debug release 21] to target/classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Microservice2 ---
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice2/src/test/resources
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice2/src/test/resources-filtered
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ Microservice2 ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ Microservice2 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ Microservice2 ---
+[INFO] Building jar: /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice2/target/microservice2.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.3:repackage (repackage) @ Microservice2 ---
+Aborted by [8mha:////4FS4+I9f7RiXdMZcVHAywdJuB9AaT+ou6iqgzVK+dooAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Sending interrupt signal to process
+script returned exit code 143
+[8mha:////4C410tks+fn7rZErG5r7gCQ3xJh7ApeZK3ZO31v7Cyx8AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIilBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fKpbQQr4AAAA=[0m[Pipeline] }
+[8mha:////4H+1KozhNvGoUullnnttyvNlFjOsfjUmMYxceMKLgw0AAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BgSW0ii+AAAA[0m[Pipeline] // dir
+[8mha:////4AnLLllwttZKPFBLxu49sMRnR6m8ZswIsfcri4rtK8JFAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigSgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwARMxJg74AAAA=[0m[Pipeline] }
+Aborted by [8mha:////4FS4+I9f7RiXdMZcVHAywdJuB9AaT+ou6iqgzVK+dooAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4L1CLx5+QkFLUw1I/v5dwaCoWcvmJQhRbnsDrWCp9MgMAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigYSQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu32u7eEDfI7acr4AAAA=[0m[Pipeline] // stage
+[8mha:////4CKkGVEmlcQBE8UeFHETSYsuh0WFrNs5gvnZDk988xizAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTUICEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFjKDbbz7F8A+BXqtHBAAAA[0m[Pipeline] stage
+[8mha:////4BRqOoYyLeAGqA0pg0g7r9sYJ7klT7jiBXYiU9J1KCAeAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] { (Clean and compile with Maven ms3)
+Aborted by [8mha:////4FS4+I9f7RiXdMZcVHAywdJuB9AaT+ou6iqgzVK+dooAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4O5V7gmV1tutBPXMeABhyVL4H60S7AE+RZm0S6vt2z7uAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJS0IAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N+gNl5q+AAAA[0m[Pipeline] }
+[8mha:////4LtMSKnE5+rt+rKx0wjOHUyn2fDfUs6FPy9zBOa1DzxlAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAP3+A6L4AAAA=[0m[Pipeline] // stage
+[8mha:////4DO1PQXLL61ThUDj0xP/P3s8Wc59szlkTx5B1VAx6m8IAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJAokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HdfI7lG3OKVMLBAAAA[0m[Pipeline] stage
+[8mha:////4GY03eblPpIXWuZTBJsc67fRUB9E5yqll9lMASFXb1bsAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAdhUMVHCAAAA[0m[Pipeline] { (Building  image ms1)
+Stage "Building  image ms1" skipped due to earlier failure(s)
+[8mha:////4L7hcFKXrJzOIb63rH20+sBJxsrWxAMnowJiSIbqbgfdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBvbls1O+AAAA[0m[Pipeline] getContext
+[8mha:////4FoSGEfQJfYFHoflrt/MDMo/AyBL/LRpJGBOCL+LNiCVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioXSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BmFfOky+AAAA[0m[Pipeline] }
+[8mha:////4HvMHzhfkbhCuelScxaEcWt+IwUkjrVUclwG5g8KIRzBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN37dbx6+AAAA[0m[Pipeline] // stage
+[8mha:////4MEoBF7z7RwdIAmUYNrzEuTslHpPEsCiNjyWZ/9vFDnCAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYTTIISEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFjKDbbz7F8A8u6Ud/BAAAA[0m[Pipeline] stage
+[8mha:////4GckjGjV0bYjWV4GnK3WhZ9QM6cXxVsZybw9hkLV6pqLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] { (Building  image ms2)
+Stage "Building  image ms2" skipped due to earlier failure(s)
+[8mha:////4GhWN0I4mvcpTqxsrsSX15IS6qBAEldqjlOpjFIbL736AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGaE3/ivgAAAA==[0m[Pipeline] getContext
+[8mha:////4GNT19h6rb/FfcS1QdqSW7/72S094y8kNxXQb5ONeYJxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEwuM6AvgAAAA==[0m[Pipeline] }
+[8mha:////4G8psFrWudTsjvIG4xdlE/QPWJXC34xLWMQc/pemHixBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCATQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHa0rF2vgAAAA==[0m[Pipeline] // stage
+[8mha:////4Nc/yPtWi48onzI+b7tZbdYX0fCfybCGMNCDVfZK/DS9AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjCiQkREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HdfI7lG8eBI2TBAAAA[0m[Pipeline] stage
+[8mha:////4KrWmpg8fUQw3rv9OY7h+8ppm/R1fpqvktE9ePhTuv72AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDwMT42zCAAAA[0m[Pipeline] { (Building  image ms3)
+Stage "Building  image ms3" skipped due to earlier failure(s)
+[8mha:////4NofV0VcgMWzOEP4jXmIXeYMvx1mfz6ZMyjU2PsdOlDgAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN1+P256+AAAA[0m[Pipeline] getContext
+[8mha:////4Cw45sjLoFaXqQWoq3SrfFbS09s0cD3ObFgjpkiAEO4OAAAA9R+LCAAAAAAAAP9djDFOw0AQRceOoEYpER39rKsQBaWCAqSIIAXRL86yXnvZGXbHJGk4BNeABokrcAgukI6aggYjV/Cb/5r3Xj5hJ0U4pWixNqFxIZUO2be2I1xRbG49rTC1zBQFkxhO6AK3gpfzxdXZhk30LjQXJGbvY/D2dfS9zSGbwaCNXmA4q/WDVl4HqxYSXbDH6wgHVbtMFLCkkMgb/FMZTZ9fp0/8nkN+DrveBCtVn7uHR8g6ff+fftL/rwz9shxgzR2gQHYogJUIT5TyVGpfUZLJuBgXqqYbde2So6DjZs5JjQolJt79ALqsxvAVAQAA[0mClick here to forcibly terminate running steps
+[8mha:////4LiwGzF6b9O388nxOEp38BHJWHQJ8bwkbaEJ2vEFat5RAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN5RlVvO+AAAA[0m[Pipeline] }
+[8mha:////4G6eWe2/h/Di1lngyoVeyNiwxy/AAvlicybJRkLCJb93AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiilSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BovnA6G+AAAA[0m[Pipeline] // stage
+[8mha:////4LygTKf/38t37eqDDp9xoyW9jPDPU1KpwVOpUThFwq0HAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKpQEiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPGNAiz70AAAA=[0m[Pipeline] }
+[8mha:////4JsW+ZhFa/a7ErvEJH0/BeeXeFBetD/YsPxpMGEOFUFGAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJUDoVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwAOeT9Yr0AAAA=[0m[Pipeline] // withEnv
+[8mha:////4CBnmu96kFxgiDMhcGfTk0LveZsnaek5D7HCHhAnakWiAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKpQEiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPfkOql70AAAA=[0m[Pipeline] }
+[8mha:////4Cw45sjLoFaXqQWoq3SrfFbS09s0cD3ObFgjpkiAEO4OAAAA9R+LCAAAAAAAAP9djDFOw0AQRceOoEYpER39rKsQBaWCAqSIIAXRL86yXnvZGXbHJGk4BNeABokrcAgukI6aggYjV/Cb/5r3Xj5hJ0U4pWixNqFxIZUO2be2I1xRbG49rTC1zBQFkxhO6AK3gpfzxdXZhk30LjQXJGbvY/D2dfS9zSGbwaCNXmA4q/WDVl4HqxYSXbDH6wgHVbtMFLCkkMgb/FMZTZ9fp0/8nkN+DrveBCtVn7uHR8g6ff+fftL/rwz9shxgzR2gQHYogJUIT5TyVGpfUZLJuBgXqqYbde2So6DjZs5JjQolJt79ALqsxvAVAQAA[0mClick here to forcibly terminate running steps
+[8mha:////4L+mcu/OubLIzO4Qjb4AoXZDeOw0yN5H0dbLt0rleo5JAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJUFI5jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAdDvDM70AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4JvtnSLdeS/3DLe1ABnGc4Wue2OH/rzThPh+Lg1O6zN+AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPPRtAz70AAAA=[0m[Pipeline] }
+[8mha:////4KCfsnMt4d1aOIDnC8LgPmf15A0SB340gw6t5lRSYNYtAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AC6nRGy9AAAA[0m[Pipeline] // node
+[8mha:////4N+jh+5t1VCcYnmTUHCcGP1p6nKUbP3I6CEg89zOVokzAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHaO3jXL0AAAA=[0m[Pipeline] End of Pipeline
+org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 6df2f676-874e-46b1-84df-736e935b9663
+Finished: ABORTED

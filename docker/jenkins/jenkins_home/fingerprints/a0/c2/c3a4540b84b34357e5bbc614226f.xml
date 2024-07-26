@@ -6,7 +6,11 @@
   <usages>
     <entry>
       <string>VisionaryOps</string>
-      <ranges>42,44-47</ranges>
+      <ranges>42,44-52</ranges>
+    </entry>
+    <entry>
+      <string>aaa</string>
+      <ranges>1-2</ranges>
     </entry>
   </usages>
   <facets/>

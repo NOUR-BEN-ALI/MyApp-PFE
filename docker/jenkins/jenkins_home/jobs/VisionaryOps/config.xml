@@ -22,28 +22,32 @@
     agent any
   
     environment {
-        GIT_CREDENTIALS = credentials(&apos;git_visionaryops&apos;)
+        GIT_CREDENTIALS = credentials(&apos;git-cred&apos;)
         GIT_REPO_URL = &apos;github.com/NOUR-BEN-ALI/MyApp-PFE.git&apos; 
-        GIT_BRANCH = &apos;tempo&apos;
+        GIT_BRANCH = &apos;automatisation&apos;
         REPO_DIR = &apos;MyApp-PFE&apos;
         registry = &quot;docker.io/nourbenali&quot;
         registryCredential = &apos;docker_visionaryops&apos; 
     }
 
     stages {
-        stage(&apos;Clone my Branch from Git&apos;) {
+    
+       stage(&apos;Clone my Branch from Git&apos;) {
             steps {
                 script {
                     if (fileExists(REPO_DIR)) {
                         dir(REPO_DIR) {
+                         sh &apos;git config --global http.postBuffer 524288000&apos;
+
                             sh &apos;git pull&apos;
                         }
                     } else {
-                        sh &quot;git clone --branch ${GIT_BRANCH} https://${GIT_CREDENTIALS_USR}:${GIT_CREDENTIALS_PSW}@${GIT_REPO_URL} ${REPO_DIR}&quot;
+                        sh &quot;git clone --branch ${env.GIT_BRANCH} https://NOUR-BEN-ALI:${env.GIT_CREDENTIALS}@${env.GIT_REPO_URL} ${REPO_DIR}&quot;
                     }
                 }
             }
         }
+        // Uncomment these stages if needed
         // stage(&apos;Clean and compile with Maven ms1&apos;) {
         //     steps {
         //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
@@ -108,17 +112,8 @@
                 script {
                     dir(REPO_DIR) {
                         // sh &apos;docker-compose build&apos;
-                        // sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo collector prometheus loki zookeeper&apos;
-                         sh &apos;docker-compose up -d microservice1&apos;
-                          sh &apos;docker-compose up -d microservice2&apos;
-                           sh &apos;docker-compose up -d microservice3&apos;
-                            sh &apos;docker-compose up -d grafana&apos;
-                             sh &apos;docker-compose up -d tempo&apos;
-                              sh &apos;docker-compose up -d collector&apos;
-                               sh &apos;docker-compose up -d prometheus&apos;
-                                sh &apos;docker-compose up -d loki&apos;
-                                 sh &apos;docker-compose up -d zookeeper&apos;
-                                  sh &apos;docker-compose up -d kafka-service&apos;
+                        sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo collector prometheus loki zookeeper kafka-service kafka-ui&apos;
+
                     }
                 }
             }

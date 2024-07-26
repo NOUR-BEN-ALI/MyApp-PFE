@@ -4,14 +4,19 @@ credentials:
       - credentials:
           - usernamePassword:
               id: "git_visionaryops"
-              password: "{AQAAABAAAAAwynOlRTeAqdarqgf74IShyBwMqctt1EE/LgSuY5ExIxaRLt5Ym40PlPaWGpVJXaDYBVRimFSw8weeMFO0GRcnHg==}"
+              password: "{AQAAABAAAAAwVeUAvNhQzZbgRSeJK1GiNyjRh9Tr1zkwA/A76LPApoRKfqNCF0BcueDs/KC0yK24+EYMY4YxUI+jwCDquy5lkw==}"
               scope: GLOBAL
               username: "NOUR-BEN -ALI"
           - usernamePassword:
               id: "docker_visionaryops"
-              password: "{AQAAABAAAAAwP0zN2GG0HlJUSQUW7uiyvkZmynbyRiNl47XRoNtYKqTywjLqSCm65Aq7NJecaYivI0RG55SD7b4bBqwUpJl39w==}"
+              password: "{AQAAABAAAAAwPZshDOqGW2uk9gffDhNxN0IiMAPf2pXZhNO4Bv44oQjBkqxMlhzaTtOzhTddLWCp5eiohSe2ujhYznEsRSTHUg==}"
               scope: GLOBAL
               username: "nourbenali"
+          - usernamePassword:
+              id: "git-cred"
+              password: "{AQAAABAAAAAwOo/BPF2+zLJa2dhs2TUo36gFpeuyNNO9Tw+Yb5d7VJ8mhmwZz97QHTTsVG4Tc8X7J2+baK65fkif6lBZoc+JSQ==}"
+              scope: GLOBAL
+              username: "NOUR-BEN-ALI"
 jenkins:
   agentProtocols:
     - "JNLP4-connect"

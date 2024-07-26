@@ -1,0 +1,130 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1400.v7fd111b_ec82f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+    <script>pipeline {
+    agent any
+  
+    environment {
+        GIT_CREDENTIALS = credentials(&apos;git-cred&apos;)
+        GIT_REPO_URL = &apos;github.com/NOUR-BEN-ALI/MyApp-PFE.git&apos; 
+        GIT_BRANCH = &apos;deployment-d&apos;
+        REPO_DIR = &apos;MyApp-PFE&apos;
+        registry = &quot;docker.io/nourbenali&quot;
+        registryCredential = &apos;docker_visionaryops&apos; 
+    }
+
+    stages {
+        stage(&apos;Clean Workspace&apos;) {
+            steps {
+                script {
+                    if (fileExists(REPO_DIR)) {
+                        sh &quot;rm -rf ${REPO_DIR}&quot;
+                    }
+                }
+            }
+        }
+
+       stage(&apos;Clone my Branch from Git&apos;) {
+            steps {
+                script {
+                    if (fileExists(REPO_DIR)) {
+                        dir(REPO_DIR) {
+                            sh &apos;git pull&apos;
+                        }
+                    } else {
+                        sh &quot;git clone --branch ${env.GIT_BRANCH} https://NOUR-BEN-ALI:${env.GIT_CREDENTIALS}@${env.GIT_REPO_URL} ${REPO_DIR}&quot;
+                    }
+                }
+            }
+        }
+        // Uncomment these stages if needed
+        // stage(&apos;Clean and compile with Maven ms1&apos;) {
+        //     steps {
+        //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        // stage(&apos;Clean and compile with Maven ms2&apos;) {
+        //     steps {
+        //         dir(REPO_DIR +&apos;/Microservice2&apos;) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        // stage(&apos;Clean and compile with Maven ms3&apos;) {
+        //     steps {
+        //         dir(REPO_DIR +&apos;/Microservice3&apos;) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        // stage(&apos;Building image ms1&apos;) { 
+        //     steps { 
+        //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
+        //             script { 
+        //                 dockerImage1 = docker.build(&quot;${registry}/visionaryops-microservice11:$BUILD_NUMBER&quot;)
+        //             }
+        //         }
+        //     } 
+        // }
+        // stage(&apos;Building image ms2&apos;) { 
+        //     steps { 
+        //         dir(REPO_DIR +&apos;/Microservice2&apos;) {
+        //             script { 
+        //                 dockerImage2 = docker.build(&quot;${registry}/visionaryops-microservice22:$BUILD_NUMBER&quot;)
+        //             }
+        //         }
+        //     } 
+        // }
+        // stage(&apos;Building image ms3&apos;) { 
+        //     steps { 
+        //         dir(REPO_DIR +&apos;/Microservice3&apos;) {
+        //             script { 
+        //                 dockerImage3 = docker.build(&quot;${registry}/visionaryops-microservice33:$BUILD_NUMBER&quot;)
+        //             }
+        //         }
+        //     } 
+        // }
+        // stage(&apos;Push Docker Images to DockerHub&apos;) {
+        //     steps {
+        //         script {
+        //             docker.withRegistry(&apos;https://index.docker.io/v1/&apos;, registryCredential) {
+        //                 dockerImage1.push()
+        //                 dockerImage2.push()
+        //                 dockerImage3.push()
+        //             }
+        //         }
+        //     }
+        // }
+        stage(&apos;Build with Docker Compose&apos;) {
+            steps {
+                script {
+                    dir(REPO_DIR) {
+                        // sh &apos;docker-compose build&apos;
+                        sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo collector prometheus loki zookeeper kafka-service kafka-ui&apos;
+
+                    }
+                }
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
