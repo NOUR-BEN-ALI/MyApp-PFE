@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='maven-snapshot-check' version='1106.v529e6b_c11e8e'><l:dependency name='Maven SNAPSHOT Check Plugin' groupId='org.jenkins-ci.plugins' artifactId='maven-snapshot-check' version='1106.v529e6b_c11e8e' url='https://github.com/jenkinsci/maven-snapshot-check-plugin'><l:description>It is used to check if pom.xml contains SNAPSHOT</l:description><l:license name='MIT License' url='http://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>

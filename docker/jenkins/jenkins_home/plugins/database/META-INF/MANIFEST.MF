@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Database
+Specification-Version: 0.0
+Implementation-Title: Database
+Implementation-Version: 247.v244b_d85f086d
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: database
+Short-Name: database
+Long-Name: Database
+Url: https://github.com/jenkinsci/database-plugin
+Plugin-Version: 247.v244b_d85f086d
+Hudson-Version: 2.426.3
+Jenkins-Version: 2.426.3
+Plugin-Dependencies: byte-buddy-api:1.14.14-3.v944fc399f504,javax-activa
+ tion-api:1.2.0-6,jaxb:2.3.9-1,workflow-step-api:657.v03b_e8115821b_;res
+ olution:=optional
+Plugin-Developers: 
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/database-plug
+ in.git
+Plugin-ScmTag: 244bd85f086d8e32f6b00a1b04981341c87d5e3b
+Plugin-ScmUrl: https://github.com/jenkinsci/database-plugin
+Plugin-GitHash: 244bd85f086d8e32f6b00a1b04981341c87d5e3b
+Implementation-Build: 244bd85f086d8e32f6b00a1b04981341c87d5e3b
+

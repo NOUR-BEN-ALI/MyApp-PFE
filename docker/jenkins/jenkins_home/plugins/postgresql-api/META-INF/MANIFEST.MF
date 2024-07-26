@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: PostgreSQL API Plugin
+Specification-Version: 42.7
+Implementation-Title: PostgreSQL API Plugin
+Implementation-Version: 42.7.2-40.v76d376d65c77
+Group-Id: io.jenkins.plugins
+Artifact-Id: postgresql-api
+Short-Name: postgresql-api
+Long-Name: PostgreSQL API Plugin
+Url: https://github.com/jenkinsci/postgresql-api-plugin
+Plugin-Version: 42.7.2-40.v76d376d65c77
+Hudson-Version: 2.387.1
+Jenkins-Version: 2.387.1
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/postgresql-ap
+ i-plugin
+Plugin-ScmTag: 76d376d65c77d859137bcd1b6c554584bfeb747c
+Plugin-ScmUrl: https://github.com/jenkinsci/postgresql-api-plugin
+Plugin-GitHash: 76d376d65c77d859137bcd1b6c554584bfeb747c
+Implementation-Build: 76d376d65c77d859137bcd1b6c554584bfeb747c
+

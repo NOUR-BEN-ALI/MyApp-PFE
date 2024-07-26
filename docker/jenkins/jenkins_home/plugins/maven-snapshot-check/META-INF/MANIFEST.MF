@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Maven SNAPSHOT Check Plugin
+Specification-Version: 0.0
+Implementation-Title: Maven SNAPSHOT Check Plugin
+Implementation-Version: 1106.v529e6b_c11e8e
+Group-Id: org.jenkins-ci.plugins
+Short-Name: maven-snapshot-check
+Long-Name: Maven SNAPSHOT Check Plugin
+Url: https://github.com/jenkinsci/maven-snapshot-check-plugin
+Plugin-Version: 1106.v529e6b_c11e8e
+Hudson-Version: 2.361
+Jenkins-Version: 2.361
+Plugin-Dependencies: structs:324.va_f5d6774f3a_d
+Plugin-Developers: donghui:donhui:977675308@nqq.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmUrl: http://github.com/jenkinsci/maven-snapshot-check-plugin
+

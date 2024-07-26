@@ -24,7 +24,7 @@ spec:
         - containerPort: 9989
       env:
         - name: SPRING_DATASOURCE_URL
-          value: "jdbc:postgresql://localhost:5432/basepfe3"
+          value: "jdbc:postgresql://postgres-service:5432/basepfe3"
         - name: SPRING_DATASOURCE_USERNAME
           value: "postgres"
         - name: SPRING_DATASOURCE_PASSWORD

@@ -3,6 +3,7 @@ server:
 
 distributor:
   receivers:
+#    Zipkin:
     otlp:
       protocols:
         grpc:
@@ -12,3 +13,5 @@ storage:
     backend: local
     local:
       path: /tmp/tempo/blocks
+
+

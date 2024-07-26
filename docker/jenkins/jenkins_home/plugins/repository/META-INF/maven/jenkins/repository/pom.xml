@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.nirima.jenkins.repository</groupId>
+        <artifactId>pom</artifactId>
+        <version>1.10</version>
+    </parent>
+
+    <groupId>jenkins</groupId>
+    <artifactId>repository</artifactId>
+    <name>Jenkins Maven Repository Server Plugin</name>
+    <description>This plug-in exposes project builds as a maven repository so the artifacts can be picked up by
+        downstream builds or other systems.
+    </description>
+    <version>1.10</version>
+    <packaging>hpi</packaging>
+
+    <url>https://github.com/jenkinsci/maven-repository-plugin</url>
+
+    <properties>
+        <spotbugs.skip>true</spotbugs.skip>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>com.nirima.jenkins.repository</groupId>
+                            <artifactId>jenkins-maven-plugin</artifactId>
+                            <version>${project.version}</version>
+                            <type>jar</type>
+                            <overWrite>true</overWrite>
+                            <outputDirectory>${project.build.outputDirectory}/tools/com/nirima/jenkins/repository/jenkins-maven-plugin/${project.version}/</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>com.nirima.jenkins.repository</groupId>
+                            <artifactId>jenkins-maven-plugin</artifactId>
+                            <version>${project.version}</version>
+                            <type>pom</type>
+                            <overWrite>true</overWrite>
+                            <outputDirectory>${project.build.outputDirectory}/tools/com/nirima/jenkins/repository/jenkins-maven-plugin/${project.version}/</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>com.nirima.jenkins.repository</groupId>
+                            <artifactId>pom</artifactId>
+                            <version>${project.version}</version>
+                            <type>pom</type>
+                            <overWrite>true</overWrite>
+                            <outputDirectory>${project.build.outputDirectory}/tools/com/nirima/jenkins/repository/pom/${project.version}/</outputDirectory>
+                        </artifactItem>
+                    </artifactItems>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>3.8.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jenkins.tools.bom</groupId>
+                <artifactId>bom-2.235.x</artifactId>
+                <version>918.vae501d2cdc99</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>git</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.main</groupId>
+            <version>3.8</version>
+            <artifactId>maven-plugin</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>token-macro</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>promoted-builds</artifactId>
+            <version>3.11</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>branch-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>matrix-project</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

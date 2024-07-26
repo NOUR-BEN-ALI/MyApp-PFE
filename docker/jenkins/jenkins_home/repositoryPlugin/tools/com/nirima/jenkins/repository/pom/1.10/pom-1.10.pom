@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>4.33</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.nirima.jenkins.repository</groupId>
+    <artifactId>pom</artifactId>
+    <name>Jenkins Maven Repository Server : Project POM</name>
+    <description>Repository Project POM</description>
+    <url>https://github.com/jenkinsci/maven-repository-plugin</url>
+
+    <version>1.10</version>
+    <packaging>pom</packaging>
+
+    <ciManagement>
+        <url>http://localhost:8080/jenkins</url>
+    </ciManagement>
+
+    <profiles>
+        <profile>
+            <id>repository</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.nirima.jenkins.repository</groupId>
+                        <artifactId>jenkins-maven-plugin</artifactId>
+                        <version>${project.version}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>report-artifacts</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <developers>
+        <developer>
+            <id>magnayn</id>
+            <name>Nigel Magnay</name>
+            <email>nigel.magnay@gmail.com</email>
+        </developer>
+        <developer>
+            <id>bjwschaap</id>
+            <name>Bastiaan Schaap</name>
+            <email>bastiaan.schaap@gmail.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <jenkins.version>2.249.1</jenkins.version>
+        <java.level>8</java.level>
+        <gitHubRepo>jenkinsci/maven-repository-plugin</gitHubRepo>
+    </properties>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
+        <url>https://github.com/${gitHubRepo}</url>
+        <tag>pom-1.10</tag>
+    </scm>
+    <modules>
+        <module>jenkins-maven-plugin</module>
+        <module>repository-hpi</module>
+    </modules>
+
+    <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

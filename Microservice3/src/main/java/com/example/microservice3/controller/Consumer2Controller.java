@@ -11,10 +11,9 @@ public class Consumer2Controller {
     public Consumer2Controller(consumer2 consumer2) {
         this.consumer2 = consumer2;
     }
-
-    @GetMapping("call-service-2")
+    @GetMapping("call-service-b")
     public String getMessageFromB(){
         String messageFromB = consumer2.getMessageFromA();
-        return "Service 3 calling Service 1: "+ messageFromB;
+        return "Service C calling Service B: "+ messageFromB;
     }
 }

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.332.3
+Plugin-Dependencies: rebuild:1.34;resolution:=optional,jaxb:2.3.6-1,cr
+ edentials:1087.1089.v2f1b_9a_b_040e4
+Implementation-Title: Maven Metadata Plugin for Jenkins CI server
+Long-Name: Maven Metadata Plugin for Jenkins CI server
+Implementation-Version: 2.2
+Group-Id: eu.markov.jenkins.plugin.mvnmeta
+Plugin-License-Name: MIT license
+Specification-Title: Maven Metadata Plugin for Jenkins CI server
+Plugin-ScmUrl: https://github.com/jenkinsci/maven-metadata-plugin
+Plugin-Version: 2.2
+Jenkins-Version: 2.332.3
+Url: https://github.com/jenkinsci/maven-metadata-plugin
+Short-Name: maven-metadata-plugin
+Plugin-Developers: Georgi "Gesh" Markov:markov:gesh@markov.eu,Marc Roh
+ lfs:marcrohlfs:Marc.Rohlfs@t-system.com
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.2
+Specification-Version: 2.2
+

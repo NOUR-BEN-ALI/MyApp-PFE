@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nguyenlevulong
+Build-Jdk: 1.8.0_212
+Extension-Name: remoting-kafka
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: remoting-kafka
+Implementation-Version: 2.0.1
+Group-Id: io.jenkins.plugins.remoting-kafka
+Short-Name: remoting-kafka
+Long-Name: Remoting Kafka Plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 2.0.1
+Hudson-Version: 2.176.2
+Jenkins-Version: 2.176.2
+Plugin-Dependencies: credentials:2.2.1,kubernetes-credentials:0.4.1
+Plugin-Developers: 
+

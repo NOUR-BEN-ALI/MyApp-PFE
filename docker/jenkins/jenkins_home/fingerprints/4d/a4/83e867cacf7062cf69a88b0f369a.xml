@@ -1,0 +1,39 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-07-19 13:51:34.414 UTC</timestamp>
+  <md5sum>4da483e867cacf7062cf69a88b0f369a</md5sum>
+  <fileName>Credential id=git_visionaryops name=NOUR-BEN-ALI/******</fileName>
+  <usages>
+    <entry>
+      <string>VisionaryOps</string>
+      <ranges>2-3,16</ranges>
+    </entry>
+    <entry>
+      <string>1111</string>
+      <ranges>2-3</ranges>
+    </entry>
+    <entry>
+      <string>nour</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>bachboucha</string>
+      <ranges>2-4</ranges>
+    </entry>
+    <entry>
+      <string>vis</string>
+      <ranges>5-6</ranges>
+    </entry>
+    <entry>
+      <string>soussou</string>
+      <ranges>1-2</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1371.vfee6b_095f0a_3">
+      <timestamp>1721491429849</timestamp>
+      <itemFullName>bachboucha</itemFullName>
+      <timestamp0>1721490536712</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

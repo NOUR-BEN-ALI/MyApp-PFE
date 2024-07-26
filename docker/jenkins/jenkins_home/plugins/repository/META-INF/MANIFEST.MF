@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.249.1
+Plugin-Dependencies: maven-plugin:3.8,branch-api:2.6.2,git:4.6.0,promo
+ ted-builds:3.11;resolution:=optional,token-macro:2.13
+Implementation-Title: repository
+Long-Name: Jenkins Maven Repository Server Plugin
+Implementation-Version: 1.10
+Group-Id: jenkins
+Minimum-Java-Version: 1.8
+Plugin-License-Name: MIT License
+Specification-Title: This plug-in exposes project builds as a maven re
+ pository so the artifacts can be picked up by       downstream builds
+  or other systems.
+Plugin-ScmUrl: https://github.com/jenkinsci/maven-repository-plugin/re
+ pository
+Plugin-Version: 1.10
+Jenkins-Version: 2.249.1
+Url: https://github.com/jenkinsci/maven-repository-plugin
+Short-Name: repository
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-Developers: Nigel Magnay:magnayn:nigel.magnay@gmail.com,Bastiaa
+ n Schaap:bjwschaap:bastiaan.schaap@gmail.com
+Extension-Name: repository
+Plugin-Class: com.nirima.jenkins.RepositoryPlugin
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.1
+

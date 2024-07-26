@@ -1,0 +1,6 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.jenkins.plugins.remotingkafka.GlobalKafkaConfiguration plugin="remoting-kafka@2.0.1">
+  <enableSSL>false</enableSSL>
+  <useKubernetes>false</useKubernetes>
+  <kubernetesSkipTlsVerify>false</kubernetesSkipTlsVerify>
+</io.jenkins.plugins.remotingkafka.GlobalKafkaConfiguration>

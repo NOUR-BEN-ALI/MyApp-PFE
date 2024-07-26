@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: PostgreSQL Database Plugin
+Specification-Version: 0.0
+Implementation-Title: PostgreSQL Database Plugin
+Implementation-Version: 100.v2418e0a_c6909
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: database-postgresql
+Short-Name: database-postgresql
+Long-Name: PostgreSQL Database Plugin
+Url: https://github.com/jenkinsci/database-postgresql-plugin
+Plugin-Version: 100.v2418e0a_c6909
+Hudson-Version: 2.387.1
+Jenkins-Version: 2.387.1
+Plugin-Dependencies: postgresql-api:42.6.0-31.vb_7e76dc13969,database:19
+ 1.vd5981b_97a_5fa_
+Plugin-Developers: 
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/database-post
+ gresql-plugin
+Plugin-ScmTag: 2418e0ac69094b3a7c2ed7bc157c8a21be50efc8
+Plugin-ScmUrl: http://github.com/jenkinsci/database-postgresql-plugin
+Plugin-GitHash: 2418e0ac69094b3a7c2ed7bc157c8a21be50efc8
+Implementation-Build: 2418e0ac69094b3a7c2ed7bc157c8a21be50efc8
+

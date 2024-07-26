@@ -1,8 +1,6 @@
 package com.example.microservice2.service;
-
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
-
 @Service
 public class KafkaConsumerService {
     @KafkaListener(topics = "MyApplication", groupId = "myapplication-M2")

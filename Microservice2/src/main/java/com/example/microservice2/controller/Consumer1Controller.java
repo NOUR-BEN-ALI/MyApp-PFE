@@ -9,9 +9,9 @@ public class Consumer1Controller {
     public Consumer1Controller(consumer1 consumer1) {
         this.consumer1 = consumer1;
     }
-    @GetMapping("/call-service-1")
-    public String getMessageFrom1() {
-        String messageFrom1 = consumer1.hello();
-        return "producer  calling consumer 1 : " + messageFrom1;
+    @GetMapping("/call-service-a")
+    public String getMessageFromA() {
+        String messageFromA = consumer1.hello();
+        return "Service B calling Service A : " + messageFromA;
     }
 }

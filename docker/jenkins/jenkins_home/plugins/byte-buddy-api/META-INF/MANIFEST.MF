@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Byte Buddy API Plugin
+Specification-Version: 1.14
+Implementation-Title: Byte Buddy API Plugin
+Implementation-Version: 1.14.18-35.v791203db_06c0
+Group-Id: io.jenkins.plugins
+Artifact-Id: byte-buddy-api
+Short-Name: byte-buddy-api
+Long-Name: Byte Buddy API Plugin
+Url: https://github.com/jenkinsci/byte-buddy-api-plugin
+Plugin-Version: 1.14.18-35.v791203db_06c0
+Hudson-Version: 2.426.3
+Jenkins-Version: 2.426.3
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/license/mit/
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/byte-buddy-ap
+ i-plugin
+Plugin-ScmTag: 791203db06c0472bd29a794e742bc9831beb52d6
+Plugin-ScmUrl: https://github.com/jenkinsci/byte-buddy-api-plugin
+Plugin-GitHash: 791203db06c0472bd29a794e742bc9831beb52d6
+Implementation-Build: 791203db06c0472bd29a794e742bc9831beb52d6
+

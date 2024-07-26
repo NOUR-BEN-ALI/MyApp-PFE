@@ -1,0 +1,196 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1400.v7fd111b_ec82f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+    <script>pipeline {
+    agent any
+    tools {
+     maven &apos;Maven 3.9.8&apos; // Adjust to match the Maven version configured in Jenkins
+}
+    environment {
+        // Define environment variables to store credentials and repo info
+        GIT_CREDENTIALS = credentials(&apos;git_visionaryops&apos;)
+        GIT_REPO_URL = &apos;github.com/NOUR-BEN-ALI/MyApp-PFE.git&apos; 
+        GIT_BRANCH = &apos;tempo&apos;
+        REPO_DIR = &apos;MyApp-PFE&apos;
+        // Sonar credential
+        //SONAR_CREDENTIALS = credentials(&apos;sonarqube&apos;)
+        //SONAR_HOST_URL = &apos;http://192.168.33.10:9000&apos;
+        registry = &quot;docker.io&quot; 
+        registryCredential = &apos;docker_visionaryops&apos; 
+        // dockerImage = &apos;nourbenali/visionaryops-microservice11&apos;
+        // dockerImages = [
+        //     &apos;nourbenali/visionaryops-microservice11&apos;,
+        //     &apos;nourbenali/visionaryops-microservice22&apos;,
+        //     &apos;nourbenali/visionaryops-microservice33&apos;
+        // ]
+    }
+
+    stages {
+        stage(&apos;Clone my Branch from Git&apos;) {
+            steps {
+                script {
+                    if (fileExists(REPO_DIR)) {
+                        dir(REPO_DIR) {
+                            sh &apos;git pull&apos;
+                        }
+                    } else {
+                        sh &quot;git clone --branch ${env.GIT_BRANCH} https://NOUR-BEN-ALI:${env.GIT_CREDENTIALS}@${env.GIT_REPO_URL} ${REPO_DIR}&quot;
+                    }
+                }
+            }
+        }
+        // stage(&apos;Clean and compile with Maven&apos;) {
+        //     steps {
+        //         dir(REPO_DIR) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        
+        //         stage(&apos;Junit/Mockito&apos;) {
+        //     steps {
+        //         dir(REPO_DIR) {
+        //             sh &quot;mvn test &quot;
+        //         }
+        //     }
+        // }    
+
+        // stage(&apos;SonarQube Analysis&apos;) {
+        //     steps {
+        //         dir(REPO_DIR) {
+        //             withCredentials([usernamePassword(credentialsId: &apos;sonarqube&apos;, usernameVariable: &apos;SONAR_USER&apos;, passwordVariable: &apos;SONAR_PASSWORD&apos;)]) {
+        //                 sh &quot;mvn clean verify sonar:sonar -Dsonar.login=\$SONAR_USER -Dsonar.password=\$SONAR_PASSWORD -Dsonar.host.url=${SONAR_HOST_URL}&quot;
+        //             }
+        //         }
+        //     }
+        // }
+        
+        // stage(&apos;Nexus Deployment&apos;) {
+        //     steps {
+        //         dir(REPO_DIR) {
+        //             sh &quot;mvn deploy -DskipTests=true &quot;
+        //         }
+        //     }
+        // }    
+// stage(&apos;Building  image&apos;) { 
+
+//             steps { 
+// dir(REPO_DIR){
+//                 script { 
+
+//                     dockerImage = docker.build registry + &quot;:$BUILD_NUMBER&quot; 
+
+//                 }
+// }
+
+//             } 
+
+//         }
+
+//         stage(&apos;Deploy  image&apos;) { 
+
+//             steps {
+//                 dir(REPO_DIR){
+
+//                 script { 
+
+//                     docker.withRegistry( &apos;&apos;, registryCredential ) { 
+
+//                         dockerImage.push() 
+
+//                     }
+
+//                 } 
+//                 }
+
+//             }
+
+//         } 
+
+//         stage(&apos;Docker Compose Up&apos;) {
+//             steps {
+//                 script {
+//                     dir(REPO_DIR) {
+//                         // Replace &apos;docker-compose.yml&apos; with your actual Docker Compose file
+//                         sh &quot;docker compose up -d&quot;
+//                     }
+//                 }
+//             }
+//         }
+// stage(&apos;Build Docker Images&apos;) {
+//             steps {
+//                 script {
+//                     def images = [
+//                         &apos;nourbenali/visionaryops-microservice11&apos;,
+//                         &apos;nourbenali/visionaryops-microservice22&apos;,
+//                         &apos;nourbenali/visionaryops-microservice33&apos;
+//                     ]
+                    
+//                     images.each { image -&gt;
+//                         dir(REPO_DIR) {
+//                             def imageTag = &quot;${image}:${env.BUILD_NUMBER}&quot;
+//                             docker.build(imageTag, &quot;-f ${image}/Dockerfile .&quot;)
+//                             env.&quot;${image.replace(&apos;/&apos;, &apos;_&apos;)}_IMAGE&quot; = imageTag
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         stage(&apos;Push Docker Images&apos;) {
+//             steps {
+//                 script {
+//                     def images = [
+//                         &apos;nourbenali/visionaryops-microservice11&apos;,
+//                         &apos;nourbenali/visionaryops-microservice22&apos;,
+//                         &apos;nourbenali/visionaryops-microservice33&apos;
+//                     ]
+                    
+//                     images.each { image -&gt;
+//                         def imageTag = env.&quot;${image.replace(&apos;/&apos;, &apos;_&apos;)}_IMAGE&quot;
+//                         docker.withRegistry(&apos;&apos;, registryCredential) {
+//                             docker.image(imageTag).push()
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+        // stage(&apos;Docker Compose Up&apos;) {
+        //     steps {
+        //         dir(REPO_DIR) {
+        //             // Replace &apos;docker-compose.yml&apos; with your actual Docker Compose file
+        //             sh &quot;docker-compose up -d&quot;
+        //         }
+        //     }
+        // }
+        
+        // stage(&apos;Prometheus &amp; Grafana &apos;) {
+        //     steps {
+        //         script {
+                    
+                    
+        //                 sh &quot;docker restart 3b907f5313b7 6fc2a772178b 45db0fedcc15 &quot;
+                    
+        //         }
+        //     }
+        // }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
