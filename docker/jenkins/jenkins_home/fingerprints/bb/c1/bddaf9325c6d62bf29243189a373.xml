@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-07-26 16:50:10.549 UTC</timestamp>
+  <md5sum>bbc1bddaf9325c6d62bf29243189a373</md5sum>
+  <fileName>Credential id=git-cred name=NOUR-BEN-ALI/******</fileName>
+  <usages>
+    <entry>
+      <string>VisionaryOps</string>
+      <ranges>90</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

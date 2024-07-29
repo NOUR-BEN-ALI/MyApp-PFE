@@ -1,0 +1,34 @@
++ docker push index.docker.io/docker.io/nourbenali/visionaryops-microservice11:81
+The push refers to repository [docker.io/nourbenali/visionaryops-microservice11]
+5f70bf18a086: Preparing
+1f774104c4ea: Preparing
+adaa0920b322: Preparing
+10359c5dc4ba: Preparing
+601b48657e0c: Preparing
+b42107e74152: Preparing
+b42107e74152: Waiting
+10359c5dc4ba: Layer already exists
+601b48657e0c: Layer already exists
+5f70bf18a086: Layer already exists
+adaa0920b322: Layer already exists
+b42107e74152: Retrying in 5 seconds
+b42107e74152: Retrying in 4 seconds
+b42107e74152: Retrying in 3 seconds
+b42107e74152: Retrying in 2 seconds
+b42107e74152: Retrying in 1 second
+1f774104c4ea: Retrying in 5 seconds
+1f774104c4ea: Retrying in 4 seconds
+1f774104c4ea: Retrying in 3 seconds
+1f774104c4ea: Retrying in 2 seconds
+1f774104c4ea: Retrying in 1 second
+b42107e74152: Mounted from nourbenali/visionaryops-microservice22
+1f774104c4ea: Retrying in 10 seconds
+1f774104c4ea: Retrying in 9 seconds
+1f774104c4ea: Retrying in 8 seconds
+1f774104c4ea: Retrying in 7 seconds
+1f774104c4ea: Retrying in 6 seconds
+1f774104c4ea: Retrying in 5 seconds
+1f774104c4ea: Retrying in 4 seconds
+1f774104c4ea: Retrying in 3 seconds
+1f774104c4ea: Retrying in 2 seconds
+1f774104c4ea: Retrying in 1 second
