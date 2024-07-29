@@ -22,16 +22,24 @@
     agent any
   
     environment {
-        GIT_CREDENTIALS = credentials(&apos;git-cred&apos;)
+        GIT_CREDENTIALS = credentials(&apos;gitcredential&apos;)
         GIT_REPO_URL = &apos;github.com/NOUR-BEN-ALI/MyApp-PFE.git&apos; 
-        GIT_BRANCH = &apos;automatisation&apos;
+        GIT_BRANCH = &apos;auto&apos;
         REPO_DIR = &apos;MyApp-PFE&apos;
         registry = &quot;docker.io/nourbenali&quot;
         registryCredential = &apos;docker_visionaryops&apos; 
     }
 
     stages {
-       
+    //  stage(&apos;Clean Workspace&apos;) {
+    //         steps {
+    //             script {
+    //                 if (fileExists(REPO_DIR)) {
+    //                     sh &apos;rm -rf MyApp-PFE MyApp-PFE@tmp&apos;
+    //                 }
+    //             }
+    //         }
+    //     }  
     
       stage(&apos;Clone my Branch from Git&apos;) {
             steps {

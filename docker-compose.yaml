@@ -15,8 +15,8 @@ services:
       - ./docker/jenkins/jenkins_home:/var/jenkins_home
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./docker/prometheus:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus
-      - ./docker/tempo/tempo:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo
+      - ./docker/prometheus:/etc/prometheus/prometheus.yml:ro
+      - ./docker/tempo/tempo:/etc/tempo/tempo.yml:ro
       - ./docker/collector:/etc/otelcol-contrib:rw
 
 
