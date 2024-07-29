@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.xml" afterDir="false" />
@@ -13,12 +12,6 @@
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +250,7 @@
       <workItem from="1720432245067" duration="31847000" />
       <workItem from="1720779764582" duration="11906000" />
       <workItem from="1720900261077" duration="49864000" />
-      <workItem from="1721987675170" duration="27220000" />
+      <workItem from="1721987675170" duration="27458000" />
     </task>
     <servers />
   </component>
