@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/1111/workspace/MyApp-PFE" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace/MyApp-PFE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/bachboucha/workspace/MyApp-PFE" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/nour/workspace" vcs="Git" />
   </component>
