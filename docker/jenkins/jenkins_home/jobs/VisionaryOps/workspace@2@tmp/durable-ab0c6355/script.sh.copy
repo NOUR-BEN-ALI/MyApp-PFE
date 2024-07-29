@@ -1,1 +1,0 @@
-docker push "$JD_TAGGED_IMAGE_NAME"

@@ -31,13 +31,13 @@
     }
 
     stages {
+       
     
-       stage(&apos;Clone my Branch from Git&apos;) {
+      stage(&apos;Clone my Branch from Git&apos;) {
             steps {
                 script {
                     if (fileExists(REPO_DIR)) {
                         dir(REPO_DIR) {
-                         sh &apos;git config --global http.postBuffer 524288000&apos;
 
                             sh &apos;git pull&apos;
                         }
@@ -48,54 +48,54 @@
             }
         }
         // Uncomment these stages if needed
-        // stage(&apos;Clean and compile with Maven ms1&apos;) {
-        //     steps {
-        //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
-        //             sh &apos;mvn clean install -DskipTests&apos;
-        //         }
-        //     }
-        // }
-        // stage(&apos;Clean and compile with Maven ms2&apos;) {
-        //     steps {
-        //         dir(REPO_DIR +&apos;/Microservice2&apos;) {
-        //             sh &apos;mvn clean install -DskipTests&apos;
-        //         }
-        //     }
-        // }
-        // stage(&apos;Clean and compile with Maven ms3&apos;) {
-        //     steps {
-        //         dir(REPO_DIR +&apos;/Microservice3&apos;) {
-        //             sh &apos;mvn clean install -DskipTests&apos;
-        //         }
-        //     }
-        // }
-        // stage(&apos;Building image ms1&apos;) { 
-        //     steps { 
-        //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
-        //             script { 
-        //                 dockerImage1 = docker.build(&quot;${registry}/visionaryops-microservice11:$BUILD_NUMBER&quot;)
-        //             }
-        //         }
-        //     } 
-        // }
-        // stage(&apos;Building image ms2&apos;) { 
-        //     steps { 
-        //         dir(REPO_DIR +&apos;/Microservice2&apos;) {
-        //             script { 
-        //                 dockerImage2 = docker.build(&quot;${registry}/visionaryops-microservice22:$BUILD_NUMBER&quot;)
-        //             }
-        //         }
-        //     } 
-        // }
-        // stage(&apos;Building image ms3&apos;) { 
-        //     steps { 
-        //         dir(REPO_DIR +&apos;/Microservice3&apos;) {
-        //             script { 
-        //                 dockerImage3 = docker.build(&quot;${registry}/visionaryops-microservice33:$BUILD_NUMBER&quot;)
-        //             }
-        //         }
-        //     } 
-        // }
+        stage(&apos;Clean and compile with Maven ms1&apos;) {
+            steps {
+                dir(REPO_DIR +&apos;/Microservice1&apos;) {
+                    sh &apos;mvn clean install -DskipTests&apos;
+                }
+            }
+        }
+        stage(&apos;Clean and compile with Maven ms2&apos;) {
+            steps {
+                dir(REPO_DIR +&apos;/Microservice2&apos;) {
+                    sh &apos;mvn clean install -DskipTests&apos;
+                }
+            }
+        }
+        stage(&apos;Clean and compile with Maven ms3&apos;) {
+            steps {
+                dir(REPO_DIR +&apos;/Microservice3&apos;) {
+                    sh &apos;mvn clean install -DskipTests&apos;
+                }
+            }
+        }
+        stage(&apos;Building image ms1&apos;) { 
+            steps { 
+                dir(REPO_DIR +&apos;/Microservice1&apos;) {
+                    script { 
+                        dockerImage1 = docker.build(&quot;${registry}/visionaryops-microservice11:$BUILD_NUMBER&quot;)
+                    }
+                }
+            } 
+        }
+        stage(&apos;Building image ms2&apos;) { 
+            steps { 
+                dir(REPO_DIR +&apos;/Microservice2&apos;) {
+                    script { 
+                        dockerImage2 = docker.build(&quot;${registry}/visionaryops-microservice22:$BUILD_NUMBER&quot;)
+                    }
+                }
+            } 
+        }
+        stage(&apos;Building image ms3&apos;) { 
+            steps { 
+                dir(REPO_DIR +&apos;/Microservice3&apos;) {
+                    script { 
+                        dockerImage3 = docker.build(&quot;${registry}/visionaryops-microservice33:$BUILD_NUMBER&quot;)
+                    }
+                }
+            } 
+        }
         // stage(&apos;Push Docker Images to DockerHub&apos;) {
         //     steps {
         //         script {

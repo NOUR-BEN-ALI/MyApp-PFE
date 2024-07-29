@@ -15,6 +15,10 @@ services:
       - ./docker/jenkins/jenkins_home:/var/jenkins_home
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./docker/prometheus:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus
+      - ./docker/tempo/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo
+      - ./docker/collector:/etc/otelcol-contrib:rw
+
 
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
@@ -118,7 +122,7 @@ services:
     container_name: tempo
     command: [ "-config.file=/etc/tempo.yml/tempo.yml" ]
     volumes:
-      - ./docker/tempo/tempo.yml:/etc/tempo.yml/:ro
+      - ./docker/tempo/tempo:/etc/tempo.yml/:ro
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as grafana data source
@@ -161,9 +165,9 @@ services:
       - postgres
       - kafka-service
     environment:
-     OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
+     OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"
      OTEL_EXPORTER_OTLP_ENDPOINT_LOGS_ENDPOINT: "http://collector:4316"
-     OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
+     OTEL_EXPORTER_OTLP_TIMEOUT: "3000"
      OTEL_METRICS_EXPORTER: "prometheus"
      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
