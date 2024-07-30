@@ -15,9 +15,12 @@ services:
       - ./docker/jenkins/jenkins_home:/var/jenkins_home
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
-      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
-      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
+      - ./docker/prometheus:/etc/prometheus
+      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
       - ./docker/collector/otel-collector.yml:/etc/otelcol-contrib/otel-collector.yml
+
+
+
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
       - ADMIN_PASSWORD=admin
@@ -120,8 +123,7 @@ services:
     container_name: tempo
     command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
-#      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
-      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
+      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
