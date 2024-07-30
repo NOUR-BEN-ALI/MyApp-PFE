@@ -119,7 +119,9 @@
             steps {
                 script {
                     dir(REPO_DIR) {
-                        // sh &apos;docker-compose build&apos;
+                         sh &apos;docker-compose down&apos;
+                        
+
                         sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo collector prometheus loki zookeeper kafka-service kafka-ui&apos;
 
                     }

@@ -4,17 +4,22 @@ credentials:
       - credentials:
           - usernamePassword:
               id: "git_visionaryops"
-              password: "{AQAAABAAAAAwVeUAvNhQzZbgRSeJK1GiNyjRh9Tr1zkwA/A76LPApoRKfqNCF0BcueDs/KC0yK24+EYMY4YxUI+jwCDquy5lkw==}"
+              password: "{AQAAABAAAAAw3bFSSBWuk47o5XASk4bweLrrrGdV6zSqYl3rw8PxHfUTdbTBTP0lV4spZdkqCu44vyiHzw+VIHdprqBwjYJuRg==}"
               scope: GLOBAL
               username: "NOUR-BEN -ALI"
           - usernamePassword:
               id: "docker_visionaryops"
-              password: "{AQAAABAAAAAwPZshDOqGW2uk9gffDhNxN0IiMAPf2pXZhNO4Bv44oQjBkqxMlhzaTtOzhTddLWCp5eiohSe2ujhYznEsRSTHUg==}"
+              password: "{AQAAABAAAAAwoHlmfM216qB8VxCJZsoKPw+BzE0JQTHJOWYeEsW/Gypln3/jhHkaAsRI2dTxnVC6RkX84ku5tVbzj+MXiArmHA==}"
               scope: GLOBAL
               username: "nourbenali"
           - usernamePassword:
               id: "git-cred"
-              password: "{AQAAABAAAAAwOo/BPF2+zLJa2dhs2TUo36gFpeuyNNO9Tw+Yb5d7VJ8mhmwZz97QHTTsVG4Tc8X7J2+baK65fkif6lBZoc+JSQ==}"
+              password: "{AQAAABAAAAAwWnz9nkSpiRDMhvU81ujfDAWwpXdN0XgYMkh6Yu4i07fzSAeLQNF52+7Bto3+6257UKD2zyZ5kRX5f/Fn8GtsdQ==}"
+              scope: GLOBAL
+              username: "NOUR-BEN-ALI"
+          - usernamePassword:
+              id: "gitcredential"
+              password: "{AQAAABAAAAAwv2QjF7eDkW2yihhQUZ4HKkjmN4xV57vnpxqMexhwldsxKfbldx+WPbaU3K3dotY1Dz/6/xFbDmue/kE70WfULg==}"
               scope: GLOBAL
               username: "NOUR-BEN-ALI"
 jenkins:
