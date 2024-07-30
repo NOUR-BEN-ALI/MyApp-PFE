@@ -16,7 +16,7 @@ services:
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
 #      - ./docker/prometheus:/etc/prometheus
-#      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
+#      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
 #      - ./docker/collector/otel-collector.yml:/etc/otelcol-contrib/otel-collector.yml
 
 
@@ -121,7 +121,7 @@ services:
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
-#    command: [ "-config.file=/etc/tempo/tempo.yml" ]
+    command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
       - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
       - ./docker/tempo/tempo-data:/tmp/tempo
