@@ -18,8 +18,8 @@ services:
 #      - ./docker/prometheus:/etc/prometheus:rw
 #      - ./docker/tempo:/etc/tempo:rw
 #      - ./docker/collector:/etc/otelcol-contrib:rw
-      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml
+      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
 
 
     environment:
