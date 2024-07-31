@@ -87,11 +87,10 @@ services:
 
   prometheus:
     image: prom/prometheus:v2.46.0
-#    command:
-#      - --enable-feature=exemplar-storage
-#      - --config.file=/etc/prometheus/prometheus.yml
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
     volumes:
-      - ./docker/prometheus:/etc/prometheus
+      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus_data:/prometheus
     ports:
       - "9090:9090"
@@ -123,7 +122,7 @@ services:
     container_name: tempo
     command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
-      - ./docker/tempo:/etc/tempo
+      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
