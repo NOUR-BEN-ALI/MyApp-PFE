@@ -15,11 +15,9 @@ services:
       - ./docker/jenkins/jenkins_home:/var/jenkins_home
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./docker/prometheus:/etc/prometheus
-      - ./docker/tempo:/etc/tempo
-      - ./docker/collector:/etc/otelcol-contrib
-
-
+      - ./docker/collector:/etc/otelcol-contrib:rw
+      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml
 
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
@@ -210,7 +208,9 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
     networks:
       - my-network
-
+/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus:
+  yml:/etc/prometheus/prometheus:
+    yml:
 networks:
   my-network:
 
