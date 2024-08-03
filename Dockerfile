@@ -50,13 +50,16 @@ RUN mkdir -p /etc/apt/keyrings && \
 RUN curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
 
+# Install kubectl
+RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
+    install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl && \
+    rm kubectl
+
 
 # Set environment variables
 ENV JAVA_HOME=/usr/local/jdk-21.0.4
 ENV MAVEN_HOME=/opt/apache-maven-4.0.0-beta-3
 ENV PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
-#ENV DOCKER_HOME=/usr/bin/docker
-
 # Switch back to Jenkins user
 USER jenkins
 # Add Docker group to Jenkins user
