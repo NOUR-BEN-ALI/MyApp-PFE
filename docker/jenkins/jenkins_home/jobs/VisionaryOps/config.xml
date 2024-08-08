@@ -41,20 +41,20 @@
     //         }
     //     }  
     
-    //   stage(&apos;Clone my Branch from Git&apos;) {
-    //         steps {
-    //             script {
-    //                 if (fileExists(REPO_DIR)) {
-    //                     dir(REPO_DIR) {
+      stage(&apos;Clone my Branch from Git&apos;) {
+            steps {
+                script {
+                    if (fileExists(REPO_DIR)) {
+                        dir(REPO_DIR) {
 
-    //                         sh &apos;git pull&apos;
-    //                     }
-    //                 } else {
-    //                     sh &quot;git clone --branch ${env.GIT_BRANCH} https://NOUR-BEN-ALI:${env.GIT_CREDENTIALS}@${env.GIT_REPO_URL} ${REPO_DIR}&quot;
-    //                 }
-    //             }
-    //         }
-    //     }
+                            sh &apos;git pull&apos;
+                        }
+                    } else {
+                        sh &quot;git clone --branch ${env.GIT_BRANCH} https://NOUR-BEN-ALI:${env.GIT_CREDENTIALS}@${env.GIT_REPO_URL} ${REPO_DIR}&quot;
+                    }
+                }
+            }
+        }
     //     // Uncomment these stages if needed
     //     stage(&apos;Clean and compile with Maven ms1&apos;) {
     //         steps {
@@ -115,16 +115,16 @@
     //     //         }
     //     //     }
     //     // }
-    //     stage(&apos;Build with Docker Compose&apos;) {
-    //         steps {
-    //             script {
-    //                 dir(REPO_DIR) {
-    //                     sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo collector prometheus loki zookeeper kafka-service kafka-ui&apos;
+        stage(&apos;Build with Docker Compose&apos;) {
+            steps {
+                script {
+                    dir(REPO_DIR) {
+                        sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo collector prometheus loki zookeeper kafka-service kafka-ui&apos;
 
-    //                 }
-    //             }
-    //         }
-    //     }
+                    }
+                }
+            }
+        }
             stage(&apos;deployment with kubernetes&apos;) {
             steps {
                 script {
