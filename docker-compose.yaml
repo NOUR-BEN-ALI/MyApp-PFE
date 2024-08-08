@@ -15,8 +15,6 @@ services:
       - ./docker/jenkins/jenkins_home:/var/jenkins_home
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
-#      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-#      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
       - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
       - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
     environment:
@@ -24,7 +22,6 @@ services:
       - ADMIN_PASSWORD=admin
     networks:
       - my-network
-
 
   zookeeper:
     image: wurstmeister/zookeeper:latest
@@ -55,6 +52,7 @@ services:
       - my-network
     volumes:
       - kafka_data:/kafka/data
+
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
     container_name: kafka-ui
@@ -68,7 +66,6 @@ services:
       DYNAMIC_CONFIG_ENABLED: 'true'
     networks:
       - my-network
-  #  command0: ["/bin/bash", "-c", "bin/kafka-topics.sh --create --topic MyApplication --bootstrap-server kafka:9093"]
 
   postgres:
     image: postgres:13
@@ -79,7 +76,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: basepfe3
-    volumes:  # Utilisation des volumes pour persister les données de PostgreSQL
+    volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - my-network
@@ -90,7 +87,6 @@ services:
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     volumes:
-#      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - prometheus_data:/prometheus
     ports:
@@ -98,13 +94,10 @@ services:
     networks:
       - my-network
 
-
-
-
   grafana:
     image: grafana/grafana:10.1.0
     container_name: grafana
-    volumes:  # Utilisation des volumes pour persister les données de Grafana
+    volumes:
       - ./docker/grafana/provisioning:/etc/grafana/provisioning
       - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
     environment:
@@ -112,28 +105,23 @@ services:
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
       - GF_AUTH_DISABLE_LOGIN_FORM=true
       - GF_SERVER_ROOT_URL=http://localhost:3000
-
     ports:
       - "3000:3000"
     networks:
       - my-network
-
 
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
     command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
-#      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
       - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
       - "4317:4317" # OTLP gRPC
-      # - "9411:9411" # Zipkin (if needed)
     networks:
       - my-network
-
 
   collector:
     container_name: collector
@@ -154,7 +142,7 @@ services:
     container_name: loki
     image: grafana/loki:2.9.0
     ports:
-        - "3100:3100"
+      - "3100:3100"
     command: -config.file=/etc/loki/local-config.yaml
     networks:
       - my-network
@@ -168,12 +156,12 @@ services:
       - postgres
       - kafka-service
     environment:
-     OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
-     OTEL_EXPORTER_OTLP_ENDPOINT_LOGS_ENDPOINT: "http://collector:4317"
-     OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
-     OTEL_METRICS_EXPORTER: "prometheus"
-     SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
-     SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
+      OTEL_EXPORTER_OTLP_ENDPOINT_LOGS_ENDPOINT: "http://collector:4317"
+      OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
+      OTEL_METRICS_EXPORTER: "prometheus"
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe3
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
     networks:
       - my-network
 
@@ -186,14 +174,12 @@ services:
       - postgres
       - kafka-service
       - microservice1
-
     environment:
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
       OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
       OTEL_METRICS_EXPORTER: none
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe4
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
-
     networks:
       - my-network
 
@@ -218,15 +204,9 @@ services:
 networks:
   my-network:
 
-volumes:  # Définition des volumes
+volumes:
   postgres_data:
   prometheus_data:
   grafana_data:
   kafka_data:
   tempo-data:
-#  sonarqube_data:
-#  sonarqube_extensions:
-#  sonarqube_logs:
-#  postgresql:
-#  postgresql_data:
-#  nexus_data:
