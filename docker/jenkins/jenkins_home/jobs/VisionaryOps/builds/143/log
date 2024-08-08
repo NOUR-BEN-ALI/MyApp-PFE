@@ -1,0 +1,264 @@
+Started by user [8mha:////4FS4+I9f7RiXdMZcVHAywdJuB9AaT+ou6iqgzVK+dooAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4IDBO16XE4YjjPEDn+v3pyfqmcbzMVOOEZOzngpOCmamAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HRJnIy9UO5P873cYMn7sg9fOWx5EOVysHZrfHewQ5s2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4B66ywBz7Ova72D0vKTI4TQsi5K1Wr1z5BjiHBqsLpXyAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/jobs/VisionaryOps/workspace@2
+[8mha:////4CfiR6tWZrRUjU35wjI3kSKrri3kJ1G+07+k7EswTYbiAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4HZNXvqMenRNl6dqnDS2CrTPj3eWfR6V2qKihHFqruWmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $GIT_CREDENTIALS or $GIT_CREDENTIALS_PSW
+[8mha:////4FLB8Mg4AKDnvbslJ0Krmw6wp1Mw3ePKu9dG/lv+y7yQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4FKj0rU4Gfp1NlAxy8uki3f/9kQJQtXs9b2wJoW1zuNIAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4DUXgCgcdTdmL+d4LD5DAbCy+DVKwbBqbSasml3oRMZbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4KuazC6UYuCTRhcn9df0n26Xpaw2Z0z1uuzu+WpFfun6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4BWSY2J/kjXWKclAsw5YDNxhuT3rnwisdabPT1y57ie1AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Clone my Branch from Git)
+[8mha:////4LrTmih7h/8180aXQQILtW1J8UFEO6OrEaXS4gXVsmz+AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] script
+[8mha:////4AV4ogdtcUKe59j/TvCxIKLjSMDOmGcO2BRcsWsLhOIBAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4Ei8tWoHab1/0Xnl97cqn6+nh7M7YtWgY9RYiBQM3GJzAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] fileExists
+[8mha:////4Hqyn+B1M0ozUU+hUQE8SoE7T2cVshIrtARrH729LON0AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAXOJEdTCAAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE
+[8mha:////4IQ6wSMcTHJuhHH4Dfo5pMPb9/UIJyASu4vODQJxrTw9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4COAaMcBcjcqV+nNoyHJZmUJvgARUD0oWb7EbEoOCEM2AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] sh
++ git pull
+Already up to date.
+[8mha:////4ECErWkgaQxpMlOm/zHKRk7skk1YYypBC4fgLqeUISDxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGOY4V7vgAAAA==[0m[Pipeline] }
+[8mha:////4N4bc2WmlO36cHmDyepAHVQPBTRG1rWV66KKJM9VbABdAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJAokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3N4dT9vgAAAA==[0m[Pipeline] // dir
+[8mha:////4OOeZ/re6V3afM3awqrlrLgHVnf3D/cUovGWeSGZCRCFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi6BCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3Bl2X69++AAAA[0m[Pipeline] }
+[8mha:////4PwXC0clWEJUIHvQByK6GxtsAYCOv+sce1543tGTzzraAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhtIgqrZWGF5j4ME6sO2M7JBUv4mv8AYtIVGyx2tlmXm9YxwAnDkb0SIOl2Fnh3WjyEhOH4ep4Ej1fRMcU2aFocWpZY7NgywlhSVHCSsIGqXMcLZkEW9mrh6qcIlOdU8jfUUJp9R2eUMhsTiqkL8wBdrdRR6af568AZu8TlId9rrr+ALKNBVC+AAAA[0m[Pipeline] // script
+[8mha:////4LPsbXQ3PGAtB3Q2qFMOVuVor8xndBj9wT3mRGb409vOAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhtIgqrZWGF5j4ME6sO2M7JBUv4mv8AYtIVGyx2tlmXm9YxwAnDkb0SIOl2Fnh3WjyEhOH4ep4Ej1fRMcU2aFocWpZY7NgywlhSVHCSsIGqXMcLZkEW9mrh6qcIlOdU8jfUUJp9R2eUMhsTiqkL8wBdrdRR6af568AZu8TlIc6V73/AIFuXuy+AAAA[0m[Pipeline] }
+[8mha:////4EyDCDXc1arn4KCqXGbRjPyT+V8kZs3ofh3JeZ7FO2xjAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkbMY4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8A9nagUL0AAAA=[0m[Pipeline] // stage
+[8mha:////4P8ZalBcS2mGZ8pflHND9Oc8m7IJpbqDhYHURwltui03AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjQYOEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFjKDbbz7F8A0IeTOzBAAAA[0m[Pipeline] stage
+[8mha:////4Eou6nZNrV4E3d9mODia7wkI46yuosKfL76BKYBuKeZmAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Build with Docker Compose)
+[8mha:////4Kj0Pph0ohxXTok3u11Z9xt7RoigLn8Qk7oBOBIZ2YJUAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] script
+[8mha:////4B6c5qRg4QROcIbC+hdJvPikl5INAGe8/oku7L3Ul7U+AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4OsXA1HnEfKUPZ/BZaoFq7FrO3bDJhWinDijYWFq+htfAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] dir
+Running in /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE
+[8mha:////4ACS7V5BLJYPr1LSn7rYgiP8batv0BR5SQJJftsJmJg6AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] {
+[8mha:////4KHMKNnYrBy/tdUPa4s7FYYaya7WlPGuZ8uHk+zNayXSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNwcnzs++AAAA[0m[Pipeline] sh
++ docker-compose build
+zookeeper uses an image, skipping
+kafka-service uses an image, skipping
+kafka-ui uses an image, skipping
+postgres uses an image, skipping
+prometheus uses an image, skipping
+grafana uses an image, skipping
+tempo uses an image, skipping
+loki uses an image, skipping
+collector uses an image, skipping
+Building jenkins
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.74kB 0.1s done
+#1 DONE 0.2s
+
+#2 [internal] load metadata for docker.io/jenkins/jenkins:lts
+#2 DONE 1.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 0.1s
+#3 transferring context: 2B 0.1s done
+#3 DONE 0.2s
+
+#4 [1/7] FROM docker.io/jenkins/jenkins:lts@sha256:2bafb1fb2d6489bccadc1b7c172937e9b56a888ed77e625a4ebe59a6b038221e
+#4 DONE 0.0s
+
+#5 [5/7] RUN mkdir -p /etc/apt/keyrings &&     curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg &&     echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list &&     apt-get update &&     apt-get install -y docker-ce docker-ce-cli containerd.io
+#5 CACHED
+
+#6 [4/7] RUN wget https://dlcdn.apache.org/maven/maven-4/4.0.0-beta-3/binaries/apache-maven-4.0.0-beta-3-bin.tar.gz -P /tmp &&     tar xf /tmp/apache-maven-4.0.0-beta-3-bin.tar.gz -C /opt &&     ln -s /opt/apache-maven-4.0.0-beta-3/bin/mvn /usr/local/bin/mvn
+#6 CACHED
+
+#7 [6/7] RUN curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose &&     chmod +x /usr/local/bin/docker-compose
+#7 CACHED
+
+#8 [3/7] RUN wget -qO - https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz | tar -xz -C /usr/local &&     ln -s /usr/local/jdk-21/bin/java /usr/local/bin/java
+#8 CACHED
+
+#9 [2/7] RUN apt-get update && apt-get install -y     curl     gnupg2     wget     software-properties-common     lsb-release
+#9 CACHED
+
+#10 [7/7] RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" &&     install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl &&     rm kubectl
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 writing image sha256:0a597420066024c385b0c8befc5badda6990c9a4e11e50f09b5e43d2e04a9f8c done
+#11 naming to docker.io/library/myapp-pfe_jenkins done
+#11 DONE 0.0s
+Building microservice1
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from dockerfile
+#1 transferring dockerfile: 2.21kB 0.1s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/openjdk:21-jdk
+#2 DONE 1.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B 0.1s done
+#3 DONE 0.1s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/openjdk:21-jdk@sha256:af9de795d1f8d3b6172f6c55ca9ba1c5768baa11bb2dc8af7045c7db9d4c33ac
+#5 DONE 0.0s
+
+#6 [2/4] ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
+#6 DONE 1.1s
+
+#4 [internal] load build context
+#4 transferring context: 74B 0.2s done
+#4 DONE 0.2s
+
+#7 [3/4] COPY target/microservice1.jar /app/microservice1.jar
+#7 CACHED
+
+#8 [2/4] ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
+#8 CACHED
+
+#9 [4/4] WORKDIR /app
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 writing image sha256:cc0be56a9825627cbac9f4918cecd1599ecb3b85455e8f580ce4803fabc414d9 done
+#10 naming to docker.io/library/myapp-pfe_microservice1 0.0s done
+#10 DONE 0.0s
+Building microservice2
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from dockerfile
+#1 transferring dockerfile: 1.46kB 0.1s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/openjdk:21-jdk
+#2 DONE 0.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B 0.1s done
+#3 DONE 0.1s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/openjdk:21-jdk@sha256:af9de795d1f8d3b6172f6c55ca9ba1c5768baa11bb2dc8af7045c7db9d4c33ac
+#5 DONE 0.0s
+
+#6 [2/4] ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
+#6 DONE 0.5s
+
+#4 [internal] load build context
+#4 transferring context: 74B 0.2s done
+#4 DONE 0.2s
+
+#7 [2/4] ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
+#7 CACHED
+
+#8 [3/4] COPY target/microservice2.jar /app/microservice2.jar
+#8 CACHED
+
+#9 [4/4] WORKDIR /app
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 writing image sha256:32944c52275454ea53c37da6a640f9454c742e63173415ba24b7712f132fbeb9 done
+#10 naming to docker.io/library/myapp-pfe_microservice2 done
+#10 DONE 0.0s
+Building microservice3
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from dockerfile
+#1 transferring dockerfile: 1.46kB 0.1s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/openjdk:21-jdk
+#2 DONE 0.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B 0.1s done
+#3 DONE 0.1s
+
+#4 [1/4] FROM docker.io/library/openjdk:21-jdk@sha256:af9de795d1f8d3b6172f6c55ca9ba1c5768baa11bb2dc8af7045c7db9d4c33ac
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [2/4] ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
+#6 DONE 0.6s
+
+#5 [internal] load build context
+#5 transferring context: 74B 0.2s done
+#5 DONE 0.2s
+
+#7 [3/4] COPY target/microservice3.jar /app/microservice3.jar
+#7 CACHED
+
+#8 [2/4] ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.33.2/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
+#8 CACHED
+
+#9 [4/4] WORKDIR /app
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 writing image sha256:78a9e30e2d3f629f36293d18a4e6cc510c43e3a3ad8a585b9f71c6e13ce7a9ce done
+#10 naming to docker.io/library/myapp-pfe_microservice3 done
+#10 DONE 0.0s
+[8mha:////4KNHR7Iq99W9enh734FiRhzcAa7klCKAbXEdDqu+grTtAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw959s4fvgAAAA==[0m[Pipeline] sh
++ test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml
+[8mha:////4EtzdJquki9DmKTC4jl8Sl7mkvvB1512d3v54z3f4hr+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw84x9UGvgAAAA==[0m[Pipeline] sh
++ test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml
+[8mha:////4FbxJEjZD9M9mAwt3WhP3l6Z6A5otIbpFpo4XmeRFt2kAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2Ccr6kGtf+w/7lPgtvgAAAA==[0m[Pipeline] sh
++ docker-compose up -d microservice1 microservice2 microservice3 grafana tempo prometheus loki zookeeper kafka-service kafka-ui
+Creating network "myapp-pfe_my-network" with the default driver
+Creating prometheus ... 
+Creating postgres   ... 
+Creating loki       ... 
+Creating tempo      ... 
+Creating grafana    ... 
+Creating zookeeper  ... 
+Creating loki       ... done
+Creating prometheus ... error
+
+ERROR: for prometheus  Cannot start service prometheus: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml" to rootfs at "/etc/prometheus/prometheus.yml": mount /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml (via /proc/self/fd/6), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type
+Creating zookeeper  ... done
+Creating kafka-service ... 
+Creating grafana       ... done
+Creating postgres      ... done
+Creating tempo         ... done
+Creating kafka-service ... done
+Creating kafka-ui      ... 
+Creating microservice1 ... 
+Creating microservice1 ... done
+Creating kafka-ui      ... done
+Creating microservice2 ... 
+Creating microservice3 ... 
+Creating microservice3 ... done
+Creating microservice2 ... done
+
+ERROR: for prometheus  Cannot start service prometheus: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml" to rootfs at "/etc/prometheus/prometheus.yml": mount /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml (via /proc/self/fd/6), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type
+Encountered errors while bringing up the project.
+[8mha:////4DB8Hm4RBNmB30IIiIkMHBw9TX/q1VRqPeVofMTcHlMEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSIOEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw/PHxcivgAAAA==[0m[Pipeline] }
+[8mha:////4Axcpe7YyqU4VSIeuPflM7iDcHy12YgNLh3GEdlYXJhDAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiARIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwA5jKtr74AAAA=[0m[Pipeline] // dir
+[8mha:////4NMhfC8Zs0DvYIWv4khR5Et/kW0eCL10oABDU7+1X1EKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigaBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw/V0fYTvgAAAA==[0m[Pipeline] }
+[8mha:////4G/TxHmNhgK+wow+PrN/rF6LfPrbBHI1TCAYZbvO/C36AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigaBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w/B8msMvgAAAA==[0m[Pipeline] // script
+[8mha:////4MqS8K7Ketffi+eTqgZILNDDUy27rwF16+cUFqVFF0EtAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiARIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8A8hEwsL4AAAA=[0m[Pipeline] }
+[8mha:////4Cxe0FGofbGb0kcbgthIhYU540eBOEtA0J73F9hJ4xyoAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSIOEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w+ENgLfvgAAAA==[0m[Pipeline] // stage
+[8mha:////4A30B3u5oSBID8JNOMmLRH+WEesHYiSMvoFbqbHysmCcAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRT0IAQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvkDag68EAAAA=[0m[Pipeline] stage
+[8mha:////4AQKoOtxqAS/8DOBRRtxtJBiVXTuXuF0dqfZje7O7Ym6AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] { (deployment with kubernetes)
+Stage "deployment with kubernetes" skipped due to earlier failure(s)
+[8mha:////4BscJ7EuUWhKwd1ToaElvKqm0WH268B70tTYokpJr83lAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBl2WGva+AAAA[0m[Pipeline] getContext
+[8mha:////4Ak2VQZqRguxrs2zTpululPE4CTDsV9KNGMUj/SxfNRwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BlDdbXS+AAAA[0m[Pipeline] }
+[8mha:////4JnIhCRYQtW9Y1SdjGpm/M1ZPLmY4G7QlhfYXKoGoTl5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJShAYhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AGWIKyJvgAAAA==[0m[Pipeline] // stage
+[8mha:////4CVA/+XcpTFLqtgYQAdmYQSRj94rbWpmbZTSCNmD9g4eAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsDCbGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0H3VC+fr0AAAA=[0m[Pipeline] }
+[8mha:////4O3sl3w7NFQUtrZDFFu6eebFZL89GMnrd5JnQ59N6trvAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpQBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP/GRh070AAAA=[0m[Pipeline] // withEnv
+[8mha:////4MnnmjLhXpJXF3+sRPnCCVVaiijkceJI/oIIs2Y+Cf+EAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0Do1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwAui7G470AAAA=[0m[Pipeline] }
+[8mha:////4PGRhpUsivXGS1CbJ63L51EXrghKO1FXtGtHBInQCKSvAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpQBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPsFavR70AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4J0mELcF5qxXdbVpOSnDfX4gICmxfyCGtYB8TmancKxaAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsDCbGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUH9/H4sr0AAAA=[0m[Pipeline] }
+[8mha:////4N3WlvN1lTXg3NhlrsA5HqkL3aqIOCaJvijZRsDWUB+JAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpoEGIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsP5E38Eb0AAAA=[0m[Pipeline] // node
+[8mha:////4G719DEO8YtalyQ+IjRtAbuSrqbZ7l4YaGaMEiLW28qGAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBSFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPpsy3oL0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
