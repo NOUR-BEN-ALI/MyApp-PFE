@@ -13,12 +13,11 @@ services:
 #      - my-network
   tempo:
     image: grafana/tempo:2.2.2
-    container_name: tempo
-    command: [ "-config.file=/etc/tempo/tempo.yml" ]
+    container_name: prometheus
+    command:
+     - --config.file=/etc/prometheus/prometheus.yml
     volumes:
-      #      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
-      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
-      - ./docker/tempo/tempo-data:/tmp/tempo
+      - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
     ports:
       - "3110:3100"  # Tempo as Grafana data source
       - "4317:4317" # OTLP gRPC
