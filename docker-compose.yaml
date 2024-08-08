@@ -15,8 +15,8 @@ services:
       - ./docker/jenkins/jenkins_home:/var/jenkins_home
       - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
+#      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+#      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
 
 
     environment:
