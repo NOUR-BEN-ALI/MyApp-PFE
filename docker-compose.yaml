@@ -90,12 +90,14 @@ services:
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     volumes:
-      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+#      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
       - prometheus_data:/prometheus
     ports:
       - "9090:9090"
     networks:
       - my-network
+
 
 
 
@@ -123,7 +125,8 @@ services:
     container_name: tempo
     command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
-      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
+#      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
+      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
