@@ -119,10 +119,11 @@
             steps {
                 script {
                     dir(REPO_DIR) {
-                        sh &apos;docker-compose build&apos;
+                        // sh &apos;docker-compose build&apos;
                          sh &apos;test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml&apos;
                     sh &apos;test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml&apos;
-                        sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo prometheus loki zookeeper kafka-service kafka-ui&apos;
+                        // sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo prometheus loki zookeeper kafka-service kafka-ui&apos;
+                            sh &apos;docker-compose -f docker-compose-minimal.yaml up&apos;
 
                     }
                 }
