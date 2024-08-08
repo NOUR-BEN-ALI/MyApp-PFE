@@ -1,21 +1,39 @@
-version: '3'
-services:
-#  prometheus:
-#    image: prom/prometheus:v2.46.0
-#    container_name: prometheus
+#version: '3'
+#services:
+##  prometheus:
+##    image: prom/prometheus:v2.46.0
+##    container_name: prometheus
+##    command:
+##      - --config.file=/etc/prometheus/prometheus.yml
+##    volumes:
+##      - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
+##    ports:
+##      - "9090:9090"
+##    networks:
+##      - my-network
+#  tempo:
+#    image: grafana/tempo:2.2.2
+#    container_name: tempo
 #    command:
-#      - --config.file=/etc/prometheus/prometheus.yml
+#     - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml
 #    volumes:
-#      - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
+#      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
 #    ports:
-#      - "9090:9090"
+#      - "3110:3100"  # Tempo as Grafana data source
+#      - "4317:4317" # OTLP gRPC
+#      # - "9411:9411" # Zipkin (if needed)
 #    networks:
 #      - my-network
+#
+#networks:
+#  my-network:
+version: '3'
+services:
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
     command:
-     - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml
+      - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml
     volumes:
       - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
     ports:

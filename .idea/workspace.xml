@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-5-api/META-INF/maven/io.jenkins.plugins/apache-httpcomponents-client-5-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-5-api/META-INF/maven/io.jenkins.plugins/apache-httpcomponents-client-5-api/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +254,7 @@
       <workItem from="1721987675170" duration="27458000" />
       <workItem from="1722288966828" duration="1996000" />
       <workItem from="1722337319513" duration="31144000" />
-      <workItem from="1722684822309" duration="17058000" />
+      <workItem from="1722684822309" duration="17459000" />
     </task>
     <servers />
   </component>
