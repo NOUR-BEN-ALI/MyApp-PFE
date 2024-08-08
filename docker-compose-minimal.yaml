@@ -35,7 +35,7 @@ services:
     command:
       - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml
     volumes:
-      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
+      - F:/esprit/5arctic/devops/nour/VisionaryOps/docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
     ports:
       - "3110:3100"  # Tempo as Grafana data source
       - "4317:4317" # OTLP gRPC
