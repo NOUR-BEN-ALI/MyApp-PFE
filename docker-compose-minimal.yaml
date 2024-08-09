@@ -1,31 +1,6 @@
 version: '3'
 
 services:
-  jenkins:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    privileged: true
-    user: root
-    ports:
-      - 8080:8080
-      - 50000:50000
-    container_name: jenkins
-    volumes:
-      - ./docker/jenkins/jenkins_home:/var/jenkins_home
-      - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
-      - /var/run/docker.sock:/var/run/docker.sock
-    #      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-    #      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
-
-
-    environment:
-      - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
-      - ADMIN_PASSWORD=admin
-    networks:
-      - my-network
-
-
   zookeeper:
     image: wurstmeister/zookeeper:latest
     container_name: zookeeper
@@ -88,7 +63,7 @@ services:
     image: prom/prometheus:v2.46.0
     container_name: prometheus
     command:
-      - --config.file=/etc/prometheus/prometheus.yml
+      - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml
     volumes:
       #      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
@@ -119,11 +94,11 @@ services:
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
-    command: [ "-config.file=/etc/tempo/tempo.yml" ]
+    command: [ "-config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" ]
     volumes:
       #      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
       - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
-      - ./docker/tempo/tempo-data:/tmp/tempo
+      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
       - "4317:4317" # OTLP gRPC
