@@ -137,9 +137,9 @@ services:
     container_name: collector
     image: otel/opentelemetry-collector-contrib:0.91.0
     command:
-      - --config=/etc/otelcol-contrib/otel-collector.yml
+      - --config=/etc/collector/otel-collector.yml
     volumes:
-      - ./docker/collector:/etc/otelcol-contrib
+      - ./docker/collector/otel-collector.yml:/etc/collector/otel-collector.yml
     restart: always
     ports:
       - "4316:4317" # OTLP gRPC receiver
@@ -187,6 +187,7 @@ services:
 
     environment:
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
+      OTEL_EXPORTER_OTLP_ENDPOINT_LOGS_ENDPOINT: "http://collector:4317"
       OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
       OTEL_METRICS_EXPORTER: none
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe4
@@ -206,6 +207,7 @@ services:
       - microservice1
     environment:
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://tempo:4317"  # Endpoint for Tempo OTLP receiver
+      OTEL_EXPORTER_OTLP_ENDPOINT_LOGS_ENDPOINT: "http://collector:4317"
       OTEL_EXPORTER_OTLP_TIMEOUT: "3000"  # Optional: set timeout in milliseconds
       OTEL_METRICS_EXPORTER: none
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/basepfe5
