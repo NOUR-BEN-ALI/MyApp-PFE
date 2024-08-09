@@ -63,7 +63,7 @@ services:
     image: prom/prometheus:v2.46.0
     container_name: prometheus
     command:
-      - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml
+      - --config.file=/etc/prometheus/prometheus.yml
     volumes:
       #      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
@@ -98,7 +98,7 @@ services:
     volumes:
       #      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
       - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
-      - ./docker/tempo/tempo-data:- /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo-data
+      - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
       - "4317:4317" # OTLP gRPC
