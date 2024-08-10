@@ -265,13 +265,16 @@ services:
     networks:
       - my-network
 
+
   prometheus:
     image: prom/prometheus:v2.46.0
     container_name: prometheus
     command:
-      - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml
+      - --config.file=/etc/prometheus/prometheus.yml
     volumes:
+        #      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
     ports:
       - "9090:9090"
     networks:
