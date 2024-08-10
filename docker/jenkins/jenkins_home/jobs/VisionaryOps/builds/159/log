@@ -2738,3 +2738,339 @@ Attaching to zookeeper, loki, prometheus, grafana, tempo, postgres, kafka-servic
 [32;1mmicroservice3    |[0m [otel.javaagent 2024-08-10 17:45:58:423 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
 [33;1mmicroservice2    |[0m [otel.javaagent 2024-08-10 17:45:58:842 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: tempo
 [36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 17:46:02:014 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:11,532[0;39m [39mDEBUG[0;39m [[34mparallel-8[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Start getting metrics for kafkaCluster: local
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:11,549[0;39m [39mDEBUG[0;39m [[34mparallel-7[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Metrics updated for cluster: local
+[32;1mmicroservice3    |[0m [otel.javaagent 2024-08-10 17:46:12:146 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[33;1mmicroservice2    |[0m [otel.javaagent 2024-08-10 17:46:12:612 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: tempo
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 17:46:15:781 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[32;1mmicroservice3    |[0m [otel.javaagent 2024-08-10 17:46:25:908 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[33;1mmicroservice2    |[0m [otel.javaagent 2024-08-10 17:46:26:372 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: tempo
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.754372688Z caller=table_manager.go:171 index-store=boltdb-shipper-2020-10-24 msg="handing over indexes to shipper"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.754446992Z caller=table_manager.go:228 index-store=boltdb-shipper-2020-10-24 msg="syncing tables"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.754487094Z caller=table_manager.go:271 index-store=boltdb-shipper-2020-10-24 msg="query readiness setup completed" duration=4.6µs distinct_users_len=0 distinct_users=
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.754459293Z caller=table_manager.go:136 index-store=boltdb-shipper-2020-10-24 msg="uploading tables"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.776038941Z caller=checkpoint.go:611 msg="starting checkpoint"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.77636116Z caller=checkpoint.go:336 msg="attempting checkpoint for" dir=/loki/wal/checkpoint.000001
+[34mloki             |[0m level=info ts=2024-08-10T17:46:27.793193934Z caller=checkpoint.go:498 msg="atomic checkpoint finished" old=/loki/wal/checkpoint.000001.tmp new=/loki/wal/checkpoint.000001
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 17:46:29:558 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[34mloki             |[0m level=info ts=2024-08-10T17:46:32.894045129Z caller=compactor.go:508 msg="compactor startup delay completed"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:32.894165235Z caller=compactor.go:562 msg="compactor started"
+[34mloki             |[0m ts=2024-08-10T17:46:32.895111579Z caller=spanlogger.go:86 level=info msg="building table names cache"
+[34mloki             |[0m ts=2024-08-10T17:46:32.896859861Z caller=spanlogger.go:86 level=info msg="table names cache built" duration=62.303µs
+[32;1mcollector        |[0m Error: failed to resolve config: cannot resolve the configuration: cannot retrieve the configuration: unable to read the file file:/etc/collector/otel-collector.yml: open /etc/collector/otel-collector.yml: no such file or directory
+[32;1mcollector        |[0m 2024/08/10 17:46:36 collector server run finished with error: failed to resolve config: cannot resolve the configuration: cannot retrieve the configuration: unable to read the file file:/etc/collector/otel-collector.yml: open /etc/collector/otel-collector.yml: no such file or directory
+[33;1mcollector exited with code 1
+[0m[32;1mmicroservice3    |[0m [otel.javaagent 2024-08-10 17:46:39:640 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[33;1mmicroservice2    |[0m [otel.javaagent 2024-08-10 17:46:40:378 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: tempo
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:41,531[0;39m [39mDEBUG[0;39m [[34mparallel-8[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Start getting metrics for kafkaCluster: local
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:41,552[0;39m [39mDEBUG[0;39m [[34mparallel-7[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Metrics updated for cluster: local
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 17:46:43:346 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[32;1mmicroservice3    |[0m [otel.javaagent 2024-08-10 17:46:53:379 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[33;1mmicroservice2    |[0m [otel.javaagent 2024-08-10 17:46:54:171 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: tempo
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.731 UTC [1] LOG:  received fast shutdown request
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.742 UTC [1] LOG:  aborting any active transactions
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.744 UTC [69] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.745 UTC [68] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.745 UTC [67] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.748 UTC [65] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.748 UTC [66] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.748 UTC [63] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.753 UTC [64] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.754 UTC [62] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.769 UTC [61] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.773 UTC [60] FATAL:  terminating connection due to administrator command
+[32;1mcollector exited with code 1
+[0m[35;1mpostgres         |[0m 2024-08-10 17:46:55.780 UTC [59] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.784 UTC [57] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.784 UTC [56] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.788 UTC [58] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.787 UTC [55] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.791 UTC [54] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.810 UTC [51] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.810 UTC [52] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.810 UTC [53] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.820 UTC [48] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.820 UTC [50] FATAL:  terminating connection due to administrator command
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.759275295Z caller=signals.go:59 msg="=== received SIGINT/SIGTERM ===\n*** exiting"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.768590071Z caller=manager.go:265 msg="stopping user managers"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.768619473Z caller=manager.go:279 msg="all user managers stopped"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772029184Z caller=basic_lifecycler.go:238 msg="ring lifecycler is shutting down" ring=distributor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772263398Z caller=basic_lifecycler.go:408 msg="unregistering instance from ring" ring=distributor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772304401Z caller=basic_lifecycler.go:278 msg="instance removed from the ring" ring=distributor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772393907Z caller=module_service.go:114 msg="module stopped" module=distributor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772411908Z caller=compactor.go:456 msg="compactor exiting"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772679124Z caller=basic_lifecycler.go:238 msg="ring lifecycler is shutting down" ring=compactor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.772883037Z caller=basic_lifecycler.go:408 msg="unregistering instance from ring" ring=compactor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.773028446Z caller=basic_lifecycler.go:278 msg="instance removed from the ring" ring=compactor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.773122252Z caller=module_service.go:114 msg="module stopped" module=compactor
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.768634774Z caller=mapper.go:47 msg="cleaning up mapped rules directory" path=/loki/rules-temp
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.773274361Z caller=module_service.go:114 msg="module stopped" module=ruler
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.776028931Z caller=wal.go:144 msg=stopped component=wal
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.776130138Z caller=lifecycler.go:533 msg="lifecycler loop() exited gracefully" ring=ingester
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.776215743Z caller=lifecycler.go:927 msg="changing instance state from" old_state=ACTIVE new_state=LEAVING ring=ingester
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.777032393Z caller=lifecycler.go:998 msg="transfers are disabled"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.777224705Z caller=lifecycler.go:1015 msg="lifecycler entering final sleep before shutdown" final_sleep=0s
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.777385215Z caller=lifecycler.go:585 msg="instance removed from the KV store" ring=ingester
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779598652Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779653955Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779781363Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779813765Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779856268Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779881269Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779903171Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779920272Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779935073Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=error ts=2024-08-10T17:46:55.779962074Z caller=scheduler_processor.go:106 msg="error processing requests from scheduler" err="rpc error: code = Canceled desc = context canceled" addr=192.168.32.4:9095
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.781475468Z caller=module_service.go:114 msg="module stopped" module=querier
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.781608976Z caller=module_service.go:114 msg="module stopped" module=ingester-querier
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.781694682Z caller=module_service.go:114 msg="module stopped" module=ingester
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.781960398Z caller=table_manager.go:100 index-store=boltdb-shipper-2020-10-24 msg="stopping table manager"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.782010101Z caller=table_manager.go:171 index-store=boltdb-shipper-2020-10-24 msg="handing over indexes to shipper"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.782025802Z caller=table_manager.go:77 index-store=boltdb-shipper-2020-10-24 msg="stopping table manager"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.782041503Z caller=table_manager.go:136 index-store=boltdb-shipper-2020-10-24 msg="uploading tables"
+[34mloki             |[0m level=info ts=2024-08-10T17:46:55.782063404Z caller=module_service.go:114 msg="module stopped" module=store
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.849 UTC [47] FATAL:  terminating connection due to administrator command
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=main.go:861 level=warn msg="Received SIGTERM, exiting gracefully..."
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=main.go:885 level=info msg="Stopping scrape discovery manager..."
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=main.go:899 level=info msg="Stopping notify discovery manager..."
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=manager.go:1023 level=info component="rule manager" msg="Stopping rule manager..."
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=manager.go:1033 level=info component="rule manager" msg="Rule manager stopped"
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=main.go:936 level=info msg="Stopping scrape manager..."
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=main.go:881 level=info msg="Scrape discovery manager stopped"
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.861Z caller=main.go:895 level=info msg="Notify discovery manager stopped"
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.862Z caller=main.go:928 level=info msg="Scrape manager stopped"
+[33mgrafana          |[0m logger=server t=2024-08-10T17:46:55.861933543Z level=info msg="Shutdown started" reason="System signal: terminated"
+[33mgrafana          |[0m logger=modules t=2024-08-10T17:46:55.862228861Z level=info msg="Awaiting services to be stopped..."
+[33mgrafana          |[0m logger=tracing t=2024-08-10T17:46:55.862634686Z level=info msg="Closing tracing"
+[33mgrafana          |[0m logger=ticker t=2024-08-10T17:46:55.86301871Z level=info msg=stopped last_tick=2024-08-10T17:46:50Z
+[33mgrafana          |[0m logger=sqlstore.transactions t=2024-08-10T17:46:55.878104043Z level=info msg="Database locked, sleeping then retrying" error="database is locked" retry=0 code="database is locked"
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.888 UTC [46] FATAL:  terminating connection due to administrator command
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.889Z caller=notifier.go:603 level=info component=notifier msg="Stopping notification manager..."
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.889Z caller=main.go:1157 level=info msg="Notifier manager stopped"
+[34;1mprometheus       |[0m ts=2024-08-10T17:46:55.889Z caller=main.go:1169 level=info msg="See you next time!"
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.900 UTC [44] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.900 UTC [45] FATAL:  terminating connection due to administrator command
+[32mkafka-service    |[0m [2024-08-10 17:46:55,917] INFO Terminating process due to signal SIGTERM (org.apache.kafka.common.utils.LoggingSignalHandler)
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.947 UTC [40] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.947 UTC [43] FATAL:  terminating connection due to administrator command
+[33mgrafana          |[0m logger=modules t=2024-08-10T17:46:55.929909046Z level=info msg="module stopped" module=background-services
+[33mgrafana          |[0m logger=modules t=2024-08-10T17:46:55.930008152Z level=info msg="module stopped" module=provisioning
+[33mgrafana          |[0m logger=modules t=2024-08-10T17:46:55.930048154Z level=info msg="module stopped" module=secret-migrator
+[33mgrafana          |[0m logger=modules t=2024-08-10T17:46:55.930486781Z level=info msg="module stopped" module=http-server
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.950 UTC [42] FATAL:  terminating connection due to administrator command
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:55.980Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Revoke previously assigned partitions MyApplication-0
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.976 UTC [41] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 17:46:55.979 UTC [39] FATAL:  terminating connection due to administrator command
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:55.993Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : myapplication-M3: partitions revoked: [MyApplication-0]
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.007Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Member consumer-myapplication-M3-1-b645b77d-3313-46db-a91f-b2e66388f315 sending LeaveGroup request to coordinator kafka-service:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.010Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Resetting generation and member id due to: consumer pro-actively leaving the group
+[35;1mpostgres         |[0m 2024-08-10 17:46:56.013 UTC [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.010Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Request joining group due to: consumer pro-actively leaving the group
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.013Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Unsubscribed all topics or patterns and assigned partitions
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.046Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Resetting generation and member id due to: consumer pro-actively leaving the group
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.047Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M3-1, groupId=myapplication-M3] Request joining group due to: consumer pro-actively leaving the group
+[35;1mpostgres         |[0m 2024-08-10 17:46:56.042 UTC [29] LOG:  shutting down
+[32mkafka-service    |[0m [2024-08-10 17:46:56,101] INFO [GroupCoordinator 1]: Member[group.instance.id None, member.id consumer-myapplication-M3-1-b645b77d-3313-46db-a91f-b2e66388f315] in group myapplication-M3 has left, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,059] INFO [KafkaServer id=1] shutting down (kafka.server.KafkaServer)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,133] INFO [KafkaServer id=1] Starting controlled shutdown (kafka.server.KafkaServer)
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:56,159[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723311464-1[0;39m] [33mo.a.k.c.u.AppInfoParser[0;39m: App info kafka.admin.client for kafka-ui-admin-1723311464-1 unregistered
+[32mkafka-service    |[0m [2024-08-10 17:46:56,153] INFO [GroupCoordinator 1]: Preparing to rebalance group myapplication-M3 in state PreparingRebalance with old generation 1 (__consumer_offsets-45) (reason: removing member consumer-myapplication-M3-1-b645b77d-3313-46db-a91f-b2e66388f315 on LeaveGroup) (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,208] INFO [GroupCoordinator 1]: Group myapplication-M3 with generation 2 is now empty (__consumer_offsets-45) (kafka.coordinator.group.GroupCoordinator)
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.247Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.273382083Z caller=module_service.go:114 msg="module stopped" module=query-frontend
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.273675001Z caller=module_service.go:114 msg="module stopped" module=cache-generation-loader
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.273751405Z caller=module_service.go:114 msg="module stopped" module=query-frontend-tripperware
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.273802309Z caller=module_service.go:114 msg="module stopped" module=query-scheduler
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.273897314Z caller=module_service.go:114 msg="module stopped" module=analytics
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.276930002Z caller=basic_lifecycler.go:238 msg="ring lifecycler is shutting down" ring=scheduler
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.277275923Z caller=basic_lifecycler.go:408 msg="unregistering instance from ring" ring=scheduler
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.277490537Z caller=basic_lifecycler.go:278 msg="instance removed from the ring" ring=scheduler
+[34mloki             |[0m level=info ts=2024-08-10T17:46:56.277796055Z caller=module_service.go:114 msg="module stopped" module=query-scheduler-ring
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.340Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Revoke previously assigned partitions MyApplication-0
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.345Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : myapplication-M2: partitions revoked: [MyApplication-0]
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.347Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Member consumer-myapplication-M2-1-56b3f7b5-1b1d-4c6e-8ef3-3b3eb3dc0c09 sending LeaveGroup request to coordinator kafka-service:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.362Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Resetting generation and member id due to: consumer pro-actively leaving the group
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.364Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Request joining group due to: consumer pro-actively leaving the group
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.364Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Unsubscribed all topics or patterns and assigned partitions
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.360Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - Metrics scheduler closed
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.361Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - Closing reporter io.opentelemetry.javaagent.shaded.instrumentation.kafka.internal.OpenTelemetryMetricsReporter
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter io.opentelemetry.javaagent.shaded.instrumentation.kafka.internal.OpenTelemetryMetricsReporter
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.361Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.362Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - Metrics reporters closed
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.369Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - App info kafka.producer for producer-1 unregistered
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:56,369[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723311464-1[0;39m] [33mo.a.k.c.m.Metrics[0;39m: Metrics scheduler closed
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:56,370[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723311464-1[0;39m] [33mo.a.k.c.m.Metrics[0;39m: Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[35mkafka-ui         |[0m [30m2024-08-10 17:46:56,371[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723311464-1[0;39m] [33mo.a.k.c.m.Metrics[0;39m: Metrics reporters closed
+[32mkafka-service    |[0m [2024-08-10 17:46:56,384] INFO [GroupCoordinator 1]: Member[group.instance.id None, member.id consumer-myapplication-M2-1-56b3f7b5-1b1d-4c6e-8ef3-3b3eb3dc0c09] in group myapplication-M2 has left, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,384] INFO [GroupCoordinator 1]: Preparing to rebalance group myapplication-M2 in state PreparingRebalance with old generation 1 (__consumer_offsets-44) (reason: removing member consumer-myapplication-M2-1-56b3f7b5-1b1d-4c6e-8ef3-3b3eb3dc0c09 on LeaveGroup) (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,385] INFO [GroupCoordinator 1]: Group myapplication-M2 with generation 2 is now empty (__consumer_offsets-44) (kafka.coordinator.group.GroupCoordinator)
+[35;1mpostgres         |[0m 2024-08-10 17:46:56.435 UTC [1] LOG:  database system is shut down
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.430Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Resetting generation and member id due to: consumer pro-actively leaving the group
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.431Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myapplication-M2-1, groupId=myapplication-M2] Request joining group due to: consumer pro-actively leaving the group
+[32mkafka-service    |[0m [2024-08-10 17:46:56,499] INFO [KafkaServer id=1] Controlled shutdown succeeded (kafka.server.KafkaServer)
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.499Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.509Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.517Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Closing reporter io.opentelemetry.javaagent.shaded.instrumentation.kafka.internal.OpenTelemetryMetricsReporter
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.522Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - HikariPool-1 - Shutdown initiated...
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.555Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.556Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Closing reporter io.opentelemetry.javaagent.shaded.instrumentation.kafka.internal.OpenTelemetryMetricsReporter
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.554Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.555Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.557Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.560Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+[36;1mmicroservice1    |[0m 2024-08-10T17:46:56.576Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - HikariPool-1 - Shutdown completed.
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.606Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-myapplication-M2-1 unregistered
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.608Z  INFO 1 --- [Microservice2] [ntainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : myapplication-M2: Consumer stopped
+[32mkafka-service    |[0m [2024-08-10 17:46:56,608] INFO [/config/changes-event-process-thread]: Shutting down (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,611] INFO [/config/changes-event-process-thread]: Stopped (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,618] INFO [/config/changes-event-process-thread]: Shutdown completed (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,628] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Stopping socket server request processors (kafka.network.SocketServer)
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.724Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-myapplication-M3-1 unregistered
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.726Z  INFO 1 --- [Microservice3] [ntainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : myapplication-M3: Consumer stopped
+[32mkafka-service    |[0m [2024-08-10 17:46:56,775] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Stopped socket server request processors (kafka.network.SocketServer)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,785] INFO [data-plane Kafka Request Handler on Broker 1], shutting down (kafka.server.KafkaRequestHandlerPool)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,800] INFO [data-plane Kafka Request Handler on Broker 1], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,829] INFO [ExpirationReaper-1-AlterAcls]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.843Z  INFO 1 --- [Microservice3] [ionShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.854Z  INFO 1 --- [Microservice2] [ionShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.868Z  INFO 1 --- [Microservice3] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.890Z  INFO 1 --- [Microservice2] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[34;1mprometheus exited with code 0
+[0m[32;1mmicroservice3    |[0m 2024-08-10T17:46:56.914Z  INFO 1 --- [Microservice3] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[32mkafka-service    |[0m [2024-08-10 17:46:56,910] INFO [ExpirationReaper-1-AlterAcls]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,911] INFO [ExpirationReaper-1-AlterAcls]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,914] INFO [KafkaApi-1] Shutdown complete. (kafka.server.KafkaApis)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,920] INFO [ExpirationReaper-1-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[33;1mmicroservice2    |[0m 2024-08-10T17:46:56.952Z  INFO 1 --- [Microservice2] [ionShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[32mkafka-service    |[0m [2024-08-10 17:46:56,962] INFO [ExpirationReaper-1-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,962] INFO [ExpirationReaper-1-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,967] INFO [TransactionCoordinator id=1] Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,977] INFO [ProducerId Manager 1]: Shutdown complete: last producerId assigned 1 (kafka.coordinator.transaction.ProducerIdManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,984] INFO [Transaction State Manager 1]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,985] INFO [Transaction Marker Channel Manager 1]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,988] INFO [Transaction Marker Channel Manager 1]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:56,999] INFO [Transaction Marker Channel Manager 1]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,006] INFO [TransactionCoordinator id=1] Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,038] INFO [GroupCoordinator 1]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,052] INFO [ExpirationReaper-1-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 17:46:57:088 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[33mgrafana exited with code 0
+[0m[32mkafka-service    |[0m [2024-08-10 17:46:57,180] INFO [ExpirationReaper-1-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,180] INFO [ExpirationReaper-1-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,182] INFO [ExpirationReaper-1-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[35;1mpostgres exited with code 0
+[0m[32mkafka-service    |[0m [2024-08-10 17:46:57,328] INFO [ExpirationReaper-1-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,328] INFO [ExpirationReaper-1-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,331] INFO [GroupCoordinator 1]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,333] INFO [ReplicaManager broker=1] Shutting down (kafka.server.ReplicaManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,333] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,334] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,334] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,336] INFO [ReplicaFetcherManager on broker 1] shutting down (kafka.server.ReplicaFetcherManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,350] INFO [ReplicaFetcherManager on broker 1] shutdown completed (kafka.server.ReplicaFetcherManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,351] INFO [ReplicaAlterLogDirsManager on broker 1] shutting down (kafka.server.ReplicaAlterLogDirsManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,352] INFO [ReplicaAlterLogDirsManager on broker 1] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,352] INFO [ExpirationReaper-1-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,483] INFO [ExpirationReaper-1-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,485] INFO [ExpirationReaper-1-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,489] INFO [ExpirationReaper-1-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,507] INFO [ExpirationReaper-1-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,507] INFO [ExpirationReaper-1-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,508] INFO [ExpirationReaper-1-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,637] INFO [ExpirationReaper-1-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,637] INFO [ExpirationReaper-1-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,638] INFO [ExpirationReaper-1-ElectLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,642] INFO [ExpirationReaper-1-ElectLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,642] INFO [ExpirationReaper-1-ElectLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,651] INFO [ReplicaManager broker=1] Shut down completely (kafka.server.ReplicaManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,652] INFO [broker-1-to-controller-send-thread]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,653] INFO [broker-1-to-controller-send-thread]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,652] INFO [broker-1-to-controller-send-thread]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,659] INFO Broker to controller channel manager for alterIsrChannel shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,664] INFO Shutting down. (kafka.log.LogManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,790] INFO [ProducerStateManager partition=__consumer_offsets-44] Writing producer snapshot at offset 4 (kafka.log.ProducerStateManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,832] INFO [ProducerStateManager partition=__consumer_offsets-45] Writing producer snapshot at offset 4 (kafka.log.ProducerStateManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,877] INFO [ProducerStateManager partition=MyApplication-0] Writing producer snapshot at offset 1 (kafka.log.ProducerStateManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,937] INFO Shutdown complete. (kafka.log.LogManager)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,987] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,990] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,989] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[32mkafka-service    |[0m [2024-08-10 17:46:57,992] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[33mzookeeper        |[0m 2024-08-10 17:46:57,996 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x10002316f980000
+[33mzookeeper        |[0m 2024-08-10 17:46:58,005 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@376] - Unable to read additional data from client sessionid 0x10002316f980000, likely client has closed socket
+[33mzookeeper        |[0m 2024-08-10 17:46:58,018 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /192.168.32.8:58534 which had sessionid 0x10002316f980000
+[32mkafka-service    |[0m [2024-08-10 17:46:58,107] INFO Session: 0x10002316f980000 closed (org.apache.zookeeper.ZooKeeper)
+[32mkafka-service    |[0m [2024-08-10 17:46:58,107] INFO EventThread shut down for session: 0x10002316f980000 (org.apache.zookeeper.ClientCnxn)
+[32mkafka-service    |[0m [2024-08-10 17:46:58,111] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[32mkafka-service    |[0m [2024-08-10 17:46:58,112] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:58,704] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:58,710] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:58,711] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[36;1mmicroservice1 exited with code 143
+[0m[34mloki exited with code 0
+[0m[33;1mmicroservice2 exited with code 143
+[0m[32mkafka-service    |[0m [2024-08-10 17:46:59,653] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:59,654] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:59,654] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:59,696] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:59,696] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:46:59,697] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32;1mmicroservice3 exited with code 143
+[0m[35mkafka-ui exited with code 143
+[0m[32mkafka-service    |[0m [2024-08-10 17:47:00,683] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,683] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,686] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Shutting down socket server (kafka.network.SocketServer)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,837] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Shutdown completed (kafka.network.SocketServer)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,839] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,840] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,844] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,860] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,865] INFO App info kafka.server for 1 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[32mkafka-service    |[0m [2024-08-10 17:47:00,866] INFO [KafkaServer id=1] shut down completed (kafka.server.KafkaServer)
+[32mkafka-service exited with code 143
+[0m[33mzookeeper exited with code 137
+[0m
+[8mha:////4Js+99X3I33TG5rCJmDLOLtjpiy84WCCTevIY9ilosj3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] }
+[8mha:////4JQSitudiZ7iTSNeBFlGYl5uI7fiBOIp8Qtnw/xEQIgEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw9eAqiyvgAAAA==[0m[Pipeline] // dir
+[8mha:////4DQPKn4beOWCVwI4F2Aw6htoSOKP8leFFquDH5NtME6OAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9wAqrYvgAAAA==[0m[Pipeline] }
+[8mha:////4Cc/ULScj3WIePvostmmzlMWmKQ1bgw5l+EQUG3Te0WBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigVIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QFvgP+KvgAAAA==[0m[Pipeline] // script
+[8mha:////4KvO9JeFpDqNjjNz2eI3iF0H/n9ozNkZCvjCdviDEiH9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w9Xwmx7vgAAAA==[0m[Pipeline] }
+[8mha:////4Ahcv7t8ACYLvs2xtIPadcx/mL0L1MX4PWpGDW/O4ncVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w9RhFQuvgAAAA==[0m[Pipeline] // stage
+[8mha:////4PGJo9PxsMXUkj+49nhd6WNK5iSVbLDZO6u4dj+9HTT3AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRT0ERCVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg6gZil39OZZvNeX8IMEAAAA=[0m[Pipeline] stage
+[8mha:////4El5zDsp9ylOLsNDzKYD2wv049s0cdYROgvvasktO99WAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD59NhPHCAAAA[0m[Pipeline] { (deployment with kubernetes)
+[8mha:////4AQKoOtxqAS/8DOBRRtxtJBiVXTuXuF0dqfZje7O7Ym6AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] script
+[8mha:////4E17FqlMdXL7b6CBlt0KcDtwarpsfg9ZVgUOKWJ9wBqVAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] {
+[8mha:////4GY03eblPpIXWuZTBJsc67fRUB9E5yqll9lMASFXb1bsAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAdhUMVHCAAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE
+[8mha:////4ODpDbi55IhmOoW/dN18s410kf/rOcmw2tIL0mJmJ2CGAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAXzhjwPCAAAA[0m[Pipeline] {
+[8mha:////4GaXd5Jixry0s/+fq0dmFH46qNMWpOiCWgEt+OrLMVnJAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSkA5R0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3fhXiFur4AAAA=[0m[Pipeline] sh
++ kubectl apply -f kafka-ui.yaml
+error: error validating "kafka-ui.yaml": error validating data: failed to download openapi: <html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s'/><script id='redirect' data-redirect-url='/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s' src='/static/5bc7413a/scripts/redirect.js'></script></head><body style='background-color:white; color:white;'>
+Authentication required
+<!--
+-->
+
+</body></html>; if you choose to ignore these errors, turn validation off with --validate=false
+[8mha:////4OnaEud4ZB/YF0vRWvcyJ/R3lbiYhlCrMbIXme8c9LASAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BlK8YfC+AAAA[0m[Pipeline] }
+[8mha:////4Oz/e1dV09MxzMwkBVRtGnr8CYyq8oxlEoK5JPRHZ+/TAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFq/vIBvgAAAA==[0m[Pipeline] // dir
+[8mha:////4GC+BVTh8z5oMm87stF5AQCS0qd9PHYXQH/T0mL+QQH8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyt//U9g11fKdTvgAAAA==[0m[Pipeline] }
+[8mha:////4MhLGLQfrn+hiT/4Wn6iN4CXV1CFGqhdEceZaHQ/mlhzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQYGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgE2/vbVvgAAAA==[0m[Pipeline] // script
+[8mha:////4LGmMsKR2Bv7y0L07BHxIIep/YFUx2ogVUmVC/Hl3QuzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQBMhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QHwAzcovgAAAA==[0m[Pipeline] }
+[8mha:////4AFjKl9U41hd5TDu8IQXrPbV6CN7qqOSxTcMGQgEJHjwAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKChJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+22u3eEDGmlI3r4AAAA=[0m[Pipeline] // stage
+[8mha:////4NI+/nRTNDGylJ+Y4MiZrDpLah0CsXfDZzZ8NqLms4Z2AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBRISoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+AwgMAn29AAAA[0m[Pipeline] }
+[8mha:////4EK6t+uaPLrjAGozT1YVQ+9zWzdVT0hhaWTh8igWTtB/AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRkBAFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+A0lrHaq9AAAA[0m[Pipeline] // withEnv
+[8mha:////4BG23sosBW4lN5GaB+r96TDUcUfIAQlOwe1XbGsMTcCEAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpEDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPb3J64L0AAAA=[0m[Pipeline] }
+[8mha:////4Bma9YkP4xqybJtemXYWd9IhSJZOX9kt7+QAWStUYQv5AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0UjlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyci/Iyg/F/1PLvQAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4MT/jJTt8XJxkOPhr7NsBV/KLyu0RNEE82HwHBoY8FG2AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0UjlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyshRk+w/j5jSBvQAAAA==[0m[Pipeline] }
+[8mha:////4OgBEYqJrerXp4ruLMUFrsQph+jXeJcmxBUaYno4zZm0AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpEDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPkAnwWL0AAAA=[0m[Pipeline] // node
+[8mha:////4GkUTgsfIb5URxi8bOp3pTKbA4LGkP4kI8od9sowomZkAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRkBAFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2A7YQlxK9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

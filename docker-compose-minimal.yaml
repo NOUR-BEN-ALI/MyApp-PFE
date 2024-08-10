@@ -206,26 +206,6 @@
 version: '3'
 
 services:
-  jenkins:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    privileged: true
-    user: root
-    ports:
-      - 8080:8080
-      - 50000:50000
-    container_name: jenkins
-    volumes:
-      - ./docker/jenkins/jenkins_home:/var/jenkins_home
-      - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
-      - /var/run/docker.sock:/var/run/docker.sock
-
-    environment:
-      - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
-      - ADMIN_PASSWORD=admin
-    networks:
-      - my-network
 
   zookeeper:
     image: wurstmeister/zookeeper:latest
@@ -255,7 +235,7 @@ services:
     networks:
       - my-network
     volumes:
-      - kafka_data:/var/lib/kafka/data
+      - kafka_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/kafka/data:rw
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
@@ -281,7 +261,7 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: basepfe3
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/postgres/data:rw
     networks:
       - my-network
 
@@ -289,10 +269,10 @@ services:
     image: prom/prometheus:v2.46.0
     container_name: prometheus
     command:
-      - --config.file=/etc/prometheus/prometheus.yml
+      - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml
     volumes:
-      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus_data:/prometheus
+      - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
+      - prometheus_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/data:rw
     ports:
       - "9090:9090"
     networks:
@@ -302,8 +282,9 @@ services:
     image: grafana/grafana:10.1.0
     container_name: grafana
     volumes:
-      - ./docker/grafana/provisioning:/etc/grafana/provisioning
-      - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
+      - ./docker/grafana/provisioning:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/grafana/provisioning:rw
+      - ./docker/grafana/dashboards:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/grafana/dashboards:rw
+      - grafana_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/grafana/data:rw
     environment:
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
@@ -317,13 +298,13 @@ services:
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
-    command: [ "-config.file=/etc/tempo/tempo.yml" ]
+    command: [ "-config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" ]
     volumes:
-      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
-      - ./docker/tempo/tempo-data:/tmp/tempo
+      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
+      - tempo_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo-data:rw
     ports:
-      - "3110:3100"
-      - "4317:4317"
+      - "3110:3100"  # Tempo as Grafana data source
+      - "4317:4317"  # OTLP gRPC
     networks:
       - my-network
 
@@ -331,12 +312,12 @@ services:
     container_name: collector
     image: otel/opentelemetry-collector-contrib:0.91.0
     command:
-      - --config=/etc/collector/otel-collector.yml
+      - --config=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml
     volumes:
-      - ./docker/collector/otel-collector.yml:/etc/collector/otel-collector.yml
+      - ./docker/collector/otel-collector.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml:ro
     restart: always
     ports:
-      - "4316:4317"
+      - "4316:4317" # OTLP gRPC receiver
     depends_on:
       - loki
     networks:
@@ -347,7 +328,10 @@ services:
     image: grafana/loki:2.9.0
     ports:
       - "3100:3100"
-    command: -config.file=/etc/loki/local-config.yaml
+    command: -config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml
+    volumes:
+      - ./docker/loki/local-config.yaml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml:ro
+      - loki_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/data:rw
     networks:
       - my-network
 
@@ -368,6 +352,8 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
     networks:
       - my-network
+    volumes:
+      - ./Microservice1:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice1:rw
 
   microservice2:
     container_name: microservice2
@@ -387,6 +373,8 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
     networks:
       - my-network
+    volumes:
+      - ./Microservice2:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice2:rw
 
   microservice3:
     build: ./Microservice3
@@ -406,13 +394,17 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-service:9092
     networks:
       - my-network
-
-networks:
-  my-network:
+    volumes:
+      - ./Microservice3:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/Microservice3:rw
 
 volumes:
   postgres_data:
   prometheus_data:
   grafana_data:
   kafka_data:
-  tempo-data:
+  tempo_data:
+  loki_data:
+
+networks:
+  my-network:
+    driver: bridge
