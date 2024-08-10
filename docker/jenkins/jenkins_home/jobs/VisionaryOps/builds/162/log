@@ -2052,3 +2052,179 @@ Attaching to grafana, loki, zookeeper, postgres, tempo, prometheus, collector, k
 [36mcollector        |[0m 2024/08/10 18:06:58 collector server run finished with error: failed to resolve config: cannot resolve the configuration: cannot retrieve the configuration: unable to read the file file:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml: read /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml: is a directory
 [34;1mcollector exited with code 1
 [0m[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 18:07:06:263 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 18:07:11:270 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: tempo
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:12,711[0;39m [39mDEBUG[0;39m [[34mparallel-4[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Start getting metrics for kafkaCluster: local
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:12,746[0;39m [39mDEBUG[0;39m [[34mparallel-1[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Metrics updated for cluster: local
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 18:07:20:090 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Too many log messages detected. Will only log once per minute from now on.
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 18:07:20:090 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 18:07:33:918 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:42,711[0;39m [39mDEBUG[0;39m [[34mparallel-2[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Start getting metrics for kafkaCluster: local
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:42,750[0;39m [39mDEBUG[0;39m [[34mparallel-7[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Metrics updated for cluster: local
+[36mcollector exited with code 1
+[0m[33mgrafana          |[0m logger=server t=2024-08-10T18:07:44.387512233Z level=info msg="Shutdown started" reason="System signal: terminated"
+[33mgrafana          |[0m logger=modules t=2024-08-10T18:07:44.387758636Z level=info msg="Awaiting services to be stopped..."
+[33mgrafana          |[0m logger=tracing t=2024-08-10T18:07:44.388300443Z level=info msg="Closing tracing"
+[33mgrafana          |[0m logger=ticker t=2024-08-10T18:07:44.388492645Z level=info msg=stopped last_tick=2024-08-10T18:07:40Z
+[33mgrafana          |[0m logger=sqlstore.transactions t=2024-08-10T18:07:44.410698119Z level=info msg="Database locked, sleeping then retrying" error="database is locked" retry=0 code="database is locked"
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.531 UTC [1] LOG:  received fast shutdown request
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.548 UTC [1] LOG:  aborting any active transactions
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.549 UTC [76] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.550 UTC [74] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.550 UTC [80] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.551 UTC [77] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.552 UTC [75] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.552 UTC [78] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.552 UTC [79] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.553 UTC [72] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.555 UTC [70] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.555 UTC [73] FATAL:  terminating connection due to administrator command
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.562 UTC [1] LOG:  background worker "logical replication launcher" (PID 68) exited with exit code 1
+[33mgrafana          |[0m logger=modules t=2024-08-10T18:07:44.566525044Z level=info msg="module stopped" module=background-services
+[33mgrafana          |[0m logger=modules t=2024-08-10T18:07:44.566642545Z level=info msg="module stopped" module=provisioning
+[33mgrafana          |[0m logger=modules t=2024-08-10T18:07:44.566682046Z level=info msg="module stopped" module=http-server
+[33mgrafana          |[0m logger=modules t=2024-08-10T18:07:44.566686546Z level=info msg="module stopped" module=secret-migrator
+[32mkafka-service    |[0m [2024-08-10 18:07:44,562] INFO Terminating process due to signal SIGTERM (org.apache.kafka.common.utils.LoggingSignalHandler)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,588] INFO [KafkaServer id=1] shutting down (kafka.server.KafkaServer)
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.596 UTC [63] LOG:  shutting down
+[32mkafka-service    |[0m [2024-08-10 18:07:44,592] INFO [KafkaServer id=1] Starting controlled shutdown (kafka.server.KafkaServer)
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:44,662[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723313148-1[0;39m] [33mo.a.k.c.u.AppInfoParser[0;39m: App info kafka.admin.client for kafka-ui-admin-1723313148-1 unregistered
+[35;1mpostgres         |[0m 2024-08-10 18:07:44.709 UTC [1] LOG:  database system is shut down
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:44,710[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723313148-1[0;39m] [33mo.a.k.c.m.Metrics[0;39m: Metrics scheduler closed
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:44,711[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723313148-1[0;39m] [33mo.a.k.c.m.Metrics[0;39m: Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[35mkafka-ui         |[0m [30m2024-08-10 18:07:44,711[0;39m [34mINFO [0;39m [[34mkafka-admin-client-thread | kafka-ui-admin-1723313148-1[0;39m] [33mo.a.k.c.m.Metrics[0;39m: Metrics reporters closed
+[32mkafka-service    |[0m [2024-08-10 18:07:44,732] INFO [KafkaServer id=1] Controlled shutdown succeeded (kafka.server.KafkaServer)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,745] INFO [/config/changes-event-process-thread]: Shutting down (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,755] INFO [/config/changes-event-process-thread]: Stopped (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,759] INFO [/config/changes-event-process-thread]: Shutdown completed (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,760] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Stopping socket server request processors (kafka.network.SocketServer)
+[36;1mmicroservice1    |[0m 2024-08-10T18:07:44.780Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[36;1mmicroservice1    |[0m 2024-08-10T18:07:44.799Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - HikariPool-1 - Shutdown initiated...
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[32mkafka-service    |[0m [2024-08-10 18:07:44,808] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Stopped socket server request processors (kafka.network.SocketServer)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,816] INFO [data-plane Kafka Request Handler on Broker 1], shutting down (kafka.server.KafkaRequestHandlerPool)
+[36;1mmicroservice1    |[0m 2024-08-10T18:07:44.825Z trace_id= span_id= trace_flags=  INFO [SpringApplicationShutdownHook] - HikariPool-1 - Shutdown completed.
+[36;1mmicroservice1    |[0m  1 --- [Microservice1] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[32mkafka-service    |[0m [2024-08-10 18:07:44,837] INFO [data-plane Kafka Request Handler on Broker 1], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[32mkafka-service    |[0m [2024-08-10 18:07:44,852] INFO [ExpirationReaper-1-AlterAcls]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,016] INFO [ExpirationReaper-1-AlterAcls]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,016] INFO [ExpirationReaper-1-AlterAcls]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,018] INFO [KafkaApi-1] Shutdown complete. (kafka.server.KafkaApis)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,020] INFO [ExpirationReaper-1-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[33mgrafana exited with code 0
+[0m[32mkafka-service    |[0m [2024-08-10 18:07:45,205] INFO [ExpirationReaper-1-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,205] INFO [ExpirationReaper-1-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,209] INFO [TransactionCoordinator id=1] Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,212] INFO [ProducerId Manager 1]: Shutdown complete: last producerId assigned 0 (kafka.coordinator.transaction.ProducerIdManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,214] INFO [Transaction State Manager 1]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,215] INFO [Transaction Marker Channel Manager 1]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,219] INFO [Transaction Marker Channel Manager 1]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,222] INFO [Transaction Marker Channel Manager 1]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,224] INFO [TransactionCoordinator id=1] Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,226] INFO [GroupCoordinator 1]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,226] INFO [ExpirationReaper-1-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,257] INFO [ExpirationReaper-1-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,257] INFO [ExpirationReaper-1-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,257] INFO [ExpirationReaper-1-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,259] INFO [ExpirationReaper-1-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,259] INFO [ExpirationReaper-1-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,261] INFO [GroupCoordinator 1]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,265] INFO [ReplicaManager broker=1] Shutting down (kafka.server.ReplicaManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,267] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,268] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,268] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,270] INFO [ReplicaFetcherManager on broker 1] shutting down (kafka.server.ReplicaFetcherManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,274] INFO [ReplicaFetcherManager on broker 1] shutdown completed (kafka.server.ReplicaFetcherManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,277] INFO [ReplicaAlterLogDirsManager on broker 1] shutting down (kafka.server.ReplicaAlterLogDirsManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,278] INFO [ReplicaAlterLogDirsManager on broker 1] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,279] INFO [ExpirationReaper-1-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[35;1mpostgres exited with code 0
+[0m[32mkafka-service    |[0m [2024-08-10 18:07:45,325] INFO [ExpirationReaper-1-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,325] INFO [ExpirationReaper-1-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,326] INFO [ExpirationReaper-1-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,423] INFO [ExpirationReaper-1-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,423] INFO [ExpirationReaper-1-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,423] INFO [ExpirationReaper-1-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,448] INFO [ExpirationReaper-1-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,448] INFO [ExpirationReaper-1-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,448] INFO [ExpirationReaper-1-ElectLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,623] INFO [ExpirationReaper-1-ElectLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,623] INFO [ExpirationReaper-1-ElectLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,633] INFO [ReplicaManager broker=1] Shut down completely (kafka.server.ReplicaManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,634] INFO [broker-1-to-controller-send-thread]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,635] INFO [broker-1-to-controller-send-thread]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,635] INFO [broker-1-to-controller-send-thread]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,639] INFO Broker to controller channel manager for alterIsrChannel shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,641] INFO Shutting down. (kafka.log.LogManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,743] INFO Shutdown complete. (kafka.log.LogManager)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,777] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,777] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,777] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,784] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[33mzookeeper        |[0m 2024-08-10 18:07:45,790 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100024a72470000
+[33mzookeeper        |[0m 2024-08-10 18:07:45,798 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /192.168.80.5:57822 which had sessionid 0x100024a72470000
+[32mkafka-service    |[0m [2024-08-10 18:07:45,898] INFO Session: 0x100024a72470000 closed (org.apache.zookeeper.ZooKeeper)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,898] INFO EventThread shut down for session: 0x100024a72470000 (org.apache.zookeeper.ClientCnxn)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,901] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[32mkafka-service    |[0m [2024-08-10 18:07:45,902] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,169] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,169] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,170] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,193] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,193] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,194] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,429] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,429] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:46,429] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,171] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,171] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,176] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Shutting down socket server (kafka.network.SocketServer)
+[35mkafka-ui exited with code 143
+[0m[32mkafka-service    |[0m [2024-08-10 18:07:47,432] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Shutdown completed (kafka.network.SocketServer)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,433] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,434] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,434] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,448] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,450] INFO App info kafka.server for 1 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[32mkafka-service    |[0m [2024-08-10 18:07:47,454] INFO [KafkaServer id=1] shut down completed (kafka.server.KafkaServer)
+[36;1mmicroservice1    |[0m [otel.javaagent 2024-08-10 18:07:47:682 +0000] [OkHttp http://tempo:4317/...] WARN io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+[36;1mmicroservice1 exited with code 143
+[0m[32mkafka-service exited with code 143
+[0m[33mzookeeper exited with code 137
+[0m
+[8mha:////4Js+99X3I33TG5rCJmDLOLtjpiy84WCCTevIY9ilosj3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] }
+[8mha:////4JQSitudiZ7iTSNeBFlGYl5uI7fiBOIp8Qtnw/xEQIgEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw9eAqiyvgAAAA==[0m[Pipeline] // dir
+[8mha:////4DQPKn4beOWCVwI4F2Aw6htoSOKP8leFFquDH5NtME6OAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9wAqrYvgAAAA==[0m[Pipeline] }
+[8mha:////4Cc/ULScj3WIePvostmmzlMWmKQ1bgw5l+EQUG3Te0WBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigVIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QFvgP+KvgAAAA==[0m[Pipeline] // script
+[8mha:////4KvO9JeFpDqNjjNz2eI3iF0H/n9ozNkZCvjCdviDEiH9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w9Xwmx7vgAAAA==[0m[Pipeline] }
+[8mha:////4Ahcv7t8ACYLvs2xtIPadcx/mL0L1MX4PWpGDW/O4ncVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w9RhFQuvgAAAA==[0m[Pipeline] // stage
+[8mha:////4PGJo9PxsMXUkj+49nhd6WNK5iSVbLDZO6u4dj+9HTT3AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRT0ERCVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg6gZil39OZZvNeX8IMEAAAA=[0m[Pipeline] stage
+[8mha:////4El5zDsp9ylOLsNDzKYD2wv049s0cdYROgvvasktO99WAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD59NhPHCAAAA[0m[Pipeline] { (deployment with kubernetes)
+[8mha:////4AQKoOtxqAS/8DOBRRtxtJBiVXTuXuF0dqfZje7O7Ym6AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] script
+[8mha:////4E17FqlMdXL7b6CBlt0KcDtwarpsfg9ZVgUOKWJ9wBqVAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] {
+[8mha:////4GY03eblPpIXWuZTBJsc67fRUB9E5yqll9lMASFXb1bsAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAdhUMVHCAAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE
+[8mha:////4ODpDbi55IhmOoW/dN18s410kf/rOcmw2tIL0mJmJ2CGAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAXzhjwPCAAAA[0m[Pipeline] {
+[8mha:////4GaXd5Jixry0s/+fq0dmFH46qNMWpOiCWgEt+OrLMVnJAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSkA5R0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3fhXiFur4AAAA=[0m[Pipeline] sh
++ kubectl apply -f kafka-ui.yaml
+error: error validating "kafka-ui.yaml": error validating data: failed to download openapi: <html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s'/><script id='redirect' data-redirect-url='/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s' src='/static/5bc7413a/scripts/redirect.js'></script></head><body style='background-color:white; color:white;'>
+Authentication required
+<!--
+-->
+
+</body></html>; if you choose to ignore these errors, turn validation off with --validate=false
+[8mha:////4OnaEud4ZB/YF0vRWvcyJ/R3lbiYhlCrMbIXme8c9LASAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BlK8YfC+AAAA[0m[Pipeline] }
+[8mha:////4Oz/e1dV09MxzMwkBVRtGnr8CYyq8oxlEoK5JPRHZ+/TAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFq/vIBvgAAAA==[0m[Pipeline] // dir
+[8mha:////4GC+BVTh8z5oMm87stF5AQCS0qd9PHYXQH/T0mL+QQH8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyt//U9g11fKdTvgAAAA==[0m[Pipeline] }
+[8mha:////4MhLGLQfrn+hiT/4Wn6iN4CXV1CFGqhdEceZaHQ/mlhzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQYGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgE2/vbVvgAAAA==[0m[Pipeline] // script
+[8mha:////4LGmMsKR2Bv7y0L07BHxIIep/YFUx2ogVUmVC/Hl3QuzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQBMhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QHwAzcovgAAAA==[0m[Pipeline] }
+[8mha:////4AFjKl9U41hd5TDu8IQXrPbV6CN7qqOSxTcMGQgEJHjwAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKChJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+22u3eEDGmlI3r4AAAA=[0m[Pipeline] // stage
+[8mha:////4NI+/nRTNDGylJ+Y4MiZrDpLah0CsXfDZzZ8NqLms4Z2AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBRISoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+AwgMAn29AAAA[0m[Pipeline] }
+[8mha:////4EK6t+uaPLrjAGozT1YVQ+9zWzdVT0hhaWTh8igWTtB/AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRkBAFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+A0lrHaq9AAAA[0m[Pipeline] // withEnv
+[8mha:////4BG23sosBW4lN5GaB+r96TDUcUfIAQlOwe1XbGsMTcCEAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpEDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPb3J64L0AAAA=[0m[Pipeline] }
+[8mha:////4Bma9YkP4xqybJtemXYWd9IhSJZOX9kt7+QAWStUYQv5AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0UjlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyci/Iyg/F/1PLvQAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4MT/jJTt8XJxkOPhr7NsBV/KLyu0RNEE82HwHBoY8FG2AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0UjlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyshRk+w/j5jSBvQAAAA==[0m[Pipeline] }
+[8mha:////4OgBEYqJrerXp4ruLMUFrsQph+jXeJcmxBUaYno4zZm0AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpEDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPkAnwWL0AAAA=[0m[Pipeline] // node
+[8mha:////4GkUTgsfIb5URxi8bOp3pTKbA4LGkP4kI8od9sowomZkAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRkBAFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2A7YQlxK9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

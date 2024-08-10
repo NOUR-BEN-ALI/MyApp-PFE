@@ -285,7 +285,8 @@ services:
     image: grafana/loki:2.9.0
     ports:
       - "3100:3100"
-    command: -config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml
+    command:
+     - --config.file=/etc/loki/local-config.yaml
     volumes:
        - ./docker/loki/local-config.yaml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml:ro
     networks:
@@ -311,7 +312,7 @@ services:
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
-    command: [ "-config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" ]
+    command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
       - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
     ports:
@@ -325,7 +326,7 @@ services:
     container_name: collector
     image: otel/opentelemetry-collector-contrib:0.91.0
     command:
-      - --config=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml
+      - --config=/etc/collector/otel-collector.yml
     volumes:
       - ./docker/collector/otel-collector.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml:ro
     restart: always
