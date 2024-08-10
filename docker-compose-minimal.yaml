@@ -272,11 +272,21 @@ services:
       - --config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml
     volumes:
       - ./docker/prometheus/prometheus.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:ro
-      - prometheus_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/data:rw
     ports:
       - "9090:9090"
     networks:
       - my-network
+
+  loki:
+    container_name: loki
+    image: grafana/loki:2.9.0
+    ports:
+      - "3100:3100"
+    command: -config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml
+    volumes:
+       - ./docker/loki/local-config.yaml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml:ro
+    networks:
+        - my-network
 
   grafana:
     image: grafana/grafana:10.1.0
@@ -301,12 +311,12 @@ services:
     command: [ "-config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" ]
     volumes:
       - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
-      - tempo_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo-data:rw
     ports:
-      - "3110:3100"  # Tempo as Grafana data source
-      - "4317:4317"  # OTLP gRPC
+      - "3110:3100"
+      - "4317:4317"
     networks:
       - my-network
+
 
   collector:
     container_name: collector
@@ -323,17 +333,7 @@ services:
     networks:
       - my-network
 
-  loki:
-    container_name: loki
-    image: grafana/loki:2.9.0
-    ports:
-      - "3100:3100"
-    command: -config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml
-    volumes:
-      - ./docker/loki/local-config.yaml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/local-config.yaml:ro
-      - loki_data:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/loki/data:rw
-    networks:
-      - my-network
+
 
   microservice1:
     container_name: microservice1
