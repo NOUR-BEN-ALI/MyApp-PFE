@@ -77,8 +77,8 @@ services:
     image: grafana/grafana:10.1.0
     container_name: grafana
     volumes:  # Utilisation des volumes pour persister les données de Grafana
-      - ./docker/grafana/provisioning:/etc/grafana/provisioning
-      - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
+      - ./docker/grafana/provisioning:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/grafana/provisioning
+      - ./docker/grafana/dashboards:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/grafana/dashboards
     environment:
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
