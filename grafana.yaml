@@ -19,17 +19,38 @@ spec:
           image: grafana/grafana:10.1.0
           ports:
             - containerPort: 3000
+          env:
+            - name: GF_AUTH_ANONYMOUS_ENABLED
+              value: "true"
+            - name: GF_AUTH_DISABLE_LOGIN_FORM
+              value: "true"
+            - name: GF_AUTH_ANONYMOUS_ORG_ROLE
+              value: "Admin"
           volumeMounts:
             - name: grafana-storage
               mountPath: /var/lib/grafana
-            - name: grafana-provisioning
-              mountPath: /etc/grafana/provisioning
+            - name: grafana-provisioning-dashboards
+              mountPath: /etc/grafana/provisioning/dashboards/dashboards.yaml
+              subPath: dashboards.yaml
+            - name: grafana-provisioning-datasource
+              mountPath: /etc/grafana/provisioning/datasources/datasource.yaml
+              subPath: datasource.yaml
       volumes:
         - name: grafana-storage
           emptyDir: {}
-        - name: grafana-provisioning
+        - name: grafana-provisioning-dashboards
           configMap:
             name: grafana-provisioning
+            items:
+              - key: dashboards.yaml
+                path: dashboards.yaml
+        - name: grafana-provisioning-datasource
+          configMap:
+            name: grafana-provisioning
+            items:
+              - key: datasource.yaml
+                path: datasource.yaml
+
 ---
 apiVersion: v1
 kind: Service

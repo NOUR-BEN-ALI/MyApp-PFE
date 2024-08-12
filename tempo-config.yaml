@@ -12,8 +12,6 @@ data:
         otlp:
           protocols:
             grpc:
-
-
     storage:
       trace:
         backend: local
