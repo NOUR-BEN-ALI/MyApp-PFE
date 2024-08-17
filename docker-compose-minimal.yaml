@@ -312,9 +312,9 @@ services:
   tempo:
     image: grafana/tempo:2.2.2
     container_name: tempo
-    command: [ "-config.file=/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" ]
+    command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
-      - ./docker/tempo/tempo.yml:/var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:ro
+      - /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"
