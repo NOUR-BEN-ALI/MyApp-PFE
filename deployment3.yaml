@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice3
+  name: ms3
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: microservice3
-          image: nourbenali/visionaryops-microservice33:latest
+          image: nourbenali/visionaryops-microservice33:final
           ports:
             - containerPort: 9987
           env:
@@ -28,12 +28,12 @@ spec:
               value: "kafka-service:9092"
             - name: PORT
               value: "9987"
-            - name: OTEL_EXPORTER_OTLP_ENDPOINT
-              value: "http://tempo-service:4317"
-            - name: OTEL_EXPORTER_OTLP_TIMEOUT
-              value: "3000"
-            - name: OTEL_METRICS_EXPORTER
-              value: "none"
+#            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+#              value: "http://tempo-service:4317"
+#            - name: OTEL_EXPORTER_OTLP_TIMEOUT
+#              value: "3000"
+#            - name: OTEL_METRICS_EXPORTER
+#              value: "none"
 
       volumes:
         - name: postgres-data

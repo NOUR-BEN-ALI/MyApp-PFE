@@ -1,19 +1,21 @@
+# otel-collector-configmap.yml
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: otel-collector-config
+  namespace: default
 data:
-  otel-collector.yaml: |
+  otel-collector.yml: |
     receivers:
       otlp:
         protocols:
           grpc:
-
     exporters:
       logging:
-
+      loki:
+        endpoint: "http://loki:3100/loki/api/v1/push"
     service:
       pipelines:
-        traces:
+        logs:
           receivers: [otlp]
-          exporters: [loki]
+          exporters: [logging, loki]

@@ -5,62 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow-completed/flowNodeStore.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/164/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/164/log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/164/log-index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/164/workflow-completed/flowNodeStore.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/.java/fonts/21.0.4/fcinfo-1-aa7a30077959-debian-12-en-.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/failed-boot-attempts.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/304af446-8aea-4e5b-b706-e6d1d820af94/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/304af446-8aea-4e5b-b706-e6d1d820af94/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/304af446-8aea-4e5b-b706-e6d1d820af94/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/76b3f44e-cb39-47be-8080-09abd50bb6a8/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/76b3f44e-cb39-47be-8080-09abd50bb6a8/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/76b3f44e-cb39-47be-8080-09abd50bb6a8/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/71cf626f-e18e-48fc-b0f8-c793c7ce5ca9/bloom-0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/71cf626f-e18e-48fc-b0f8-c793c7ce5ca9/data.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/71cf626f-e18e-48fc-b0f8-c793c7ce5ca9/meta.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice1/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/collector.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confCollector.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/confCollector.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment2.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment3.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment3.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose-minimal.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-minimal.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/collector/otel-collector.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/collector/otel-collector.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/copy_reference_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/copy_reference_file.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/credentials.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/credentials.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/fingerprints/99/dd/d151f7ee4ef9df4c954ecfc0664d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/fingerprints/99/dd/d151f7ee4ef9df4c954ecfc0664d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/log-index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/log-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/program.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/163/workflow/9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/fingerprints/f6/7d/b5cdaeed2d0212fee49646adc539.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/fingerprints/f6/7d/b5cdaeed2d0212fee49646adc539.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/build.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/permalinks" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/permalinks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/nextBuildNumber" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/nextBuildNumber" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.properties" afterDir="false" />
@@ -68,32 +32,35 @@
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-5-api/META-INF/maven/io.jenkins.plugins/apache-httpcomponents-client-5-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-5-api/META-INF/maven/io.jenkins.plugins/apache-httpcomponents-client-5-api/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE@tmp/durable-8e2623e0/jenkins-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE@tmp/durable-8e2623e0/script.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE@tmp/durable-8e2623e0/script.sh.copy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/.timestamp2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/META-INF/maven/org.jenkins-ci.plugins/jackson2-api/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/META-INF/maven/org.jenkins-ci.plugins/jackson2-api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-annotations-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-core-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-databind-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-dataformat-cbor-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-dataformat-xml-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-datatype-jdk8-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-datatype-json-org-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/jackson-datatype-jsr310-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/stax2-api-4.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/woodstox-core-6.6.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/jackson2-api/WEB-INF/lib/woodstox-core-6.6.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Workspace clean-up.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Workspace clean-up.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/.timestamp2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/META-INF/maven/io.jenkins/configuration-as-code/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/META-INF/maven/io.jenkins/configuration-as-code/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/WEB-INF/lib/vavr-0.10.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/WEB-INF/lib/vavr-0.10.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/WEB-INF/lib/vavr-match-0.10.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/WEB-INF/licenses.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/img/logo-head.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/img/logo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/configuration-as-code/img/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/loki/local-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/hudson.plugins.gradle.GradleInstaller" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/hudson.plugins.gradle.GradleInstaller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/112a7e9c-1f5d-4dde-92d6-28debd9f05d1/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/112a7e9c-1f5d-4dde-92d6-28debd9f05d1/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/112a7e9c-1f5d-4dde-92d6-28debd9f05d1/meta.compacted.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/66e218ea-f6ce-4842-a493-b3eb7837cff7/bloom-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/66e218ea-f6ce-4842-a493-b3eb7837cff7/data.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/66e218ea-f6ce-4842-a493-b3eb7837cff7/meta.compacted.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/grafana.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tempo-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tempo-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loki-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loki-deploy.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,7 +303,9 @@
       <workItem from="1722288966828" duration="1996000" />
       <workItem from="1722337319513" duration="31144000" />
       <workItem from="1722684822309" duration="36261000" />
-      <workItem from="1723462781973" duration="2615000" />
+      <workItem from="1723462781973" duration="16684000" />
+      <workItem from="1723662689040" duration="1680000" />
+      <workItem from="1723911078906" duration="351000" />
     </task>
     <servers />
   </component>

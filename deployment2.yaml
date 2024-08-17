@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice2
+  name: ms2
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: microservice2
-          image: nourbenali/visionaryops-microservice22:latest
+          image: nourbenali/visionaryops-microservice22:final
           ports:
             - containerPort: 9988
           env:

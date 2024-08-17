@@ -55,92 +55,123 @@
                 }
             }
         }
-    //     // Uncomment these stages if needed
-    //     stage(&apos;Clean and compile with Maven ms1&apos;) {
-    //         steps {
-    //             dir(REPO_DIR +&apos;/Microservice1&apos;) {
-    //                 sh &apos;mvn clean install -DskipTests&apos;
-    //             }
-    //         }
-    //     }
-    //     stage(&apos;Clean and compile with Maven ms2&apos;) {
-    //         steps {
-    //             dir(REPO_DIR +&apos;/Microservice2&apos;) {
-    //                 sh &apos;mvn clean install -DskipTests&apos;
-    //             }
-    //         }
-    //     }
-    //     stage(&apos;Clean and compile with Maven ms3&apos;) {
-    //         steps {
-    //             dir(REPO_DIR +&apos;/Microservice3&apos;) {
-    //                 sh &apos;mvn clean install -DskipTests&apos;
-    //             }
-    //         }
-    //     }
-    //     stage(&apos;Building image ms1&apos;) { 
-    //         steps { 
-    //             dir(REPO_DIR +&apos;/Microservice1&apos;) {
-    //                 script { 
-    //                     dockerImage1 = docker.build(&quot;${registry}/visionaryops-microservice11:$BUILD_NUMBER&quot;)
-    //                 }
-    //             }
-    //         } 
-    //     }
-    //     stage(&apos;Building image ms2&apos;) { 
-    //         steps { 
-    //             dir(REPO_DIR +&apos;/Microservice2&apos;) {
-    //                 script { 
-    //                     dockerImage2 = docker.build(&quot;${registry}/visionaryops-microservice22:$BUILD_NUMBER&quot;)
-    //                 }
-    //             }
-    //         } 
-    //     }
-    //     stage(&apos;Building image ms3&apos;) { 
-    //         steps { 
-    //             dir(REPO_DIR +&apos;/Microservice3&apos;) {
-    //                 script { 
-    //                     dockerImage3 = docker.build(&quot;${registry}/visionaryops-microservice33:$BUILD_NUMBER&quot;)
-    //                 }
-    //             }
-    //         } 
-    //     }
-    //     // stage(&apos;Push Docker Images to DockerHub&apos;) {
-    //     //     steps {
-    //     //         script {
-    //     //             docker.withRegistry(&apos;https://index.docker.io/v1/&apos;, registryCredential) {
-    //     //                 dockerImage1.push()
-    //     //                 dockerImage2.push()
-    //     //                 dockerImage3.push()
-    //     //             }
-    //     //         }
-    //     //     }
-    //     // }
+        // Uncomment these stages if needed
+        // stage(&apos;Clean and compile with Maven ms1&apos;) {
+        //     steps {
+        //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        // stage(&apos;Clean and compile with Maven ms2&apos;) {
+        //     steps {
+        //         dir(REPO_DIR +&apos;/Microservice2&apos;) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        // stage(&apos;Clean and compile with Maven ms3&apos;) {
+        //     steps {
+        //         dir(REPO_DIR +&apos;/Microservice3&apos;) {
+        //             sh &apos;mvn clean install -DskipTests&apos;
+        //         }
+        //     }
+        // }
+        // stage(&apos;Building image ms1&apos;) { 
+        //     steps { 
+        //         dir(REPO_DIR +&apos;/Microservice1&apos;) {
+        //             script { 
+        //                 dockerImage1 = docker.build(&quot;${registry}/visionaryops-microservice11:$BUILD_NUMBER&quot;)
+        //             }
+        //         }
+        //     } 
+        // }
+        // stage(&apos;Building image ms2&apos;) { 
+        //     steps { 
+        //         dir(REPO_DIR +&apos;/Microservice2&apos;) {
+        //             script { 
+        //                 dockerImage2 = docker.build(&quot;${registry}/visionaryops-microservice22:$BUILD_NUMBER&quot;)
+        //             }
+        //         }
+        //     } 
+        // }
+        // stage(&apos;Building image ms3&apos;) { 
+        //     steps { 
+        //         dir(REPO_DIR +&apos;/Microservice3&apos;) {
+        //             script { 
+        //                 dockerImage3 = docker.build(&quot;${registry}/visionaryops-microservice33:$BUILD_NUMBER&quot;)
+        //             }
+        //         }
+        //     } 
+        // }
+        // stage(&apos;Push Docker Images to DockerHub&apos;) {
+        //     steps {
+        //         script {
+        //             docker.withRegistry(&apos;https://index.docker.io/v1/&apos;, registryCredential) {
+        //                 dockerImage1.push()
+        //                 dockerImage2.push()
+        //                 dockerImage3.push()
+        //             }
+        //         }
+        //     }
+        // }
+        // stage(&apos;Build with Docker Compose&apos;) {
+        //     steps {
+        //         script {
+        //             dir(REPO_DIR) {
+        //                 // sh &apos;docker-compose build&apos;
+        //                  sh &apos;test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml&apos;
+        //             sh &apos;test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml&apos;
+        //                 // sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo prometheus collector loki zookeeper kafka-service kafka-ui&apos;
+        //                     sh &apos;docker-compose -f docker-compose-minimal.yaml up&apos;
+
+        //             }
+        //         }
+        //     }
+        // }
+        
+        
+        
+        
+        
         stage(&apos;Build with Docker Compose&apos;) {
             steps {
                 script {
                     dir(REPO_DIR) {
-                        // sh &apos;docker-compose build&apos;
-                         sh &apos;test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml&apos;
-                    sh &apos;test -f /var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml&apos;
-                        // sh &apos;docker-compose up -d microservice1 microservice2 microservice3 grafana tempo prometheus collector loki zookeeper kafka-service kafka-ui&apos;
-                            sh &apos;docker-compose -f docker-compose-minimal.yaml up&apos;
+                       // Arrêter et supprimer les conteneurs existants
+                    // sh &apos;docker compose -f docker-compose.yaml down&apos;
 
+                    // Construire les services
+                    // sh &apos;docker compose -f docker-compose.yaml build&apos;
+
+                    // Démarrer les services en arrière-plan
+                  sh &apos;docker-compose -f docker-compose-minimal.yaml up -d&apos;
                     }
                 }
             }
         }
-            stage(&apos;deployment with kubernetes&apos;) {
+        
+        
+    
+      stage(&apos;Post-Deployment&apos;) {
             steps {
-                script {
-                    dir(REPO_DIR) {
-                        sh &apos;kubectl apply -f kafka-ui.yaml&apos;
-
-                    }
-                }
+                // Ajouter ici des étapes supplémentaires, telles que des tests ou des vérifications
+                echo &apos;Services déployés avec succès&apos;
             }
         }
     }
-}
+
+    post {
+        always {
+            // Nettoyer les conteneurs inutilisés, les volumes, les images, etc.
+            sh &apos;docker system prune -f&apos;
+        }
+    }  
+        
+        
+        
+
+    }
 </script>
     <sandbox>true</sandbox>
   </definition>
