@@ -145,7 +145,7 @@
                     // sh &apos;docker compose -f docker-compose.yaml build&apos;
 
                     // Démarrer les services en arrière-plan
-                  sh &apos;docker-compose -f docker-compose-minimal.yaml up -d&apos;
+                  sh &apos;docker-compose -f docker-compose.yaml up -d&apos;
                     }
                 }
             }

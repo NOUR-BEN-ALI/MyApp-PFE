@@ -1,24 +1,31 @@
-jenkins:
-  build:
-    context: .
-    dockerfile: Dockerfile
-  privileged: true
-  user: root
-  ports:
-    - 8080:8080
-    - 50000:50000
-  container_name: jenkins
-  volumes:
-    - ./docker/jenkins/jenkins_home:/var/jenkins_home
-    - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
-    - /var/run/docker.sock:/var/run/docker.sock
-  #      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-  #      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
+version: '3'
+
+services:
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    privileged: true
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - ./docker/jenkins/jenkins_home:/var/jenkins_home
+      - ./docker/jenkins/casc_configs/jenkins.yaml:/var/jenkins_home/casc_configs/jenkins.yaml:rw
+      - /var/run/docker.sock:/var/run/docker.sock
+    #      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    #      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
 
 
-  environment:
-    - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
-    - ADMIN_PASSWORD=admin
-  networks:
-    - my-network
+    environment:
+      - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
+      - ADMIN_PASSWORD=admin
+    networks:
+      - my-network
+
+networks:
+  my-network:
+
 

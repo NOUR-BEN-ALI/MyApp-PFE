@@ -480,7 +480,7 @@ services:
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     volumes:
-      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus_data:/prometheus
     ports:
       - "9090:9090"
@@ -513,7 +513,7 @@ services:
     container_name: tempo
     command: [ "-config.file=/etc/tempo/tempo.yml" ]
     volumes:
-      - ./docker/tempo/tempo.yml:/etc/tempo/tempo.yml
+      - ./var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml:/etc/tempo/tempo.yml
       - ./docker/tempo/tempo-data:/tmp/tempo
     ports:
       - "3110:3100"  # Tempo as Grafana data source
@@ -529,7 +529,7 @@ services:
     command:
       - --config=/etc/collector/otel-collector.yml
     volumes:
-      - ./docker/collector/otel-collector.yml:/etc/collector/otel-collector.yml
+      - ./var/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/collector/otel-collector.yml:/etc/collector/otel-collector.yml
     restart: always
     ports:
       - "4316:4317" # OTLP gRPC receiver

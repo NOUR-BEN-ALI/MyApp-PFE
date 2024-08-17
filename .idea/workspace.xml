@@ -5,28 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8043258-deca-4561-87d9-1ca2decce464" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/.java/fonts/21.0.4/fcinfo-1-aa7a30077959-debian-12-en-.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/failed-boot-attempts.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/prometheus/test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/71cf626f-e18e-48fc-b0f8-c793c7ce5ca9/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/71cf626f-e18e-48fc-b0f8-c793c7ce5ca9/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/71cf626f-e18e-48fc-b0f8-c793c7ce5ca9/meta.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/collector.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confCollector.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/confCollector.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment2.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment3.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment3.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-jenkins.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-jenkins.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose-minimal.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-minimal.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/copy_reference_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/copy_reference_file.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/credentials.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/credentials.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/fingerprints/f6/7d/b5cdaeed2d0212fee49646adc539.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/fingerprints/f6/7d/b5cdaeed2d0212fee49646adc539.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/failed-boot-attempts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jenkins.install.InstallUtil.lastExecVersion" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jenkins.install.InstallUtil.lastExecVersion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/17/log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/permalinks" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/builds/permalinks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/nextBuildNumber" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/nextBuildNumber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-5-api/META-INF/maven/io.jenkins.plugins/apache-httpcomponents-client-5-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/apache-httpcomponents-client-5-api/META-INF/maven/io.jenkins.plugins/apache-httpcomponents-client-5-api/pom.properties" afterDir="false" />
@@ -39,34 +30,118 @@
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Periodic background build discarder.log.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Workspace clean-up.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/tasks/Workspace clean-up.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/.timestamp2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/META-INF/maven/io.jenkins.plugins/echarts-api/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/META-INF/maven/io.jenkins.plugins/echarts-api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/WEB-INF/lib/echarts-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/WEB-INF/licenses.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts-api.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.esm.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.esm.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.simple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/echarts.simple.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/plugins/echarts-api/js/progress-chart.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/queue.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/hudson.plugins.gradle.GradleInstaller" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/updates/hudson.plugins.gradle.GradleInstaller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/112a7e9c-1f5d-4dde-92d6-28debd9f05d1/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/112a7e9c-1f5d-4dde-92d6-28debd9f05d1/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/112a7e9c-1f5d-4dde-92d6-28debd9f05d1/meta.compacted.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/66e218ea-f6ce-4842-a493-b3eb7837cff7/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/66e218ea-f6ce-4842-a493-b3eb7837cff7/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/66e218ea-f6ce-4842-a493-b3eb7837cff7/meta.compacted.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/a57bb274-3e8a-4095-986d-e96e2bd1e812/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/e3e2a83a-4d90-4283-aaa0-05e85a7789eb/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loki-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loki-deploy.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/JENKINS.RSA" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/JENKINS.RSA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/JENKINS.SF" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/JENKINS.SF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/META-INF/licenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/META-INF/licenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/META-INF/licenses.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/META-INF/licenses.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/dependencies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/dependencies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/journal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/journal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/lock-closed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/lock-closed.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/power.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/power.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-aborted-anime.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-aborted-anime.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-blue-anime.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-blue-anime.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-disabled-anime.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-disabled-anime.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-nobuilt-anime.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-nobuilt-anime.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-red-anime.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-red-anime.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-yellow-anime.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/status-yellow-anime.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/trash-bin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/classes/images/symbols/trash-bin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/asm-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/asm-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/bouncycastle-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/bouncycastle-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/checks-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/checks-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/commons-lang3-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/commons-lang3-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/commons-text-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/commons-text-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/display-url-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/display-url-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/font-awesome-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/font-awesome-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/gson-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/gson-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/ionicons-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/ionicons-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/javax-activation-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/javax-activation-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/javax-mail-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/javax-mail-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/matrix-project.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/matrix-project.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/mina-sshd-api-common.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/mina-sshd-api-common.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/mina-sshd-api-core.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/mina-sshd-api-core.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/scm-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/scm-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/script-security.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/script-security.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/sshd.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/sshd.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/trilead-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/trilead-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/workflow-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/workflow-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/workflow-step-api.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/workflow-step-api.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/workflow-support.hpi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/detached-plugins/workflow-support.hpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/asm-9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/asm-analysis-9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/asm-commons-9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/asm-tree-9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/asm-util-9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/cli-2.452.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/commons-codec-1.16.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/commons-fileupload-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/commons-io-2.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/commons-jelly-1.1-jenkins-20230713.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/commons-jelly-tags-define-1.1-jenkins-20230713.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/ezmorph-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/guava-33.1.0-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/jakarta.annotation-api-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/jcl-over-slf4j-2.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/jenkins-core-2.452.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/json-lib-2.4-jenkins-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/log4j-over-slf4j-2.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/remoting-3206.vb_15dcf73f6a_9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/slf4j-api-2.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/slf4j-jdk14-2.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spotbugs-annotations-4.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-aop-5.3.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-beans-5.3.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-context-5.3.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-core-5.3.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-expression-5.3.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-security-core-5.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-security-crypto-5.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-security-web-5.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/spring-web-5.3.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/stapler-1839.ved17667b_a_eb_5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/stapler-groovy-1839.ved17667b_a_eb_5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/stapler-jelly-1839.ved17667b_a_eb_5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/websocket-jetty10-2.452.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/lib/websocket-spi-2.452.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/executable/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/executable/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/executable/winstone.jar" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/executable/winstone.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/add-item.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/app.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/app.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/filter-build-history.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/filter-build-history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/filter-build-history.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/filter-build-history.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/keyboard-shortcuts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/keyboard-shortcuts.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/cloud-set.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/cloud-set.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/cloud-set.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/cloud-set.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/dashboard.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/dashboard.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/manage-jenkins/system-information.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pages/manage-jenkins/system-information.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/plugin-manager-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/plugin-manager-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/plugin-manager-ui.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/plugin-manager-ui.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pluginSetupWizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pluginSetupWizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pluginSetupWizard.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/pluginSetupWizard.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/section-to-sidebar-items.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/section-to-sidebar-items.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/simple-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/simple-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/simple-page.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/simple-page.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/sortable-drag-drop.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/sortable-drag-drop.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/vendors.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/vendors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/vendors.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/jsbundles/vendors.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/scripts/behavior.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/scripts/behavior.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/scripts/hudson-behavior.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/scripts/hudson-behavior.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/scripts/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/war/scripts/sortable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +386,7 @@
       <workItem from="1722684822309" duration="36261000" />
       <workItem from="1723462781973" duration="16684000" />
       <workItem from="1723662689040" duration="1680000" />
-      <workItem from="1723911078906" duration="663000" />
+      <workItem from="1723911078906" duration="3206000" />
     </task>
     <servers />
   </component>

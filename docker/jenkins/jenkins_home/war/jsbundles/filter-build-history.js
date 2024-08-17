@@ -266,7 +266,6 @@ function checkRowCellOverflows(row) {
           detailsLessThanHalf = detailsOverflowParams.scrollWidth < usableRowWidth / 2;
         }
       }
-      // eslint-disable-next-line no-inner-declarations
       function expandLeftWithRight(leftCellOverFlowParams, rightCellOverflowParams) {
         // Float them left and right...
         leftCellOverFlowParams.element.style.float = "left";

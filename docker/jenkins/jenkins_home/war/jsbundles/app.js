@@ -29,11 +29,9 @@ function combinePath(pathOne, pathTwo) {
 });
 ;// CONCATENATED MODULE: ./src/main/js/util/behavior-shim.js
 function specify(selector, id, priority, behavior) {
-  // eslint-ignore-next-line
   Behaviour.specify(selector, id, priority, behavior);
 }
 function applySubtree(startNode, includeSelf) {
-  // eslint-ignore-next-line
   Behaviour.applySubtree(startNode, includeSelf);
 }
 /* harmony default export */ var behavior_shim = ({
@@ -932,8 +930,7 @@ function search_bar_init() {
 const TOOLTIP_BASE = {
   arrow: false,
   theme: "tooltip",
-  animation: "tooltip",
-  appendTo: document.body
+  animation: "tooltip"
 };
 
 /**
@@ -948,6 +945,10 @@ function registerTooltip(element) {
   }
   const tooltip = element.getAttribute("tooltip");
   const htmlTooltip = element.getAttribute("data-html-tooltip");
+  let appendTo = document.body;
+  if (element.hasAttribute("data-tooltip-append-to-parent")) {
+    appendTo = "parent";
+  }
   if (tooltip !== null && tooltip.trim().length > 0 && (htmlTooltip === null || htmlTooltip.trim().length == 0)) {
     (0,tippy_esm/* default */.Ay)(element, Object.assign({
       content: () => tooltip.replace(/<br[ /]?\/?>|\\n/g, "\n"),
@@ -959,7 +960,8 @@ function registerTooltip(element) {
       },
       onHidden(instance) {
         instance.reference.setAttribute("title", instance.props.content);
-      }
+      },
+      appendTo: appendTo
     }, TOOLTIP_BASE));
   }
   if (htmlTooltip !== null && htmlTooltip.trim().length > 0) {
@@ -968,7 +970,8 @@ function registerTooltip(element) {
       allowHTML: true,
       onCreate(instance) {
         instance.props.interactive = instance.reference.getAttribute("data-tooltip-interactive") === "true";
-      }
+      },
+      appendTo: appendTo
     }, TOOLTIP_BASE));
   }
 }

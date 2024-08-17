@@ -744,7 +744,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"alert alert-danger\">\n                    "
+  return "                <div class=\"jenkins-alert jenkins-alert-danger\">\n                    "
     + ((stack1 = container.lambda((depth0 != null ? lookupProperty(depth0,"newerCoreRequired") : depth0), depth0)) != null ? stack1 : "")
     + "\n                </div>\n";
 },"11":function(container,depth0,helpers,partials,data) {
@@ -755,7 +755,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"alert alert-danger\">\n                    "
+  return "                <div class=\"jenkins-alert jenkins-alert-danger\">\n                    "
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"unresolvedSecurityWarnings") : depth0)) != null ? lookupProperty(stack1,"text") : stack1), depth0))
     + "\n                    <ul>\n"
     + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? lookupProperty(depth0,"unresolvedSecurityWarnings") : depth0)) != null ? lookupProperty(stack1,"warnings") : stack1),{"name":"each","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":42,"column":24},"end":{"line":48,"column":33}}})) != null ? stack1 : "")
@@ -781,7 +781,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"alert alert-warning\">\n                    "
+  return "                <div class=\"jenkins-alert jenkins-alert-warning\">\n                    "
     + ((stack1 = container.lambda((depth0 != null ? lookupProperty(depth0,"deprecated") : depth0), depth0)) != null ? stack1 : "")
     + "\n                </div>\n";
 },"16":function(container,depth0,helpers,partials,data) {
@@ -792,7 +792,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"alert alert-warning\">\n                    "
+  return "                <div class=\"jenkins-alert jenkins-alert-warning\">\n                    "
     + ((stack1 = container.lambda((depth0 != null ? lookupProperty(depth0,"adoptMe") : depth0), depth0)) != null ? stack1 : "")
     + "\n                </div>\n";
 },"18":function(container,depth0,helpers,partials,data) {
