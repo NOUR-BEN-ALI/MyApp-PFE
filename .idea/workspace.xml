@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/maven-dependency-update-trigger/META-INF/maven/org.jenkins-ci.plugins/maven-dependency-update-trigger/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/jenkins/jenkins_home/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/jobs/VisionaryOps/workspace@2/MyApp-PFE/docker/tempo/tempo.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/jenkins_home/logs/health-checker.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +257,7 @@
       <workItem from="1722684822309" duration="36261000" />
       <workItem from="1723462781973" duration="16684000" />
       <workItem from="1723662689040" duration="1680000" />
-      <workItem from="1723911078906" duration="6179000" />
+      <workItem from="1723911078906" duration="6503000" />
     </task>
     <servers />
   </component>
